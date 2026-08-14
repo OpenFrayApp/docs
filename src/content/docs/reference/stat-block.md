@@ -64,7 +64,7 @@ where the book has one, for example _Brood & Bloom_, or _Basic Rules 2024 (SRD 5
 pg. 320)_. When the creature comes from one of OpenFray's own books, that name is a link:
 click it to read the book, in a new tab, so following it never takes the fight off your
 screen. Every other source is plain text. Full credit for every book OpenFray uses is in
-[CREDITS.md](https://github.com/SirDarcanos/openfray/blob/main/CREDITS.md).
+[CREDITS.md](https://github.com/OpenFrayApp/console/blob/main/CREDITS.md).
 
 ## What you can click in a fight
 

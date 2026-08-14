@@ -49,7 +49,7 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/SirDarcanos/openfray',
+          href: 'https://github.com/OpenFrayApp',
         },
       ],
       sidebar: [

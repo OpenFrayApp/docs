@@ -33,6 +33,11 @@ on it. Nothing important is hidden in a menu.
    starts, the fight's timers once it does, and, when you're signed in, which campaign
    you're running.
 
+On a phone, the three columns become three screens. Swipe between them, or tap
+**Tracker**, **Stat block**, or **Controls** in the bar at the bottom, which also holds
+the **Compendium**. Tapping a combatant in the tracker slides to its stat block, and the
+dice sit on the **Controls** screen.
+
 ## Add your creatures and players
 
 Add everyone before the fight starts. Three buttons, for three different things:

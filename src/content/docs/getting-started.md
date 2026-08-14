@@ -35,8 +35,10 @@ on it. Nothing important is hidden in a menu.
 
 On a phone, the three columns become three screens. Swipe between them, or tap
 **Tracker**, **Stat block**, or **Controls** in the bar at the bottom, which also holds
-the **Compendium**. Tapping a combatant in the tracker slides to its stat block, and the
-dice sit on the **Controls** screen.
+the **Compendium**. Tapping a combatant in the tracker slides to its stat block, the
+dice sit on the **Controls** screen, and the Privacy, Terms, and Source links move into
+the **gear** menu. On a tablet held upright, the tracker and the stat block sit side by
+side, with the controls and the log below them.
 
 ## Add your creatures and players
 

@@ -5,7 +5,7 @@ how the console works, from the first fight to every reference table, written fo
 players and Game Masters.
 
 This repo is one part of OpenFray. The console and the website live in their own
-repos, and [openfray.app](https://github.com/OpenFrayApp/openfray.app) ties the
+repos, and [openfray](https://github.com/OpenFrayApp/openfray) ties the
 three together into the single deploy that serves the domain. This repo works on its own: clone it, install, and run.
 
 ## Running it

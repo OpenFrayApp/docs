@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -17,5 +19,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OpenFrayApp/docs.git"
-  }
+  },
+  "devDependencies": {
+    "prettier": "^3.9.5",
+    "prettier-plugin-astro": "^0.14.1"
+  },
+  "license": "AGPL-3.0-or-later"
 }

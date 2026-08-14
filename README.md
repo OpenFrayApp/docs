@@ -16,7 +16,17 @@ npm run dev
 ```
 
 The handbook builds with `/docs/` as its base path; the parent repo's assembly
-step copies it into the deployed site.
+step copies it into the deployed site. `npm test` covers the annotation scripts.
+
+## Screenshots
+
+Every capture in the handbook (and the site's hero shots) is a
+[shotlist](https://github.com/SirDarcanos/shotlist) recipe in `screenshots/`. Run
+the console, then `npx shotlist <name> --install` re-shoots one and copies it where
+it belongs; `npx shotlist --check` reports the captures the app has moved on from.
+Six recipes install the site's shots into a `site` clone sitting beside this repo.
+The scripts in `scripts/` draw the red callouts onto the captures. Never edit a
+screenshot by hand.
 
 ## Before contributing
 

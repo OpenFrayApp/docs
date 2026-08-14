@@ -5,10 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/check-prose.mjs && astro build",
     "preview": "astro preview",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "vitest run"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -21,8 +22,11 @@
     "url": "git+https://github.com/OpenFrayApp/docs.git"
   },
   "devDependencies": {
+    "jsdom": "^26.1.0",
     "prettier": "^3.9.5",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "shotlist": "^0.2.3",
+    "vitest": "^3.0.0"
   },
   "license": "AGPL-3.0-or-later"
 }

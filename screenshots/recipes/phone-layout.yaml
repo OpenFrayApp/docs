@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The console on a phone (getting-started.md): one screen at a time, with the bottom bar
+# switching between them. The board is seeded through the phone's own controls, because
+# the wide header's buttons are hidden at this width.
+name: phone-layout
+install: docs
+viewport: { width: 375, height: 812 }
+
+setup:
+  - each: $party
+    as: pc
+    steps:
+      - click: { role: button, name: Add to the encounter }
+      - click: { role: menuitem, name: Add PC }
+      - fill: { label: PC name }
+        value: $pc.name
+      - fill: { label: AC, exact: true }
+        value: $pc.ac
+      - fill: { label: Max HP }
+        value: $pc.hp
+      - fill: { label: Initiative modifier }
+        value: $pc.init
+      - click: { role: button, name: Add, exact: true }
+      - wait: 150
+  - each: $foes
+    as: foe
+    steps:
+      - click: { role: button, name: Add to the encounter }
+      - click: { role: menuitem, name: Add creature }
+      - fill: { placeholder: Search creatures… }
+        value: $foe.name
+      - wait: 320
+      - each: $foe.times
+        as: n
+        steps:
+          - click: { role: button, name: $foe.name, matching: '^$foe.name' }
+          - wait: 220
+      - press: Escape
+      - wait: 120
+  - use: start
+
+clip: viewport
+
+marks:
+  nav:
+    span:
+      - { css: button, text: Tracker }
+      - { css: button, text: Compendium }
+
+# The label sits inside the shot, in the empty list under the last row.
+callouts:
+  - { mark: nav, text: Switch screens, place: top, inside: true, dy: -70 }

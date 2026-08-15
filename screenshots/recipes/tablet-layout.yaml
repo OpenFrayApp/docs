@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The console on a small tablet held sideways (getting-started.md): tracker beside stat
+# block, controls and log in a band below.
+name: tablet-layout
+install: docs
+viewport: { width: 1180, height: 820 }
+
+setup:
+  - use: seed
+  - use: start
+  - click: { text: Ogre }
+  - wait: 400
+
+clip: viewport
+
+# Same masks as the wide layout shot: the log keeps the console's own initiative dice,
+# and the clocks keep real time.
+check:
+  ignore:
+    - { css: div.border-t, contains: Game log, pick: smallest }
+    - { css: div, contains: Real, matching: In-game, pick: smallest }

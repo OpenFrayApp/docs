@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# A Lightning Bolt resolved against a lightning-immune dragon (guides/attacks.md): the
+# damage cell reads immune 0, whatever the dice said.
+name: immunity-damage
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Archmage, times: [1] }
+        - { name: Adult Bronze Dragon, times: [1] }
+  - use: start
+  - click: { text: Archmage }
+  - wait: 300
+  - click: { role: button, name: Cast spell }
+  - fill: { placeholder: Search spells… }
+    value: Lightning Bolt
+  - wait: 320
+  - click: { role: button, name: Lightning Bolt, matching: '^Lightning Bolt' }
+  - wait: 500
+  - click:
+      role: button
+      name: Adult Bronze Dragon
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  - wait: 600
+
+clip: { panel: Archmage · Lightning Bolt, pad: 14 }
+
+marks:
+  dmg: { css: 'span, div', contains: 'lightning · 8d6', pick: smallest, within: clip }
+  immune:
+    span:
+      - { css: 'span, div, label', text: immune, pick: smallest }
+      - { css: input, within: { css: li, contains: immune, pick: smallest }, pick: last }
+
+# The label sits inside the shot, in the empty band above the cell.
+callouts:
+  - { mark: dmg, box: true }
+  - { mark: immune, text: 'Immune, so no damage lands', place: top, inside: true }
+
+# The dragon's save is a real roll, and a failure adds the Use LR button to its row, so
+# the panel's shape varies run to run.
+check: false

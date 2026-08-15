@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# An action-forced save resolved against two players (guides/saves.md): the rules preset
+# from the stat block, the targets picked, and the recorded results.
+name: save-resolve
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Young Black Dragon, times: [1] }
+  - use: start
+  - click: { text: Young Black Dragon }
+  - wait: 300
+  - click: { startsWith: 'Acid Breath', maxChildren: 0, pick: smallest }
+  - wait: { css: '[role=dialog]' }
+  - wait: 400
+  - click:
+      role: button
+      name: Tav
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - click:
+      role: button
+      name: Zara
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  # The rolled damage line animates in before the recording rows exist.
+  - wait: 1600
+  # Players roll their own; the recording is what the capture shows. The buttons are
+  # found by css: on shotlist 0.4.2 a role click's `within` sub-query inherits the role
+  # engine's seeds and can never find the row around them.
+  - click:
+      css: button
+      text: Fail
+      within: { css: li, contains: Zara, matching: 'Save', pick: smallest }
+  - click:
+      css: button
+      text: Save
+      within: { css: li, contains: Tav, matching: 'Save', pick: smallest }
+  - wait: 300
+
+clip: { panel: Young Black Dragon · Acid Breath, pad: 14 }
+
+marks:
+  rules:
+    span:
+      - { css: input, within: clip, pick: first }
+      - { css: select, within: clip, pick: first }
+  targets:
+    span:
+      - { css: button, text: Tav, within: clip }
+      - { css: button, text: Zara, within: clip }
+  results:
+    span:
+      - { css: li, contains: Zara, matching: 'Save', pick: smallest }
+      - { css: li, contains: Tav, matching: 'Save', pick: smallest }
+
+# The rows are full of controls on both ends, so the results label alone reaches in from
+# the margin; the other two sit inside the panel's empty right side.
+callouts:
+  - { mark: rules, text: Save rules are preset, place: right, inside: true }
+  - { mark: targets, text: Select the targets, place: right, inside: true }
+  - { mark: results, text: Damage is adjusted automatically, place: right }
+
+# The recorded choices are scripted, so what varies is the rolled damage: its total line
+# and what lands on each row. The check masks those and guards the rest of the box.
+check:
+  ignore:
+    - { css: div, contains: '14d6 [', pick: smallest }
+    - { css: li, contains: Zara, matching: 'Save', pick: smallest }
+    - { css: li, contains: Tav, matching: 'Save', pick: smallest }

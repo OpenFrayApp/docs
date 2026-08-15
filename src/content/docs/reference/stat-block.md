@@ -72,13 +72,13 @@ other source is plain text. Full credit for every book OpenFray uses is in
 
 During a fight, the parts that roll or spend something are clickable:
 
-| Click this                           | And it does                                                                            |
-| ------------------------------------ | -------------------------------------------------------------------------------------- |
-| An **ability** or **skill**          | Rolls that check or save (a creature's own).                                           |
-| An **action** with an attack or save | Opens the [attack](/docs/guides/attacks/) or [save](/docs/guides/saves/) box.          |
-| A **spell**                          | Casts it. See [Cast a spell](/docs/guides/spells/).                                    |
+| Click this                           | And it does                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------------------- |
+| An **ability** or **skill**          | Rolls that check or save (a creature's own).                                                |
+| An **action** with an attack or save | Opens the [attack](/docs/guides/attacks/) or [save](/docs/guides/saves/) box.               |
+| A **spell**                          | Casts it. See [Cast a spell](/docs/guides/spells/).                                         |
 | A **legendary action**               | Spends it from the round's budget. See [Spend creature resources](/docs/guides/resources/). |
-| A **recharge** ability               | Spends it; OpenFray rolls to recharge on the creature's turn.                          |
+| A **recharge** ability               | Spends it; OpenFray rolls to recharge on the creature's turn.                               |
 
 Everything else is there to read, including traits and the descriptive text of an
 action. OpenFray never rolls a player's dice, so a player character's abilities show the

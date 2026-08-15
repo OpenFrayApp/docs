@@ -29,12 +29,12 @@ into **Core**, **OpenFray**, and **Other**:
 - **Basic Rules 2024 (SRD 5.2.1)** — the newer rules. On by default.
 - **Basic Rules 2014 (SRD 5.1)** — the older rules. Turn this on if that's what your
   table plays.
-- **Brood & Bloom**, **The Waking Garden**, and **On Strong Waters and Potent
-  Simples** — OpenFray's own books. Their names are links: click one to read the book
-  itself, in a new tab.
+- **Brood & Bloom**, **The Waking Garden**, and **On Strong Waters and Potent Simples**
+  are OpenFray's own books. Their names are links: click one to read the book itself, in
+  a new tab.
 - **Homebrew creations** — your own creatures and spells, on by default. Turn it off to
   shelve them all at once.
-- **Tome of Beasts 1, 2, and 3** and **Creature Codex** — four bestiaries from Kobold
+- **Tome of Beasts 1, 2, and 3** and **Creature Codex** are four bestiaries from Kobold
   Press.
 
 What each book contains is covered in

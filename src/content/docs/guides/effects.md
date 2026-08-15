@@ -30,13 +30,13 @@ The numbered parts match the picture. Use the ones you need, in any order:
    The row appears once there are presets to offer. See [Presets](#presets).
 2. **Set how long it lasts.** The duration applies to everything staged in the box:
 
-   | Choice                      | Use it for                                                                                                                                                |
-   | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | **Until removed**           | you'll clear it yourself when the story says so                                                                                                           |
-   | **This turn / next attack** | something used up by the next roll (Vicious Mockery)                                                                                                      |
+   | Choice                      | Use it for                                                                                                                                                 |
+   | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Until removed**           | you'll clear it yourself when the story says so                                                                                                            |
+   | **This turn / next attack** | something used up by the next roll (Vicious Mockery)                                                                                                       |
    | **Save ends**               | something the creature can shake off. It then asks which save, the number to beat, and whether it's rolled at the start or the end of that creature's turn |
-   | **1 round** … **24 hours**  | anything with a stated duration, such as a spell or a potion                                                                                              |
-   | **Custom…**                 | any other length, typed as a number of rounds, minutes, hours, or days                                                                                    |
+   | **1 round** … **24 hours**  | anything with a stated duration, such as a spell or a potion                                                                                               |
+   | **Custom…**                 | any other length, typed as a number of rounds, minutes, hours, or days                                                                                     |
 
 3. **Type a reminder.** A short note OpenFray shows on the creature's row. It reminds
    you; you decide what it does. **+ Add another reminder** stages a second note.

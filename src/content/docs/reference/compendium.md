@@ -74,20 +74,20 @@ Your games and their house rules. Each campaign's card lists its rules at a glan
 The compendium shows the books you've turned on in
 [Settings](/docs/reference/settings/#libraries). OpenFray ships with:
 
-- **Basic Rules 2024** (DnD 5.5e) — the newer rules. On by default.
-- **Basic Rules 2014** (DnD 5e) — the older rules. Turn this on if that's what your
+- **Basic Rules 2024** — DnD 5.5e. The newer rules. On by default.
+- **Basic Rules 2014** — DnD 5e. The older rules. Turn this on if that's what your
   table plays.
-- **Tome of Beasts 1, 2, and 3** (DnD 5e) — three books of extra creatures from Kobold
+- **Tome of Beasts 1, 2, and 3** — DnD 5e. Three books of extra creatures from Kobold
   Press.
-- **Creature Codex** (DnD 5e) — a fourth Kobold Press bestiary, around 350 more
+- **Creature Codex** — DnD 5e. A fourth Kobold Press bestiary, around 350 more
   creatures.
-- **Brood & Bloom** (DnD 5.5e) — OpenFray's own, a bestiary of parasites in three
+- **Brood & Bloom** — DnD 5.5e. OpenFray's own, a bestiary of parasites in three
   broods. One lives in people, one takes ground and buildings, and one wants only the
   dead. It also carries the Lazaret, the order that catalogs and treats them.
-- **On Strong Waters and Potent Simples** (DnD 5.5e) — OpenFray's own, an apothecary's
+- **On Strong Waters and Potent Simples** — DnD 5.5e. OpenFray's own, an apothecary's
   book of drink and drugs. It adds eleven spells and a set of ready-made effect presets
   for the intoxication, craving, and addiction it counts. It adds no creatures.
-- **The Waking Garden** (DnD 5.5e) — OpenFray's own, a bestiary of vegetables that have
+- **The Waking Garden** — DnD 5.5e. OpenFray's own, a bestiary of vegetables that have
   woken up, across three stages of growth.
 - **Homebrew creations** — everything you build or import yourself. On by default.
 

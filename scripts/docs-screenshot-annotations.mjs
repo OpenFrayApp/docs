@@ -12,8 +12,8 @@
 // Most of these carry no callout at all: a form whose fields are already labelled says
 // more without one. Only mark what the screen itself doesn't explain.
 
-const IN = 'src/assets/screens/incoming'
-const OUT = 'src/assets/screens'
+const IN = 'src/assets/screens/incoming';
+const OUT = 'src/assets/screens';
 
 export const SHOTS = [
   {
@@ -71,4 +71,4 @@ export const SHOTS = [
     out: `${OUT}/import-json.png`,
     items: [],
   },
-]
+];

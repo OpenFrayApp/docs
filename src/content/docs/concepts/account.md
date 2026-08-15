@@ -8,13 +8,15 @@ keywords:
   - sync fights across devices
 ---
 
-OpenFray works with no account at all. Signing in is how you keep things between
-sessions and between devices; it doesn't unlock any part of the console. This page
-explains where your game lives in each case, and how to delete it.
+Running a fight needs no account at all. Signing in is free, and it adds everything
+OpenFray has to store for you: fights that sync between devices, campaigns and house
+rules, saved characters, homebrew and imported creatures, your own presets, and a named
+player-view link. This page explains where your game lives in each case, and how to
+delete it.
 
 ## Without an account
 
-Open [the console](/console/) and run a fight straight away. You get the whole thing:
+Open [the console](/console/) and run a fight straight away. The whole fight works:
 creatures from the built-in books, players, initiative, effects, spells, group saves,
 dice, and the compendium.
 

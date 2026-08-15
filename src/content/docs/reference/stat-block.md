@@ -81,5 +81,5 @@ During a fight, the parts that roll or spend something are clickable:
 | A **recharge** ability               | Spends it; OpenFray rolls to recharge on the creature's turn.                               |
 
 Everything else is there to read, including traits and the descriptive text of an
-action. OpenFray never rolls a player's dice, so a player character's abilities show the
-modifier only, and you enter what the player rolled.
+action. OpenFray doesn't roll a player's dice on its own, so a player character's
+abilities show the modifier only, and you enter what the player rolled.

@@ -47,5 +47,5 @@ Whatever is on a creature is worked into its rolls for you:
   Evasion.
 
 OpenFray rolls for creatures because it has their numbers. A player's rolls stay with
-the player, and you type in the result. See
-[Honest dice](/docs/concepts/dice/#players-roll-their-own).
+the player: you type in the result, and OpenFray rolls for a player only when you choose
+to. See [Honest dice](/docs/concepts/dice/#players-roll-their-own).

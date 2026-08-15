@@ -9,8 +9,8 @@ keywords:
 ---
 
 Three rules govern every die OpenFray rolls: the rolls are truly random, every roll is
-written down, and a player's dice are never rolled for them. This page explains each
-one. The formulas the roll box understands are in
+written down, and a player's dice are never rolled automatically. This page explains
+each one. The formulas the roll box understands are in
 [Dice & roll formulas](/docs/reference/dice/).
 
 ## Fair rolls
@@ -49,7 +49,10 @@ one that counted highlighted and the other dimmed beside it.
 OpenFray rolls for creatures because it has their numbers. It never rolls a player's
 attack, save, or check on its own. Those dice belong to the player, and you type in the
 result. Wherever a box resolves rolls for a mixed group, the creatures are rolled for
-you and each player gets a field for what they rolled. The one exception is the
-[Roll initiative box](/docs/getting-started/#start-the-fight), which offers to roll for
-a player who isn't there to roll, and the same fallback exists for
-[death saves](/docs/guides/death/).
+you and each player gets a field for what they rolled.
+
+You can still choose to roll for a player from the console when they can't. Leave a
+player's box blank in the [Roll initiative box](/docs/getting-started/#start-the-fight)
+and OpenFray rolls their initiative, and
+[Roll death save](/docs/guides/death/#death-saves) is the same fallback for a downed
+character. In both cases the roll happens because you asked for it.

@@ -47,8 +47,8 @@ Every creature's row carries a **Reroll** button. It rolls that creature's save 
 and updates what that creature takes; everyone else keeps the result you've already
 settled. The damage itself doesn't change, because one roll is shared by the whole area.
 
-A player's row has no **Reroll**. OpenFray never rolls for a player, so you record what
-they rolled with **Save** or **Fail**, and change it there if they roll again.
+A player's row has no **Reroll**. Their dice stay with them: record what they rolled
+with **Save** or **Fail**, and change it there if they roll again.
 
 ## Turning a failed save into a success
 

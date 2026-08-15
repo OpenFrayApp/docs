@@ -39,8 +39,9 @@ what you, the Game Master, need to see on the board:
 
 ![The Add PC button outlined in red, with the quick form open: name, AC, HP, initiative, senses, speed, languages, and defenses.](../../../assets/screens/add-pc-dropdown.png)
 
-OpenFray never rolls for a player. Wherever it would roll for a creature, you type in
-what the player rolled instead. See [Honest dice](/docs/concepts/dice/).
+OpenFray never rolls for a player on its own. Wherever it would roll for a creature, you
+type in what the player rolled instead, or choose to let OpenFray roll for them. See
+[Honest dice](/docs/concepts/dice/).
 
 When you sign in with your Google or Discord account, you can save your player
 characters and add them from the compendium instead:

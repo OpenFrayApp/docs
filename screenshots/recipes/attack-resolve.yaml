@@ -18,12 +18,14 @@ marks:
   roll: { role: button, name: Reroll, within: clip }
   apply: { role: button, name: Apply to Zara, within: clip }
 
-# The chips and the damage field sit left of two of these, so those labels come in from
-# the right — a label must never cover something the reader needs.
+# The panel's right side is empty past the chips and the apply button, so those two
+# labels sit inside the shot; the roll row runs the panel's width, so its label stays in
+# the left margin.
 callouts:
-  - { mark: target, text: Who it hits, place: right }
-  - { mark: apply, text: Take the damage off, place: right }
+  - { mark: target, text: Who it hits, place: right, inside: true }
+  - { mark: apply, text: Take the damage off, place: right, inside: true }
   - { mark: roll, text: The roll and the result, place: left }
 
-# The panel is as tall as the result it is showing, and the result is a real roll.
+# The roll decides between Hit and Miss, and a miss adds its own helper line, so the
+# panel's very shape varies run to run. Nothing regional to ignore; the shot opts out.
 check: false

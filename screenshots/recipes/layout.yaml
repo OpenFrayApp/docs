@@ -32,6 +32,10 @@ callouts:
   - { mark: controls, n: 4, place: corner, badge: bc, box: false, dy: -140 }
   - { mark: dice, n: 5, place: corner, badge: mr, box: false, inside: false, dx: 60 }
 
-# The game log is in frame, and a creature's initiative line carries the roll the console
-# made for it — pinning the number in the modal fixes the order, not the dice behind it.
-check: false
+# Two regions carry real dice and real time: the log column (a creature's initiative
+# line keeps the roll the console made, even once the number is pinned) and the footer
+# clocks. The check masks both and guards the rest of the screen.
+check:
+  ignore:
+    - { css: div.border-t, contains: Game log, pick: smallest }
+    - { css: div, contains: Real, matching: In-game, pick: smallest }

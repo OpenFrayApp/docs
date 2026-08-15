@@ -14,8 +14,9 @@ site:
   theme: dark
   # The console renders before the compendium arrives, so a selector alone is not enough
   # to know the board is ready to shoot. The responsive shells keep a second, hidden Add
-  # cluster in the DOM, so the wait names the visible one.
-  ready: 'button:has-text("Add creature"):visible'
+  # cluster in the DOM, so the wait names the visible one — and on the swipe shell the
+  # add affordance is the single Add button, so either form counts.
+  ready: 'button:has-text("Add creature"):visible, button[aria-label="Add to the encounter"]:visible'
   settle: 800
 
 style:

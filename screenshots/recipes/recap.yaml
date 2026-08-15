@@ -31,5 +31,7 @@ setup:
 
 clip: { panel: Combat recap, pad: 16 }
 
-# The damage tiles count an attack that was really rolled, so no two runs agree.
+# The rolled attack decides the damage totals and which awards the fight earns, and an
+# absent award changes the recap's shape, so no region mask can hold it steady. The shot
+# opts out.
 check: false

@@ -37,5 +37,8 @@ callouts:
   - { mark: bar, text: Roll anything by hand, place: left }
   - { mark: entry, text: 'Every roll, with its dice', place: top }
 
-# The entry holds a die that was actually rolled, so no two runs agree.
-check: false
+# The entry's numbers are a real roll, but its box is a fixed row of the log, so the
+# check masks the entry and still guards the bar and the frame around it.
+check:
+  ignore:
+    - { css: li, contains: 1d20+2, visible: true, pick: last }

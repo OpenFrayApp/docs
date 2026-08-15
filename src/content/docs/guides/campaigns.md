@@ -10,8 +10,12 @@ keywords:
 
 A **campaign** keeps one game together. It holds the rules your table uses, so you set
 them once and they apply to every fight you run. This page covers creating a campaign,
-the house rules, and picking which campaign you're running. Without a campaign, OpenFray
-uses the default rules.
+the house rules, and picking which campaign you're running.
+
+Without a campaign (including everyone not signed in), OpenFray uses the 2024-first
+defaults: critical hits double the dice (standard), surprise is initiative with
+disadvantage, creatures join with average hit points, initiative ties go to the higher
+Dexterity, and the party levels by experience points.
 
 :::note[Needs an account]
 Creating and using a campaign requires signing in with a free Google or Discord account.

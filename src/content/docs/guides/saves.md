@@ -39,7 +39,7 @@ Two common defenses are handled for you when they apply:
   failure, instead of the usual half on success. OpenFray shows an **Evasion** marker on
   those creatures and works it into the damage.
 
-![A save with Magical Effect checked, and a log entry showing the creature rolled with advantage from Magic Resistance.](../../../assets/screens/magic-resistance.png)
+![A save with Magical Effect checked, and the target's row showing the two dice it rolled with advantage from Magic Resistance.](../../../assets/screens/magic-resistance.png)
 
 ## Rerolling one creature's save
 

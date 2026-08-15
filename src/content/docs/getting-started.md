@@ -39,17 +39,21 @@ during a fight is on it.
 ### On a phone or tablet
 
 The console fits itself to the screen you open it on. The same five areas are always
-there; smaller screens rearrange them:
+there; smaller screens rearrange them. The buttons keep the same names everywhere, so
+the steps in this handbook work on every screen. When a page says where a control is, it
+describes the laptop layout.
 
-- **On a phone, or a tablet held upright**, the console shows one area at a time. A bar
-  along the bottom switches between **Tracker**, **Stat block**, **Controls**, and
-  **Compendium**. The dice sit at the top of the **Controls** screen, and the three add
-  buttons become one **Add** button.
-- **On a smaller tablet held sideways**, the tracker and the stat block sit side by
-  side, with the controls and the log in a band below them.
+On a phone, or a tablet held upright, the console shows one area at a time. A bar along
+the bottom switches between **Tracker**, **Stat block**, **Controls**, and
+**Compendium**. The dice sit at the top of the **Controls** screen, and the three add
+buttons become one **Add** button.
 
-The buttons keep the same names everywhere, so the steps in this handbook work on every
-screen. When a page says where a control is, it describes the laptop layout.
+![The console on a phone: the stacked header with one Add button, a fight in the tracker, and the bottom bar outlined in red and labeled Switch screens.](../../assets/screens/phone-layout.png)
+
+On a smaller tablet held sideways, the tracker and the stat block sit side by side, with
+the controls and the log in a band below them.
+
+![The console on a small tablet held sideways: the tracker beside the stat block, with the controls and the game log in a band below.](../../assets/screens/tablet-layout.png)
 
 ## Add your creatures and players
 

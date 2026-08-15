@@ -23,45 +23,51 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-OpenFray is a combat console and initiative tracker for Dungeons and Dragons. It keeps track of a fight for
-you: who acts when, everyone's hit points, the conditions and effects on each creature,
-and the dice. It also has a built-in list of creatures and spells to pull from. It runs in
-your web browser, and you don't need an account. Signing in just lets you save your game.
+OpenFray is a combat console and initiative tracker for Dungeons and Dragons. It keeps
+track of a fight for you: who acts when, everyone's hit points, the conditions and
+effects on each creature, and the dice. It also has a built-in list of creatures and
+spells to pull from. It runs in your web browser, on a laptop, a tablet, or a phone, and
+you don't need an account. Signing in lets you save your game.
 
-These pages explain how each part works. New here? Start with
-[Getting started](/docs/getting-started/), then come back for the rest.
+The handbook is organized by what you need. New here? Start with
+[Getting started](/docs/getting-started/) and run your first fight. After that, the
+guides give you the steps for each task, the concepts explain how OpenFray thinks, and
+the reference describes every screen in detail.
 
 <CardGrid stagger>
   <Card title="Getting started" icon="rocket">
-    Open the console, add your creatures and players, and run your first fight. [Getting
-    started](/docs/getting-started/).
+    Open the console, add your creatures and players, and run your first fight.
+    [Getting started](/docs/getting-started/).
   </Card>
   <Card title="Running a fight" icon="list-format">
-    Turns and initiative, [attacks & damage](/docs/fight/attacks/), [saving
-    throws](/docs/fight/saves/), [effects](/docs/fight/effects/), and [creature
-    resources](/docs/fight/resources/).
+    Step-by-step guides: [rounds & turns](/docs/guides/encounters/),
+    [attacks](/docs/guides/attacks/), [saving throws](/docs/guides/saves/),
+    [effects](/docs/guides/effects/), [spells](/docs/guides/spells/), and
+    [the player view](/docs/guides/player-view/).
   </Card>
-  <Card title="Combatants" icon="puzzle">
-    The [three kinds](/docs/fight/combatants/) you can add, [the tracker &
-    rows](/docs/fight/tracker/), and [death & dying](/docs/fight/death/).
+  <Card title="Concepts" icon="puzzle">
+    How OpenFray thinks: [the three kinds of combatant](/docs/concepts/combatants/),
+    [how effects work](/docs/concepts/effects/), [honest dice](/docs/concepts/dice/), and
+    [what's saved where](/docs/concepts/account/).
   </Card>
   <Card title="Your library" icon="open-book">
-    The [compendium](/docs/library/compendium/), [building your
-    own](/docs/library/making-your-own/), [campaigns](/docs/library/campaigns/), and [the
-    importer](/docs/library/importer/).
+    [Set up a campaign & house rules](/docs/guides/campaigns/), [build your own
+    creatures & spells](/docs/guides/making-your-own/), and [import from D&D
+    Beyond](/docs/guides/importer/).
   </Card>
   <Card title="Reference" icon="approve-check">
-    [The stat block](/docs/reference/stat-block/), [dice & formulas](/docs/reference/dice/), [the
-    game log](/docs/reference/game-log/), and [settings](/docs/reference/settings/).
+    [The tracker](/docs/reference/tracker/), [the stat
+    block](/docs/reference/stat-block/), [the compendium](/docs/reference/compendium/),
+    [dice & roll formulas](/docs/reference/dice/), [the game
+    log](/docs/reference/game-log/), and [settings](/docs/reference/settings/).
   </Card>
   <Card title="Your account" icon="setting">
-    What works without an account, what signing in saves, and how to delete it all. [Your
-    account](/docs/account/).
+    What works without an account, what signing in saves, and how to delete it all.
+    [Your account & what's saved](/docs/concepts/account/).
   </Card>
 </CardGrid>
 
 :::note[If the handbook and the app disagree]
-OpenFray still changes often. If something here doesn't match what you see in the
-app, trust the app, and please
-[let us know](https://github.com/OpenFrayApp/console/issues).
+OpenFray still changes often. If something here doesn't match what you see in the app,
+trust the app, and please [let us know](https://github.com/OpenFrayApp/console/issues).
 :::

@@ -48,6 +48,17 @@ fill an initiative for **every** combatant, creatures included, or the console r
 theirs and the board reorders between runs; and a shot framing live dice or the fight
 clock takes `check: false`, because it can never match itself.
 
+Fourteen captures still have no recipe, because they need something the pipeline
+cannot stage anonymously. They stay by-hand until it can:
+
+- **A signed-in account**: `add-pc-dropdown-signedin`, `campaign-form`,
+  `campaign-picker`, `campaigns-tab`, `characters-tab`, `custom-creature`,
+  `custom-spell`, and `import-json`.
+- **Motion**: `reorder-combatants`, `set-concentration`, and `use-reaction` are
+  GIFs, and shotlist takes stills.
+- **The browser extension**: `importer-browser-pin`, `importer-options`, and
+  `importer-popup` picture the importer's own UI around the console.
+
 The scripts in `scripts/` draw the red callouts onto captures
 (`docs-screenshot-annotations.mjs` for the pipeline, `annotate-screenshot.mjs` for
 the rare by-hand capture); `tests/` covers the drawing. Never edit a screenshot by

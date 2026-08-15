@@ -6,8 +6,11 @@ defaults:
   who: Zara
   hp: 0
 steps:
+  # The HP total is the one unlabeled button carrying a slash (49/68); a condition
+  # chip's clear button is unlabeled too, so shape alone stopped being enough.
   - click:
       css: 'button:not([aria-label])'
+      matching: '^\d+$'
       within: { trackerRow: $who }
       pick: first
   - wait: 200

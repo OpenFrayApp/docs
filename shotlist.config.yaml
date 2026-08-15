@@ -58,7 +58,7 @@ finders:
     css: 'li, div'
     contains: $1
     matching: 'AC\s*\d'
-    maxChildren: 12
+    maxChildren: 24
     pick: smallest
 
   # A dialog that carries a given control, for the ones whose heading is not unique.

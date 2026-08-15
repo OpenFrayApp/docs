@@ -190,27 +190,11 @@ steps:
   - click: { role: button, name: Next turn }
   - wait: 250
 
-  # The Ogre, Prone and Baned, heaves up and swings the greatclub at Bram — rolled
-  # for real, with the Bane d4 coming off the attack roll in the log.
-  - click: { text: Ogre, within: { trackerRow: Ogre } }
-  - wait: 300
-  - click: { startsWith: 'Greatclub.', maxChildren: 0, pick: smallest }
-  - wait: 700
-  - click:
-      css: button
-      text: Bram Ironfist
-      within: { css: '[role=dialog]', pick: last }
-  - wait: 300
-  - click: { role: button, name: Roll attack }
-  - wait: 1000
-  - click: { role: button, name: Apply to Bram Ironfist }
-  - wait: 400
-  - optional:
-      - click:
-          css: button
-          text: Close
-          within: { css: '[role=dialog]', pick: last }
-  - wait: 300
+  # The Ogre, Prone and Baned, heaves up and catches Bram anyway — set, not
+  # rolled. The one rolled swing lives in console-hero's last step, so every
+  # take of every shot ends on identical numbers, "regains" lines included.
+  - use: set-hp
+    with: { who: Bram Ironfist, hp: 13 }
   - click: { role: button, name: Next turn }
   - wait: 250
 
@@ -222,15 +206,18 @@ steps:
   - click: { role: button, name: Next turn }
   - wait: 250
 
-  # Sister Mirad: a healing word steadies Bram.
+  # Sister Mirad: her healing steadies Bram.
   - use: set-hp
-    with: { who: Bram Ironfist, hp: 20 }
+    with: { who: Bram Ironfist, hp: 24 }
   - click: { role: button, name: Next turn }
   - wait: 300
 
   # ── Round 3 ──────────────────────────────────────────────────────────────
-  # The party works the Ogre and its minders down; the Mage answers with an Arcane
-  # Burst at Bram; and the capture holds on the Ogre's turn, club raised.
+  # The party works the Ogre and its minders down, and the Mage's Arcane Burst
+  # scorches Bram — set like round 1's attacks, so every take ends on the same
+  # numbers. The board holds on the Ogre's turn with nothing rolled: the swing
+  # itself is console-hero's own last step, so every other shot's log tail reads
+  # identically across takes.
   - click: { text: Kessa Quick, within: { trackerRow: Kessa Quick } }
   - wait: 300
   - use: set-hp
@@ -246,25 +233,7 @@ steps:
   - click: { role: button, name: Next turn }
   - wait: 250
 
-  - click: { text: Mage, within: { trackerRow: Mage } }
-  - wait: 300
-  - click: { startsWith: 'Arcane Burst.', maxChildren: 0, pick: smallest }
-  - wait: 700
-  - click:
-      css: button
-      text: Bram Ironfist
-      within: { css: '[role=dialog]', pick: last }
-  - wait: 300
-  - click: { role: button, name: Roll attack }
-  - wait: 1000
-  - click: { role: button, name: Apply to Bram Ironfist }
-  - wait: 400
-  - optional:
-      - click:
-          css: button
-          text: Close
-          within: { css: '[role=dialog]', pick: last }
-  - wait: 300
-
+  - use: set-hp
+    with: { who: Bram Ironfist, hp: 9 }
   - click: { role: button, name: Next turn }
   - wait: 400

@@ -6,7 +6,7 @@ install: site
 viewport: { width: 1800, height: 1000 }
 
 setup:
-  - use: hero-board
+  - use: fight-board
   - click: { text: Mage }
   - wait: 500
   # Clicking the spell opens its card; the Cast button inside it is what spends a use, so

@@ -9,7 +9,7 @@ install: site
 viewport: { width: 1800, height: 1000 }
 
 setup:
-  - use: hero-board
+  - use: fight-board
   - click: { role: button, name: Share with players }
   - wait: 400
   - click: { role: button, name: Start sharing }

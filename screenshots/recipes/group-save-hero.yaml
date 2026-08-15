@@ -6,7 +6,7 @@ install: site
 viewport: { width: 1800, height: 1000 }
 
 setup:
-  - use: hero-board
+  - use: fight-board
   # Cast the spell rather than opening Group save by hand: casting brings the spell's own
   # dice with it, so the numbers on screen are a Fireball's rather than ones typed in.
   - click: { role: button, name: Cast spell }

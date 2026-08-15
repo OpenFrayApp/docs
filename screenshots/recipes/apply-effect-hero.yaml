@@ -16,7 +16,7 @@ setup:
   - check: { role: checkbox, name: Brood & Bloom }
   - click: { role: button, name: Done }
   - wait: 300
-  - use: hero-board
+  - use: fight-board
   - click: { text: Ogre }
   - wait: 250
   - click: { role: button, name: Apply effect }

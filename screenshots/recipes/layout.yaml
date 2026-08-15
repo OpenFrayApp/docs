@@ -15,11 +15,13 @@ setup:
 
 clip: viewport
 
+# The console body is one snap-scroller that the split and wide shells upgrade to a
+# grid, so the h-full snap-x pair is what names it in every shell.
 marks:
   bar: { role: button, name: Short rest }
-  tracker: { css: div.grid.h-full, children: true, nth: 0 }
-  stat: { css: div.grid.h-full, children: true, nth: 1 }
-  controls: { css: div.grid.h-full, children: true, nth: 2 }
+  tracker: { css: div.h-full.snap-x, children: true, nth: 0 }
+  stat: { css: div.h-full.snap-x, children: true, nth: 1 }
+  controls: { css: div.h-full.snap-x, children: true, nth: 2 }
   dice: { role: button, name: d4, exact: true }
 
 # No outlines: the areas are the whole screen, and boxing them would draw a grid over it.

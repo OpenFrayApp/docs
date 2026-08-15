@@ -6,27 +6,29 @@ name: dice-log
 install: docs
 viewport: { width: 1440, height: 560 }
 
+# The swipe shell keeps a hidden copy of the dice bar in the DOM, so every query here
+# names the visible one.
 setup:
   - use: seed
   - use: start
-  - fill: { label: Dice formula }
+  - fill: { css: 'input[aria-label="Dice formula"]', visible: true }
     value: 1d20+2
   - click: { role: button, name: Roll, exact: true }
   - wait: 600
 
 clip:
   span:
-    - { css: 'input[aria-label="Dice formula"]' }
-    - { css: button, text: d4 }
-    - { css: li, contains: 1d20+2, pick: last }
+    - { css: 'input[aria-label="Dice formula"]', visible: true }
+    - { css: button, text: d4, visible: true, pick: last }
+    - { css: li, contains: 1d20+2, visible: true, pick: last }
   pad: 16
 
 marks:
   bar:
     span:
-      - { css: 'input[aria-label="Dice formula"]' }
-      - { css: button, text: d4 }
-  entry: { css: li, contains: 1d20+2, pick: last }
+      - { css: 'input[aria-label="Dice formula"]', visible: true }
+      - { css: button, text: d4, visible: true, pick: last }
+  entry: { css: li, contains: 1d20+2, visible: true, pick: last }
 
 # The bar sits along the foot of the console and the log runs down its right — so the
 # bar's label comes in from the side, where a label above it would send its arrow the

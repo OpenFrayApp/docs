@@ -13,8 +13,9 @@ site:
   scale: 2
   theme: dark
   # The console renders before the compendium arrives, so a selector alone is not enough
-  # to know the board is ready to shoot.
-  ready: 'text=Add creature'
+  # to know the board is ready to shoot. The responsive shells keep a second, hidden Add
+  # cluster in the DOM, so the wait names the visible one.
+  ready: 'button:has-text("Add creature"):visible'
   settle: 800
 
 style:

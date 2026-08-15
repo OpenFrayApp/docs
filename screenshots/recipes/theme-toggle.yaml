@@ -4,7 +4,7 @@
 # (reference/settings.md).
 name: theme-toggle
 install: docs
-viewport: { width: 1200, height: 1200 }
+viewport: { width: 1280, height: 1200 }
 
 setup:
   - click: { role: button, name: Settings and more }

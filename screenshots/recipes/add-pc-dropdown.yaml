@@ -4,7 +4,7 @@
 # button opens the form rather than the roster picker.
 name: add-pc-dropdown
 install: docs
-viewport: { width: 1200, height: 1200 }
+viewport: { width: 1280, height: 1200 }
 
 setup:
   - click: { role: button, name: Add PC, exact: true }

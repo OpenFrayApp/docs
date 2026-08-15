@@ -1,5 +1,5 @@
 ---
-title: Campaigns & house rules
+title: Set up a campaign & house rules
 description: Set your table's Dungeons and Dragons 5e house rules once — crit damage, surprise, hit points, initiative ties, and how you level up — and they apply to every fight.
 keywords:
   - Dungeons and Dragons 5e house rules
@@ -8,30 +8,39 @@ keywords:
   - Game Master campaign tracker
 ---
 
-A **campaign** is where you keep one game together. It holds the rules your table uses,
-so you set them once and they apply to every fight you run. Pick the campaign you're
-running from the box at the bottom of the console. Without a campaign OpenFray just uses
-the default rules.
+A **campaign** keeps one game together. It holds the rules your table uses, so you set
+them once and they apply to every fight you run. This page covers creating a campaign,
+the house rules, and picking which campaign you're running. Without a campaign, OpenFray
+uses the default rules.
 
-Make and edit campaigns on the **Campaigns** tab of the
-[compendium](/docs/library/compendium/#campaigns). Each one shows its rules at a glance,
-and you can change them right there.
-
-:::note[Sign in required]
-Creating and using a campaign and its rules requires an account. Sign in with a free
-Google or Discord account. Without an account OpenFray uses the default rules.
+:::note[Needs an account]
+Creating and using a campaign requires signing in with a free Google or Discord account.
+Without an account OpenFray uses the default rules.
 :::
 
-## Which rules it's for
+## Creating a campaign
 
-Each campaign is labeled **DnD 5.5 (2024)** or **DnD 5.0 (2014)**, so you can tell your
-games apart at a glance. Which creatures and spells you actually see is a separate
-choice, in [Settings](/docs/reference/settings/#libraries), so one setting covers
-you whether or not you're signed in.
+Make and edit campaigns on the **Campaigns** tab of the
+[compendium](/docs/reference/compendium/#campaigns):
+
+1. Open the compendium with the **book** at the top of the screen, and pick the
+   **Campaigns** tab.
+2. Create a new campaign. The **New campaign** box asks for a name, an edition, and the
+   five house rules below.
+3. Pick the edition: **DnD 5.5 (2024)** or **DnD 5.0 (2014)**. It labels your games so
+   you can tell them apart, and it decides which
+   [Exhaustion rules](/docs/concepts/effects/#exhaustion) apply.
+4. Set the house rules, and save.
 
 ![The New campaign box, with a name, an edition, and the five house-rule dropdowns.](../../../assets/screens/campaign-form.png)
 
+Which creatures and spells you actually see is a separate choice, in
+[Settings](/docs/reference/settings/#libraries), so it covers you whether or not you're
+signed in.
+
 ## House rules
+
+Each rule is a dropdown on the campaign form:
 
 | Rule                    | What you can choose                                                                              |
 | ----------------------- | ------------------------------------------------------------------------------------------------ |
@@ -41,32 +50,33 @@ you whether or not you're signed in.
 | **Initiative ties**     | _Higher Dexterity_; _Players first_; or _Manual_, leaving the order to you                       |
 | **Level up**            | _XP_, or _Milestone_                                                                             |
 
-The crit and hit-point rules change the dice OpenFray rolls for creatures. It never
+The crit and hit-point rules change the dice OpenFray rolls for creatures; it never
 rolls a player's attack. The surprise and tie rules change the initiative order.
 
-Once a campaign exists, its card lists every rule at a glance, so you can check what this
-table plays without opening the form:
+Once a campaign exists, its card lists every rule, so you can check what this table
+plays without opening the form:
 
 ![The Campaigns tab, with a campaign selected and its house rules listed on the right.](../../../assets/screens/campaigns-tab.png)
 
 ## Running a campaign
 
-Pick which one you're running from the box at the bottom right of the console. That's
-what applies its rules to the fight in front of you:
+Pick the campaign you're running from the box at the bottom right of the console. That
+choice is what applies its rules to the fight in front of you:
 
 ![The campaign picker in the console footer, open, listing the available campaigns.](../../../assets/screens/campaign-picker.png)
 
-Selecting a campaign does not affect the combatants already added in the initiative
-tracker. Add new creatures to recalculate their hit points, or add new player characters
-as necessary.
+Selecting a campaign doesn't change the combatants already in the tracker. Add a
+creature again if its hit points should follow the new rule.
 
 ## Leveling up: experience or milestone
 
-- **Experience points** — the usual way. The experience points awarded by each creature
-  show on stat blocks and in the end-of-fight summary, as a total and split for each
-  player on the board (excluding friendly NPCs).
-- **Milestone** — you level the party up at story moments, so experience is just noise.
-  Pick this and OpenFray hides it during a fight and in the summary.
+The **Level up** rule changes what the fight reports:
 
-The [compendium's creature list](/docs/library/compendium/#creatures) always shows
-experience, whichever you pick. It is a reference, not a scoreboard.
+- **XP** — the usual way. The experience points each creature awards show on stat
+  blocks and in the [end-of-fight summary](/docs/guides/recap/), as a total and split
+  for each player on the board (allies excluded).
+- **Milestone** — you level the party up at story moments. Pick this and OpenFray hides
+  experience during a fight and in the summary.
+
+The [compendium's creature list](/docs/reference/compendium/#creatures) always shows
+experience, whichever you pick. It is a reference either way.

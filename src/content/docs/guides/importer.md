@@ -1,5 +1,5 @@
 ---
-title: The importer
+title: Import from D&D Beyond
 description: A free browser add-on that turns a D&D Beyond creature page into an OpenFray Dungeons and Dragons 5e creature, so you don't have to type it in yourself.
 keywords:
   - D&D Beyond importer
@@ -10,18 +10,20 @@ keywords:
 
 The **OpenFray Importer** is a free browser add-on. It reads a creature's page on
 D&D&nbsp;Beyond and turns it into an OpenFray creature, so you don't have to type a
-whole stat block in by hand.
+whole stat block in by hand. This page covers installing it and using it.
 
 ## Download the importer
+
+Install it from your browser's store:
 
 - **Google Chrome or Edge** — [OpenFray Importer on the Chrome Web
   Store](https://chromewebstore.google.com/detail/openfray-importer/cjooflanhdpfddpppllaelhlfpdinjfk).
 - **Firefox** — [OpenFray Importer on Firefox Browser
   Add-ons](https://addons.mozilla.org/en-US/firefox/addon/openfray-importer/).
 
-Both links are in OpenFray's **Settings** too, under **Browser extension**.
+Both links are in OpenFray's **Settings** too, under the **Importer** tab.
 
-Once it's installed pin it to your browser's toolbar for easy access.
+Once it's installed, pin it to your browser's toolbar so it's one click away:
 
 ![Chrome's Extensions menu, with the pin icon beside OpenFray Importer outlined in red to pin it to the toolbar.](../../../assets/screens/importer-browser-pin.png)
 
@@ -36,8 +38,8 @@ Once it's installed pin it to your browser's toolbar for easy access.
 
 3. Click **Copy JSON**. (**Download .json** saves it as a file instead, if you'd rather
    keep it or send it to someone.)
-4. In OpenFray, open the compendium's **Creatures** tab and choose **Import a creature**.
-   Paste what you copied into the box and click **Import**.
+4. In OpenFray, open the compendium's **Creatures** tab and choose **Import a
+   creature**. Paste what you copied into the box and click **Import**.
 
    ![The Import a creature box in OpenFray, with the pasted creature and an Import button.](../../../assets/screens/import-json.png)
 
@@ -55,18 +57,17 @@ The importer maps the whole stat block, including:
 - the spell list;
 - the flavor description.
 
-It works out from the page whether the creature uses the 5th edition (2014) or 5.5e
-(2024) rules.
+It works out from the page whether the creature uses the 5.5e (2024) or 5th edition
+(2014) rules.
 
 :::note[Mythic actions]
-Some 5th edition creatures have _Mythic actions_. At this moment, OpenFray
-and the importer do not support them and they will ignore them when creating or importing
-a homebrew creature.
+Some 5th edition creatures have _Mythic actions_. OpenFray and the importer don't
+support them yet, and skip them when importing a creature.
 :::
 
 ### Settings
 
-Click **Options** in the importer's popup to toggle the following options:
+Click **Options** in the importer's popup to toggle what comes across:
 
 - _Include description_
 - _Include page number in source_
@@ -77,6 +78,6 @@ Click **Options** in the importer's popup to toggle the following options:
 ## What it can and can't see
 
 The importer only reads the page you're looking at, and only when you click it. It
-carries no game content of its own. It just reformats the creature already on your
-screen into OpenFray's format, on your own computer. It's a free, unofficial fan tool,
-not made or approved by Wizards of the Coast or D&D&nbsp;Beyond.
+carries no game content of its own: it reformats the creature already on your screen
+into OpenFray's format, on your own computer. It's a free, unofficial fan tool, and it
+isn't made or approved by Wizards of the Coast or D&D&nbsp;Beyond.

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The In lair toggle, checked, in a legendary creature's controls
+# (guides/resources.md).
+name: lair-toggle
+install: docs
+
+setup:
+  - use: add-creature
+    with: { foe: { name: Adult Blue Dragon, times: [1] } }
+  - click: { text: Adult Blue Dragon }
+  - wait: 600
+  - check: { role: checkbox, name: In lair }
+  - wait: 300
+
+# The heading down to the legendary row the toggle sits on.
+clip:
+  span:
+    - { text: Controls }
+    - { css: button, text: Use Legendary Resistance }
+    - { css: label, contains: In lair, pick: smallest }
+  pad: 18
+
+marks:
+  lair: { css: label, contains: In lair, pick: smallest, pad: 4 }
+
+# Outlined and unlabelled: the page's sentence names the toggle.
+callouts:
+  - { mark: lair }

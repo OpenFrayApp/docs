@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# A dragon's Legendary Actions section with its full budget (guides/resources.md).
+# The header counts down as uses are spent; untouched it reads 3 of 3. A plain
+# crop — the header and the three actions are the picture.
+name: legendary-actions
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: add-creature
+    with: { foe: { name: Adult Blue Dragon, times: [1] } }
+  - click: { text: Adult Blue Dragon }
+  - wait: 600
+  # The section straddles the fold, and scrolling to its header changes nothing:
+  # the header is already on screen. Scrolling to the last action brings the whole
+  # section up, since it is far shorter than the viewport.
+  - scrollIntoView: { css: 'p, div', startsWith: Tail Swipe, visible: true, pick: smallest }
+  - wait: 300
+
+# The counting header down to the last action's line.
+clip:
+  span:
+    - { contains: Legendary Actions (3 of 3 left), maxChildren: 0, pick: smallest }
+    - { css: 'p, div', startsWith: Tail Swipe, pick: smallest }
+  pad: 18

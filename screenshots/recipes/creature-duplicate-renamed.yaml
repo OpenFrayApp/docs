@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Three copies of one creature, the third renamed (concepts/combatants.md): the
+# tracker numbers the copies, and the renamed one's header keeps the original name.
+name: creature-duplicate-renamed
+install: docs
+# Wide enough that a tracker row holds a name and its numbers with room to spare.
+viewport: { width: 1800, height: 1000 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Goblin Minion, times: [1, 2, 3] }
+  - click: { text: Goblin Minion 3 }
+  - wait: 400
+  # The name in the stat header is a click-to-edit field.
+  - click: { css: 'button[title^="Rename"]' }
+  - wait: 200
+  - press: ControlOrMeta+a
+  - type: Snik
+  - press: Enter
+  - wait: 400
+
+# The tracker and enough of the stat block that the header's "(Goblin Minion)" has
+# its columns under it.
+clip:
+  span:
+    - { trackerRow: Zara }
+    - { trackerRow: Snik }
+    - { css: span, text: (Goblin Minion) }
+  grow: { left: 14, right: 460, top: 14, bottom: 14 }
+
+# The names are plain spans — a tracker row is a clickable div, not a button. Snik
+# is scoped to its row because the stat header carries the same word.
+marks:
+  first: { css: span, text: Goblin Minion, visible: true }
+  second: { css: span, text: Goblin Minion 2, visible: true }
+  renamed: { css: span, text: Snik, within: { trackerRow: Snik } }
+  header:
+    span:
+      - { css: h3, text: Snik }
+      - { css: span, text: (Goblin Minion) }
+
+# Four outlines, no labels: the page's sentence walks the three names, and the
+# header shows what renaming keeps.
+callouts:
+  - { mark: first }
+  - { mark: second }
+  - { mark: renamed }
+  - { mark: header }

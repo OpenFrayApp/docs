@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Quick add button with its short form open (concepts/combatants.md). The
+# filename says NPC where the page says quick add — the committed name is the one
+# the page links, so keep them matching.
+name: add-npc-dropdown
+install: docs
+
+setup:
+  - use: seed
+  - click: { text: Zara }
+  - wait: 300
+  - click: { role: button, name: Quick add, exact: true }
+  - wait: 400
+
+# The button row and the form under it. The form is matched by the one word of
+# writing in it: the Foe option — every field is a placeholder, and a placeholder
+# carries no text to match.
+clip:
+  span:
+    - { css: button, text: Quick add }
+    - { css: button, text: Add creature }
+    - { css: form, contains: Foe, pick: smallest }
+  # Barely grown leftward: the next button along sits close enough that an even pad
+  # would pull its edge into the frame.
+  grow: { left: 2, right: 18, top: 18, bottom: 18 }
+
+marks:
+  btn: { css: button, text: Quick add }
+
+# Outlined and unlabelled: the page's sentence names the button.
+callouts:
+  - { mark: btn }

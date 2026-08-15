@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The log after a spell lands (guides/spells.md): the Ogre's failed save, and Zara
+# marked concentrating the moment Banishment takes hold. The same cast as
+# gm-cast-spell, carried one step further and closed. A plain crop.
+name: game-log-spell-casted
+install: docs
+# Tall, so the log column holds every entry of the cast without scrolling the
+# save roll out from under its heading.
+viewport: { width: 1440, height: 1200 }
+
+setup:
+  - use: seed
+  - use: start
+  - click: { text: Zara }
+  - wait: 300
+  - click: { role: button, name: Cast spell, exact: true }
+  - fill: { placeholder: Search spells… }
+    value: Banishment
+  - wait: 320
+  - click: { role: button, name: Banishment, matching: '^Banishment' }
+  - wait: 500
+  - fill: { label: Save DC }
+    value: 22
+  - click:
+      role: button
+      name: Ogre
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  - wait: 800
+  - click: { role: button, name: Apply Banishment to failed }
+  - wait: 500
+  - click:
+      css: button
+      text: Close
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 400
+
+# The log heading down through the whole cast. The log writes newest first, so
+# the order reads: the condition, the concentration, then the save that let them
+# in.
+clip:
+  span:
+    - { text: Game log }
+    - { css: button, text: View all }
+    - { css: li, contains: CHA save, visible: true, pick: first }
+  # Six at the foot, or the next entry's top edge gets into the picture.
+  grow: { left: 16, right: 16, top: 16, bottom: 6 }
+
+# The save entry keeps its d20; the entries around it are typed or scripted. The
+# check masks the roll and guards the rest of the log.
+check:
+  ignore:
+    - { css: li, contains: 'CHA save', pick: last }

@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Three rows, one per wound tint (reference/tracker.md): critical red at 1/5, full
+# green with temporary hit points on top, hurt amber at 18/23. The two quick adds
+# exist to own the exact totals the page names; the compendium's creatures all
+# carry their own.
+name: tracker-row-hp-colors
+install: docs
+# Wide enough that a tracker row holds a name and its numbers with room to spare.
+viewport: { width: 1800, height: 1000 }
+
+setup:
+  - click: { role: button, name: Quick add, exact: true }
+  - fill: { label: Quick add name }
+    value: Bandit
+  - fill: { label: AC, exact: true }
+    value: 12
+  - fill: { label: Max HP }
+    value: 5
+  - click: { role: button, name: Add, exact: true }
+  - wait: 200
+  - use: add-creature
+    with: { foe: { name: Mage, times: [1] } }
+  - click: { role: button, name: Quick add, exact: true }
+  - fill: { label: Quick add name }
+    value: Cultist
+  - fill: { label: AC, exact: true }
+    value: 13
+  - fill: { label: Max HP }
+    value: 23
+  - click: { role: button, name: Add, exact: true }
+  - wait: 200
+  - use: set-hp
+    with: { who: Bandit, hp: 1 }
+  - use: set-hp
+    with: { who: Cultist, hp: 18 }
+  # The Mage last, so the full-health row is the selected one, and with temporary
+  # hit points so the row shows them counted apart.
+  - click: { text: Mage }
+  - wait: 400
+  - click: { css: 'button[title="Set temporary hit points, or type +5 or -8"]' }
+  - wait: 200
+  - type: '6'
+  - press: Enter
+  - wait: 300
+
+# A plain crop — the tints are the picture.
+clip:
+  span:
+    - { trackerRow: Bandit }
+    - { trackerRow: Cultist }
+  # Four at the top, or the group heading's underside gets into the frame.
+  grow: { left: 14, right: 14, top: 4, bottom: 14 }

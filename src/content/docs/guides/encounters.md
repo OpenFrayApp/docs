@@ -96,7 +96,7 @@ Two clocks run in the footer while you fight: **Real**, the time you've actually
 (pauses don't count), and **In-game**, six seconds per round. Use the in-game clock to
 tell a player how long a timed spell has left.
 
-![The footer clocks during a fight, reading Real 29:11 and In-game 0:36.](../../../assets/screens/fight-timer.png)
+![The footer clocks during a fight, with Real elapsed time beside the In-game clock at 0:36.](../../../assets/screens/fight-timer.png)
 
 ## Rearranging the order
 

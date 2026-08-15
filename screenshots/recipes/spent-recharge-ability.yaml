@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# A spent recharge ability (guides/resources.md): the dragon's breath used, grayed
+# in the stat block, with the recharge roll on offer.
+name: spent-recharge-ability
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Young Black Dragon, times: [1] }
+  - use: start
+  - click: { text: Young Black Dragon }
+  - wait: 300
+  - click: { startsWith: 'Acid Breath', maxChildren: 0, pick: smallest }
+  - wait: { css: '[role=dialog]' }
+  - wait: 400
+  # Opening the box does not spend the breath; rolling it does.
+  - click:
+      role: button
+      name: Tav
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  - wait: 1200
+  - click:
+      css: button
+      text: Close
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 400
+
+# Traits through the source line, the slice of the block the breath sits in.
+clip:
+  span:
+    - { heading: Traits }
+    # The source line is a label and a link, so no single leaf holds all of it.
+    - { css: 'p, div', contains: 'Source:', pick: smallest }
+  pad: 18
+
+marks:
+  breath: { css: 'p, div', contains: Acid Breath, matching: Roll recharge, pick: smallest, pad: 4 }
+
+# Outlined and unlabelled: gray and the offered roll are what the page describes.
+callouts:
+  - { mark: breath }

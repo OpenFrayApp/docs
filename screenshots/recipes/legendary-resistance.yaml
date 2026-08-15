@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Where legendary resistance lives (guides/resources.md): the counter section in
+# the stat block, and the button with its lair toggle in the controls. In lair is
+# on, so the counter shows the lair allowance of 4.
+name: legendary-resistance
+install: docs
+viewport: { width: 1800, height: 1000 }
+
+setup:
+  - use: add-creature
+    with: { foe: { name: Adult Blue Dragon, times: [1] } }
+  - click: { text: Adult Blue Dragon }
+  - wait: 600
+  - check: { role: checkbox, name: In lair }
+  - wait: 300
+
+# From the name across to the controls, down to the counter's trait line.
+clip:
+  span:
+    - { css: h3, text: Adult Blue Dragon }
+    - { contains: Legendary Resistance (4 left), maxChildren: 0, pick: smallest }
+    - { startsWith: If the dragon fails, maxChildren: 0, pick: smallest }
+    - { css: label, contains: In lair, pick: smallest }
+  # Grown a little further right so the reaction button beside the toggle isn't
+  # cut mid-word.
+  grow: { left: 18, right: 54, top: 18, bottom: 18 }
+
+marks:
+  counter:
+    span:
+      - { contains: Legendary Resistance (4 left), maxChildren: 0, pick: smallest }
+      - { startsWith: If the dragon fails, maxChildren: 0, pick: smallest }
+  controls:
+    span:
+      - { css: button, text: Use Legendary Resistance }
+      - { css: label, contains: In lair, pick: smallest }
+
+# Two outlines, no labels: the page walks both places in the sentence beside the
+# picture.
+callouts:
+  - { mark: counter }
+  - { mark: controls }

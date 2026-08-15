@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Legendary resistance offered in the save box (guides/resources.md): a Fireball
+# forced on the dragon, its failure recorded, and Use LR (4) waiting on the row.
+# The failure is clicked rather than trusted to the dice, so the offer is in every
+# run's shot; In lair is on first, so the counter reads the lair allowance.
+name: effect-legendary-resistance
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Mage, times: [1] }
+        - { name: Adult Blue Dragon, times: [1] }
+  - use: start
+  - click: { text: Adult Blue Dragon }
+  - wait: 300
+  - check: { role: checkbox, name: In lair }
+  - wait: 200
+  - click: { text: Mage }
+  - wait: 300
+  - click: { role: button, name: Cast spell }
+  - fill: { placeholder: Search spells… }
+    value: Fireball
+  - wait: 320
+  - click: { role: button, name: Fireball, matching: '^Fireball' }
+  - wait: 500
+  - click:
+      role: button
+      name: Adult Blue Dragon
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  - wait: 800
+  # Recording the failure by hand is what makes the offer deterministic: the
+  # button is found by css because on shotlist 0.4.2 a role click's `within`
+  # sub-query inherits the role engine's seeds.
+  - click:
+      css: button
+      text: Fail
+      within: { css: li, contains: Adult Blue Dragon, matching: Save, pick: smallest }
+  - wait: 300
+
+clip: { panel: Mage · Fireball, pad: 14 }
+
+marks:
+  uselr: { css: button, text: Use LR (4), within: clip }
+
+# Outlined and unlabelled: the page's sentence says what one tap does.
+callouts:
+  - { mark: uselr }
+
+# The dragon's d20 and the rolled damage change every run; the recorded failure
+# and the offer do not. The check masks the row and the damage figures and guards
+# the rest of the box.
+check:
+  ignore:
+    - { css: li, contains: Adult Blue Dragon, matching: Save, pick: smallest }
+    # Grown sideways because the band resizes with its digits: a 9 and a 48 set
+    # different widths for the same roll count.
+    - {
+        css: 'p, span, div',
+        contains: '8d6 [',
+        visible: true,
+        pick: smallest,
+        grow: { left: 6, right: 40 },
+      }

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Banishment resolved against the Ogre (guides/spells.md): the failure in, and the
+# box offering to apply the spell to the creatures that failed. Zara casts, so the
+# spell has a concentrator; the DC is typed at 22, past the best the Ogre's −2 can
+# roll, so the failure needs no luck. A plain crop.
+name: gm-cast-spell
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: seed
+  - use: start
+  - click: { text: Zara }
+  - wait: 300
+  - click: { role: button, name: Cast spell, exact: true }
+  - fill: { placeholder: Search spells… }
+    value: Banishment
+  - wait: 320
+  - click: { role: button, name: Banishment, matching: '^Banishment' }
+  - wait: 500
+  - fill: { label: Save DC }
+    value: 22
+  - click:
+      role: button
+      name: Ogre
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  - wait: 800
+
+# The box is headed by the spell alone; the caster shows in the picker, not the
+# title.
+clip: { panel: Banishment, pad: 14 }
+
+# The Ogre's d20 changes every run; the failure and the offer do not. The check
+# masks the row and guards the rest of the box.
+check:
+  ignore:
+    - { css: li, contains: Ogre, matching: Save, pick: smallest }

@@ -101,4 +101,4 @@ nothing is marked. A spell with nothing to roll and nothing to put on a creature
 clears the spell everywhere at once. See
 [Track concentration](/docs/guides/concentration/).
 
-![The game log with "Zara concentrates on Banishment" recorded below the Ogre's failed CHA save.](../../../assets/screens/game-log-spell-casted.png)
+![The game log after Banishment lands: the Ogre incapacitated, Zara marked concentrating, and the failed CHA save below.](../../../assets/screens/game-log-spell-casted.png)

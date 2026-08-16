@@ -54,7 +54,11 @@ Current hit points change color as a creature gets hurt, so you can spot a badly
 one at a glance. Temporary hit points are counted separately and consumed first when a
 combatant takes damage.
 
-![Three tracker rows with current hit points tinted by wound level: red at 1/5, green at full, and amber at 18/23.](../../../assets/screens/tracker-row-hp-colors.png)
+The video below shows each form typed into a row, and the tint following the damage:
+
+<video controls preload="none" poster="/docs/videos/type-hit-points.jpg" width="451" height="235" style="max-width:100%; height:auto; border-radius:0.6rem;">
+  <source src="/docs/videos/type-hit-points.mp4" type="video/mp4" />
+</video>
 
 :::tip[Damage from a player]
 Typing `-8` is the quick way to apply damage from a player to a creature. When a

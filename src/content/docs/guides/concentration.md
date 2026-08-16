@@ -25,7 +25,12 @@ creature's stat block, starts this for you with the timer already counting, as s
 the spell lands on someone. A spell every target shrugs off leaves nothing to hold on
 to, so nobody is marked as concentrating.
 
-![The Concentrate control in use, with the game log recording a creature starting and ending concentration.](../../../assets/screens/set-concentration.gif)
+The video below shows the control in use, from naming the spell to ending the
+concentration, with the log recording both:
+
+<video controls preload="none" poster="/docs/videos/set-concentration.jpg" width="384" height="500" style="max-width:100%; height:auto; border-radius:0.6rem;">
+  <source src="/docs/videos/set-concentration.mp4" type="video/mp4" />
+</video>
 
 ## End concentration
 

@@ -41,7 +41,7 @@ callouts:
       place: bottom,
       box: false,
       inside: true,
-      gap: 64,
-      dx: 110,
+      gap: 116,
+      dx: 210,
     }
   - { mark: broom, text: Remove foes only, place: right, box: false, inside: true }

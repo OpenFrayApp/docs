@@ -39,6 +39,10 @@ setup:
       - press: Escape
       - wait: 120
   - use: start
+  # Every control here was tapped by script, and the last one keeps a focus ring the
+  # shot would show on the header's buttons.
+  - optional:
+      - blur: { css: ':focus' }
 
 clip: viewport
 

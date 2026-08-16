@@ -30,11 +30,10 @@ marks:
       - { css: button, text: d4, visible: true, pick: last }
   entry: { css: li, contains: 1d20+2, visible: true, pick: last }
 
-# The bar sits along the foot of the console and the log runs down its right — so the
-# bar's label comes in from the side, where a label above it would send its arrow the
-# whole height of the shot, across the stat block on the way.
+# The stat block above the bar ends well before the bar does, so the bar's label sits
+# inside the shot, floated a little clear of the outline.
 callouts:
-  - { mark: bar, text: Roll anything by hand, place: left }
+  - { mark: bar, text: Roll anything by hand, place: top, inside: true, gap: 24 }
   - { mark: entry, text: 'Every roll, with its dice', place: top }
 
 # The entry's numbers are a real roll, but its box is a fixed row of the log, so the

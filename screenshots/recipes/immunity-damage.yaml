@@ -42,7 +42,7 @@ marks:
 # The label sits inside the shot, in the empty band above the cell.
 callouts:
   - { mark: dmg, box: true }
-  - { mark: immune, text: 'Immune, so no damage lands', place: top, inside: true }
+  - { mark: immune, text: 'Immune, so no damage lands', place: top, inside: true, gap: 40, dx: -60 }
 
 # The dragon's save is a real roll, and a failure adds the Use LR button to its row, so
 # the panel's shape varies run to run.

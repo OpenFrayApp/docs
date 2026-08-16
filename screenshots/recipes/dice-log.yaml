@@ -15,6 +15,9 @@ setup:
     value: 1d20+2
   - click: { role: button, name: Roll, exact: true }
   - wait: 600
+  # The click leaves a focus ring on Roll that renders on some runs and not others.
+  - optional:
+      - blur: { css: ':focus' }
 
 clip:
   span:

@@ -28,6 +28,12 @@ callouts:
   - { mark: zara, text: Type what the player rolled, place: top }
   - { mark: surprise, text: Mark them surprised, place: right }
 
-# The console has already rolled the creatures' initiative by the time this modal opens,
-# and this is the one shot that frames those numbers, so no two runs agree.
-check: false
+# The console has already rolled the creatures' initiative by the time this modal opens.
+# Those four boxes are the only pixels that vary, so the check masks them and keeps the
+# rest of the modal honest.
+check:
+  ignore:
+    - { label: Initiative for Ogre }
+    - { label: Initiative for Goblin Boss }
+    - { label: Initiative for Goblin Minion, exact: true }
+    - { label: Initiative for Goblin Minion 2 }

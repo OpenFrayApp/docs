@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The alert after the last foe drops (guides/encounters.md). Every total is typed,
+# so the board behind the card is the same on every run.
+name: end-combat-alert
+install: docs
+
+setup:
+  - use: seed
+  - use: start
+  - each: [Goblin Minion 2, Goblin Minion, Goblin Boss, Ogre]
+    as: foe
+    steps:
+      - use: set-hp
+        with: { who: $foe, hp: 0 }
+  - wait: 600
+
+# The card with a band of the console behind it, so it reads as an overlay rather
+# than a floating box.
+clip: { panel: Every foe is down, pad: 48 }

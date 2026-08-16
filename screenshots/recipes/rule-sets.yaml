@@ -4,7 +4,7 @@
 # 1200 square is tall enough for the whole panel without the console showing around it.
 name: rule-sets
 install: docs
-viewport: { width: 1200, height: 1200 }
+viewport: { width: 1280, height: 1200 }
 
 setup:
   - use: open-settings

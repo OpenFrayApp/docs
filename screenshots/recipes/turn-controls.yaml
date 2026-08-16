@@ -27,6 +27,8 @@ marks:
       - { css: 'button[aria-label="Pause"]' }
       - { css: 'button[aria-label="Stop"]' }
 
+# The squared-up header sets the two clusters too close for two top labels, so they
+# take opposite sides of the bar.
 callouts:
-  - { mark: turns, text: Move through turns, place: top }
-  - { mark: ps, text: Pause or end fight, place: top }
+  - { mark: turns, text: Move through turns, place: top, dx: -60 }
+  - { mark: ps, text: Pause or end fight, place: bottom, dx: 60 }

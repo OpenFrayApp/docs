@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Add creature button with its search open over a board being filled
+# (concepts/combatants.md). Zara is selected so the popover hangs over a working
+# console rather than an empty one.
+name: add-creature-dropdown
+install: docs
+
+setup:
+  - use: seed
+  - click: { text: Zara }
+  - wait: 300
+  - click: { role: button, name: Add creature, exact: true }
+  - wait: 600
+
+# From the first add button across to the gear, down the whole open list. The popover
+# is the one fixed box carrying the creature list.
+clip:
+  span:
+    - { css: button, text: Quick add }
+    - { css: 'button[aria-label="Settings and more"]' }
+    - { css: div.fixed, contains: Aboleth, pick: smallest }
+  # Barely grown leftward: the next button along sits close enough that an even pad
+  # would pull its edge into the frame.
+  grow: { left: 2, right: 18, top: 18, bottom: 18 }
+
+marks:
+  btn: { css: button, text: Add creature }
+
+# Outlined and unlabelled: the page's sentence names the button.
+callouts:
+  - { mark: btn }

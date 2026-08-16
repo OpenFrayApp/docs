@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The concentration check after damage (guides/concentration.md): the Ogre holds a
+# spell, takes 13 typed damage, and the controls ask at DC 10. A plain crop — the
+# prompt and its buttons label themselves.
+name: keep-concentration
+install: docs
+
+setup:
+  - use: seed
+  - use: start
+  - click: { text: Ogre }
+  - wait: 300
+  - click: { role: button, name: Concentrate }
+  - wait: 300
+  # Name and timer are optional, and a name would only add a word the page never
+  # mentions.
+  - click: { role: button, name: Set, exact: true }
+  - wait: 400
+  # Thirteen damage: under the 21 that would push the DC past its floor of 10.
+  - use: set-hp
+    with: { who: Ogre, hp: 55 }
+  - wait: 400
+
+# The heading down to the reaction button, which closes the cluster the prompt
+# lives in.
+clip:
+  span:
+    - { text: Controls }
+    - { css: button, text: Roll CON save }
+    - { css: button, text: Use reaction }
+  pad: 18

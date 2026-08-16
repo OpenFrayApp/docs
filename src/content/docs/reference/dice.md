@@ -1,43 +1,22 @@
 ---
 title: Dice & roll formulas
-description: Fair, honest Dungeons and Dragons 5e dice you can check, the formulas the roll box understands, and how effects are worked into a roll.
+description: The formulas the OpenFray roll box understands — advantage, keep-highest, exploding dice — and how Dungeons and Dragons 5e effects are worked into a roll.
 keywords:
   - Dungeons and Dragons 5e dice roller
   - DnD 5e dice formulas
   - 5e advantage dice
-  - fair virtual dice
+  - dice notation
 ---
 
-For a fight to feel fair, the dice have to be fair, and everyone has to be able to see
-how they landed. OpenFray does both.
+The **dice bar** rolls anything by hand: type a formula like `2d6+3`, or tap a die. On a
+laptop it sits along the bottom of the screen; on a phone it sits at the top of the
+**Controls** screen. This page lists the formulas it understands and what OpenFray works
+into a roll for you. Why the dice are fair, and where every roll is recorded, is
+explained in [Honest dice](/docs/concepts/dice/).
 
-## Fair rolls
+## Rolling by hand
 
-OpenFray uses your browser's built-in random generator, the same secure kind used for
-things like passwords. Every number is equally likely, every time.
-
-:::note[No "lucky" dice]
-Some apps quietly nudge the dice so your luck "feels" more even, with fewer long streaks of
-bad rolls. OpenFray never does that. Real dice have streaks, and so do these. What you
-roll is what you get.
-:::
-
-## Every roll is written down
-
-Every roll goes through the same place: attacks, saves, checks, damage, and initiative. It
-is written into the **log** on the right. Nothing is rolled in secret. You can also roll
-anything by hand from the bar along the bottom: type a formula like `2d6+3`, or tap a
-die.
-
-![The dice bar at the bottom of the screen and a log entry reading "1d20 [16] +2", both outlined in red and labeled.](../../../assets/screens/dice-log.png)
-
-Each entry shows the dice that were rolled, in brackets, and what was added to them, so
-"is that right?" is answered by looking, not arguing. **View all** opens the full history,
-grouped by round and filterable by kind. See [The game log](/docs/reference/game-log/).
-
-### Rolling by hand
-
-The box at the bottom takes a formula and rolls it. Beyond `2d6+3`, it understands:
+The box takes a formula and rolls it. Beyond `2d6+3`, it understands:
 
 | Type this             | And you get                                                            |
 | --------------------- | ---------------------------------------------------------------------- |
@@ -48,24 +27,25 @@ The box at the bottom takes a formula and rolls it. Beyond `2d6+3`, it understan
 | `1d6!`                | exploding: a die landing on its highest face is rolled again and added |
 | `1d6x10`              | multiply that group of dice, so a d6 gives 10, 20, 30 and so on        |
 
-The **d20 d12 d10 d8 d6 d4** buttons beside it are shortcuts for a single die, for when
-someone just needs a number.
+The **d20 d12 d10 d8 d6 d4** buttons beside the box are shortcuts for a single die, for
+when someone just needs a number.
 
-## Rolls know about effects
+Every roll made here is written into the [game log](/docs/reference/game-log/), dice in
+brackets, like every other roll.
 
-Because rolls and [effects](/docs/fight/effects/) work together, whatever is on a
-creature is worked in for you:
+## What's worked into a roll
 
-- **advantage and disadvantage** from conditions and effects are applied. Both dice show
-  in the box you rolled from and in the log, with the one that counted highlighted and
-  the one it dropped dimmed beside it;
-- **bonuses and penalties** (Bless's +1d4, Bane's −1d4) are added and shown;
-- **critical hits** follow your campaign's [crit rule](/docs/library/campaigns/#house-rules);
-- a creature's **saves** include its bonuses, plus things like Magic Resistance and
+Whatever is on a creature is worked into its rolls for you:
+
+- **Advantage and disadvantage** from conditions and [effects](/docs/concepts/effects/)
+  are applied. Both dice show in the box you rolled from and in the log, with the one
+  that counted highlighted and the one it dropped dimmed beside it.
+- **Bonuses and penalties** (Bless's +1d4, Bane's −1d4) are added and shown.
+- **Critical hits** follow your campaign's
+  [crit rule](/docs/guides/campaigns/#house-rules).
+- A creature's **saves** include its bonuses, plus defenses like Magic Resistance and
   Evasion.
 
-## Players roll their own
-
-OpenFray rolls for creatures because it has their numbers. It never rolls a player's
-attack or save. Those belong to the player, and you type in the result. See
-[Creatures & players](/docs/fight/combatants/#players).
+OpenFray rolls for creatures because it has their numbers. A player's rolls stay with
+the player: you type in the result, and OpenFray rolls for a player only when you choose
+to. See [Honest dice](/docs/concepts/dice/#players-roll-their-own).

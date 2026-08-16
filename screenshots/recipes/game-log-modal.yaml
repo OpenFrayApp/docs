@@ -34,5 +34,7 @@ callouts:
   - { mark: chips, text: Filter by kind, place: left }
   - { mark: clear, text: Empty the history, place: right }
 
-# The log holds an attack that was really rolled, so no two runs agree.
+# The attack behind the log is a real roll, and a miss writes fewer entries than a hit,
+# so the list's very shape varies run to run. Nothing regional to mask; the shot opts
+# out.
 check: false

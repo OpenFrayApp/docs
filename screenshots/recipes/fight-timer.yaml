@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The footer clocks mid-fight (guides/encounters.md). Five rounds are clicked
+# through so the in-game clock reads 0:36 — six seconds a round, round 6. The real
+# clock reads however long the run took, which is why the check masks it.
+name: fight-timer
+install: docs
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Ogre, times: [1] }
+  - use: start
+  # Five combatants, five rounds: twenty-five turns from round 1 to round 6.
+  - repeat: 25
+    steps:
+      - click: { css: 'button[aria-label="Next turn"]' }
+      - wait: 90
+  - wait: 400
+
+# The clocks with the footer's top border above them, so the band reads as the foot
+# of the console. A plain crop.
+clip:
+  css: div
+  contains: Real
+  matching: In-game
+  pick: smallest
+  # Twelve to the right, or the dice bar's formula field gets an edge into the shot.
+  grow: { left: 30, right: 12, top: 42, bottom: 20 }
+
+# The real clock is wall time and can never match itself; the in-game clock is the
+# claim the shot makes, so it stays guarded.
+check:
+  ignore:
+    - { css: span, contains: Real, pick: smallest }

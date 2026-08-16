@@ -17,5 +17,6 @@ marks:
       - { css: button, text: Normal, within: clip }
       - { css: button, text: Disadvantage, within: clip }
 
+# The panel is empty to the right of the segmented control, so the label sits inside.
 callouts:
-  - { mark: roll, text: Set this before you roll, place: right }
+  - { mark: roll, text: Set this before you roll, place: right, inside: true }

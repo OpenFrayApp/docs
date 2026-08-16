@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# A stabilized player above the Dead section (guides/death.md): Tav at nothing with
+# three saves banked, and a killed goblin struck through under the heading.
+name: dead-combatants
+install: docs
+# Wide enough that the name, both tags, and the pips share the row without the
+# name truncating away.
+viewport: { width: 1800, height: 1000 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Ogre, times: [1] }
+        - { name: Goblin Minion, times: [1] }
+  # Tav rolls last so the Dead heading sits directly under his row.
+  - use: start
+    with:
+      rolls:
+        - { who: Zara, roll: 21 }
+        - { who: Mira, roll: 20 }
+        - { who: Ren, roll: 19 }
+        - { who: Goblin Minion, roll: 18 }
+        - { who: Ogre, roll: 14 }
+        - { who: Tav, roll: 5 }
+  - use: set-hp
+    with: { who: Goblin Minion, hp: 0 }
+  - use: set-hp
+    with: { who: Tav, hp: 0 }
+  - click: { text: Tav }
+  - wait: 300
+  - click: { role: button, name: Fail, exact: true }
+  - wait: 150
+  - click: { role: button, name: Fail, exact: true }
+  - wait: 150
+  - click: { role: button, name: Save, exact: true }
+  - wait: 150
+  - click: { role: button, name: Save, exact: true }
+  - wait: 150
+  - click: { role: button, name: Save, exact: true }
+  - wait: 400
+
+# From the living row above Tav down through the dead goblin. A plain crop — the
+# tags and the heading label themselves.
+clip:
+  span:
+    - { trackerRow: Ogre }
+    - { trackerRow: Goblin Minion }
+  # Four at the top, or the row above leaves its bottom edge in the frame.
+  grow: { left: 14, right: 14, top: 4, bottom: 14 }

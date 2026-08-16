@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Magical Effect toggle at work (guides/saves.md): a spell forces a save on a
+# creature with Magic Resistance, and its row shows the two dice advantage rolled.
+name: magic-resistance
+install: docs
+viewport: { width: 1500, height: 1120 }
+
+setup:
+  - use: seed
+    with:
+      monsters:
+        - { name: Mage, times: [1] }
+        - { name: Archmage, times: [1] }
+  - use: start
+  - click: { text: Mage }
+  - wait: 300
+  - click: { role: button, name: Cast spell }
+  - fill: { placeholder: Search spells… }
+    value: Hold Person
+  - wait: 320
+  - click: { role: button, name: Hold Person, matching: '^Hold Person' }
+  - wait: 500
+  - click:
+      role: button
+      name: Archmage
+      exact: true
+      within: { css: '[role=dialog]', pick: last }
+  - wait: 200
+  - click: { role: button, name: Roll saves }
+  - wait: 600
+
+clip: { panel: Mage · Hold Person, pad: 14 }
+
+marks:
+  magical: { css: 'label, div', contains: Magical Effect, pick: smallest, within: clip }
+  roll: { css: li, contains: Archmage, matching: '→', pick: smallest, within: clip }
+
+callouts:
+  - { mark: magical, box: true }
+  - {
+      mark: roll,
+      text: Rolled with advantage from Magic Resistance,
+      place: bottom,
+      inside: true,
+      gap: 20,
+      dx: 150,
+    }
+
+# The save is a real roll, and a failure adds the apply-to-failed band to the box, so
+# the shot's shape varies run to run.
+check: false

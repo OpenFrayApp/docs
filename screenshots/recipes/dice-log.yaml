@@ -6,34 +6,41 @@ name: dice-log
 install: docs
 viewport: { width: 1440, height: 560 }
 
+# The swipe shell keeps a hidden copy of the dice bar in the DOM, so every query here
+# names the visible one.
 setup:
   - use: seed
   - use: start
-  - fill: { label: Dice formula }
+  - fill: { css: 'input[aria-label="Dice formula"]', visible: true }
     value: 1d20+2
   - click: { role: button, name: Roll, exact: true }
   - wait: 600
+  # The click leaves a focus ring on Roll that renders on some runs and not others.
+  - optional:
+      - blur: { css: ':focus' }
 
 clip:
   span:
-    - { css: 'input[aria-label="Dice formula"]' }
-    - { css: button, text: d4 }
-    - { css: li, contains: 1d20+2, pick: last }
+    - { css: 'input[aria-label="Dice formula"]', visible: true }
+    - { css: button, text: d4, visible: true, pick: last }
+    - { css: li, contains: 1d20+2, visible: true, pick: last }
   pad: 16
 
 marks:
   bar:
     span:
-      - { css: 'input[aria-label="Dice formula"]' }
-      - { css: button, text: d4 }
-  entry: { css: li, contains: 1d20+2, pick: last }
+      - { css: 'input[aria-label="Dice formula"]', visible: true }
+      - { css: button, text: d4, visible: true, pick: last }
+  entry: { css: li, contains: 1d20+2, visible: true, pick: last }
 
-# The bar sits along the foot of the console and the log runs down its right — so the
-# bar's label comes in from the side, where a label above it would send its arrow the
-# whole height of the shot, across the stat block on the way.
+# The stat block above the bar ends well before the bar does, so the bar's label sits
+# inside the shot, floated a little clear of the outline.
 callouts:
-  - { mark: bar, text: Roll anything by hand, place: left }
+  - { mark: bar, text: Roll anything by hand, place: top, inside: true, gap: 24 }
   - { mark: entry, text: 'Every roll, with its dice', place: top }
 
-# The entry holds a die that was actually rolled, so no two runs agree.
-check: false
+# The entry's numbers are a real roll, but its box is a fixed row of the log, so the
+# check masks the entry and still guards the bar and the frame around it.
+check:
+  ignore:
+    - { css: li, contains: 1d20+2, visible: true, pick: last }

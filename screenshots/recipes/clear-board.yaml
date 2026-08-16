@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The skull and broom over a board between fights (guides/rests.md). The fight is
+# started and stopped so every row keeps its typed initiative, and bloodlessly:
+# damage before the stop puts the recap over the screen.
+name: clear-board
+install: docs
+# Wide enough that a tracker row holds a name and its numbers with room to spare.
+viewport: { width: 1800, height: 1000 }
+
+setup:
+  - use: seed
+  - use: start
+  - click: { role: button, name: Stop }
+  - wait: 500
+
+# The cleanup pair across to Begin, with the first hurt rows below so the buttons
+# read as the top of a tracker.
+clip:
+  span:
+    - { css: 'button[aria-label="Remove everyone and clear the log"]' }
+    - { css: 'button[aria-label="Begin"]' }
+    - { trackerRow: Zara }
+  grow: { left: 14, right: 14, top: 14, bottom: 76 }
+
+marks:
+  pair:
+    span:
+      - { css: 'button[aria-label="Remove everyone and clear the log"]' }
+      - { css: 'button[aria-label="Remove all foes, keep the players"]' }
+  skull: { css: 'button[aria-label="Remove everyone and clear the log"]' }
+  broom: { css: 'button[aria-label="Remove all foes, keep the players"]' }
+
+# One box around the pair, and a label per button, both inside the shot: the strip
+# between the pair and Begin is empty, and so is the band under the skull.
+callouts:
+  - { mark: pair }
+  - {
+      mark: skull,
+      text: Remove everyone,
+      place: bottom,
+      box: false,
+      inside: true,
+      gap: 116,
+      dx: 210,
+    }
+  - { mark: broom, text: Remove foes only, place: right, box: false, inside: true }

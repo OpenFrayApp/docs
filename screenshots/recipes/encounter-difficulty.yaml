@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The difficulty readout while the board is being filled (guides/encounters.md).
+# Three players against an Air Elemental and an Ogre is 2,250 XP of foes, times 1.5
+# for the pair: the Deadly 3,375 the page's alt text promises, with no dice in it.
+name: encounter-difficulty
+install: docs
+
+setup:
+  - use: seed
+    with:
+      pcs:
+        - { name: Zara, ac: 15, hp: 33, init: 2 }
+        - { name: Mira, ac: 13, hp: 28, init: 2 }
+        - { name: Tav, ac: 16, hp: 38, init: 1 }
+      monsters:
+        - { name: Air Elemental, times: [1] }
+        - { name: Ogre, times: [1] }
+  - wait: 300
+
+clip:
+  css: div
+  contains: Difficulty
+  matching: XP
+  pick: smallest
+  pad: 16
+
+marks:
+  readout: { css: div, contains: Difficulty, matching: XP, pick: smallest }
+  badge: { css: span, text: Deadly }
+  xp: { css: span, text: '3,375 XP' }
+
+# The readout boxed, and a label per number: one above, one below, so the two
+# arrows come in from opposite sides and never cross.
+callouts:
+  - { mark: readout }
+  - { mark: badge, text: How hard it is, place: top, box: false, gap: 60 }
+  - { mark: xp, text: What the fight is worth, place: bottom, box: false, gap: 60 }

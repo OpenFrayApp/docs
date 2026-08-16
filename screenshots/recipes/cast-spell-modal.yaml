@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Cast spell button with its popover open (guides/spells.md): the caster
+# picker holding Zara, the search, and the badged spell list. Zara is selected
+# first, which is what fills the picker.
+name: cast-spell-modal
+install: docs
+
+setup:
+  - use: seed
+  - click: { text: Zara }
+  - wait: 300
+  - click: { role: button, name: Cast spell, exact: true }
+  - wait: 600
+
+# The button pair and the popover under them. The popover is the one fixed box
+# carrying the spell list.
+# The popover hangs rightward under the neighboring buttons, so the span runs to
+# the end of the row rather than cut one of them mid-word.
+clip:
+  span:
+    - { css: button, text: Group save }
+    - { css: button, text: Add creature }
+    - { css: div.fixed, contains: Acid Splash, pick: smallest }
+  # Barely grown leftward: the next button along sits close enough that an even
+  # pad would pull its edge into the frame.
+  grow: { left: 6, right: 18, top: 18, bottom: 18 }
+
+marks:
+  btn: { css: button, text: Cast spell }
+
+# Outlined and unlabelled: the page's sentence names the button.
+callouts:
+  - { mark: btn }

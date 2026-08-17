@@ -34,9 +34,19 @@ case needs no picking; change it in the dropdown when it's someone else.
 ![The Cast spell button outlined in red, its modal open with a caster picker set to Zara, a spell search, and a badged spell list.](../../../assets/screens/cast-spell-modal.png)
 
 Naming a caster does two things: OpenFray takes their save DC and spell attack bonus,
-and starts their concentration when the spell takes hold. You can also cast with the
-caster blank and type the numbers yourself. That's the path for a player's spell, where
-OpenFray has no sheet to read from.
+and starts their concentration when the spell takes hold. A creature reads both off its
+stat block. A saved character works them out from the class, level and ability scores
+you typed in, so a player's spell needs no numbers from you either.
+
+Some characters leave both fields blank, and you type the numbers yourself:
+
+- a character whose spellcasting comes from a subclass, like an Eldritch Knight, because
+  the board records the class and not the subclass;
+- a character with more than one class, because only one of them is stored;
+- an anonymous character or a [quick add](/docs/concepts/combatants/), which carries no
+  class, level, or ability scores at all.
+
+You can also cast with the caster blank and type both numbers, whoever is casting.
 
 What happens next depends on the spell:
 

@@ -30,13 +30,25 @@ The numbered parts match the picture. Use the ones you need, in any order:
    The row appears once there are presets to offer. See [Presets](#presets).
 2. **Set how long it lasts.** The duration applies to everything staged in the box:
 
-   | Choice                      | Use it for                                                                                                                                                 |
-   | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | **Until removed**           | you'll clear it yourself when the story says so                                                                                                            |
-   | **This turn / next attack** | something used up by the next roll (Vicious Mockery)                                                                                                       |
-   | **Save ends**               | something the creature can shake off. It then asks which save, the number to beat, and whether it's rolled at the start or the end of that creature's turn |
-   | **1 round** … **24 hours**  | anything with a stated duration, such as a spell or a potion                                                                                               |
-   | **Custom…**                 | any other length, typed as a number of rounds, minutes, hours, or days                                                                                     |
+   | Choice                             | Use it for                                                                                                                                                 |
+   | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Until removed**                  | you'll clear it yourself when the story says so                                                                                                            |
+   | **Save ends**                      | something the creature can shake off. It then asks which save, the number to beat, and whether it's rolled at the start or the end of that creature's turn |
+   | **Start of turn**, **End of turn** | anything the rules end on a turn, like "until the start of its next turn". A second dropdown picks whose turn                                              |
+   | **1 minute** … **24 hours**        | anything with a stated duration, such as a spell or a potion                                                                                               |
+   | **Custom…**                        | any other length, typed as a number of rounds, minutes, hours, or days                                                                                     |
+
+   **Start of turn** and **End of turn** open a **Whose turn** dropdown listing everyone
+   on the board, allies first. It starts on the creature you're applying to, which is
+   what most rules mean. Pick someone else when the effect ends on their turn instead,
+   like a fear that lasts until the creature that caused it acts again.
+
+   Below the duration, tick **or its next roll** to end the effect early on the first
+   roll it changes, like Vicious Mockery's next attack. It rides on top of whatever
+   duration you picked, so the effect still ends on its own if no such roll comes.
+   OpenFray never sees a player's own rolls, so for a player the duration above is what
+   ends it. The box isn't offered for **Save ends**, where a roll ending it is already
+   the point.
 
 3. **Type a reminder.** A short note OpenFray shows on the creature's row. It reminds
    you; you decide what it does. **+ Add another reminder** stages a second note.
@@ -74,13 +86,13 @@ time.
 ### Reckless Attack
 
 The barbarian's player announces it. There's no spell to cast and nothing on any stat
-block; for the rest of the round, attacks against them have advantage.
+block; until their next turn starts, attacks against them have advantage.
 
 ![The Apply effect box set up for Reckless: Advantage on attack rolls made against it, with the summary line text.](../../../assets/screens/example-reckless.png)
 
 1. Click the player's character, then **Apply effect**.
-2. Set **Duration** to **1 round**, so it clears itself when their turn comes round
-   again.
+2. Set **Duration** to **Start of turn**, and leave **Whose turn** on the character
+   themselves, so it clears when their next turn begins.
 3. Click **+ Add a bonus or penalty**.
 4. Set the **Effect** to **Advantage**, **Applies to** to **Attack rolls**, and **On**
    to **Rolls made against it**.

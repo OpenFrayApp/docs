@@ -30,9 +30,9 @@ setup:
   - click: { role: button, name: Roll saves }
   - wait: 800
 
-# The box is headed by the spell alone; the caster shows in the picker, not the
-# title.
-clip: { panel: Banishment, pad: 14 }
+# The box is headed by the caster and the spell, separated by a middle dot, since
+# 1.1.0 names whoever is casting.
+clip: { panel: Zara · Banishment, pad: 14 }
 
 # The Ogre's d20 changes every run; the failure and the offer do not. The check
 # masks the row and guards the rest of the box.

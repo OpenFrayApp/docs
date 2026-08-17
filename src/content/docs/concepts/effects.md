@@ -55,9 +55,12 @@ doesn't apply anything for you. A reminder is a note, and you decide what it mea
 Every effect knows when it ends. Some count down in rounds, and the board shows what's
 left ("10 rounds left"). Some clear on their own at the right moment:
 
-- effects that last **until the next attack or roll** clear when that roll happens
-  (Vicious Mockery);
-- effects that last **until my next turn** clear when their owner starts to act;
+- effects hung on a **turn** clear at the start or the end of that turn. The turn can
+  belong to anyone on the board, so a fear can end when the creature that caused it acts
+  again;
+- effects marked **or its next roll** also clear on the first roll they change (Vicious
+  Mockery), whatever their duration says. OpenFray never sees a player's own rolls, so
+  for a player the duration is what ends it;
 - effects that last a set time clear when it runs out, and show the time when OpenFray
   can't count it in rounds ("1 hour left");
 - the rest stay until you clear them.

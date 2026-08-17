@@ -40,13 +40,13 @@ account is created for you.
 
 From then on, these follow you between devices:
 
-| What                              | Why you'd want it                                                             |
-| --------------------------------- | ----------------------------------------------------------------------------- |
-| **The fight you're running**      | close the laptop mid-session, pick it up next week exactly where you left off |
-| **Creatures and spells you make** | your homebrew and imports, in your own library                                |
-| **Characters**                    | build the party once instead of retyping them each session                    |
-| **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/), applied to every fight   |
-| **Your player-view link**         | name it something your table remembers, and keep it between sessions          |
+| What                              | Why you'd want it                                                                 |
+| --------------------------------- | --------------------------------------------------------------------------------- |
+| **The fight you're running**      | close the laptop mid-session, pick it up next week exactly where you left off     |
+| **Creatures and spells you make** | your homebrew and imports, in your own library                                    |
+| **Characters**                    | build the party once instead of retyping them each session                        |
+| **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/) and private notes on the game |
+| **Your player-view link**         | name it something your table remembers, and keep it between sessions              |
 
 Saving happens in the background while you play. You never wait for it, and there's no
 save button.

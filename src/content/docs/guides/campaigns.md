@@ -29,8 +29,8 @@ Make and edit campaigns on the **Campaigns** tab of the
 
 1. Open the compendium with the **book** at the top of the screen, and pick the
    **Campaigns** tab.
-2. Create a new campaign. The **New campaign** box asks for a name, an edition, and the
-   five house rules below.
+2. Create a new campaign. The **New campaign** box asks for a name, an edition, the five
+   house rules below, and any notes you want to keep on the game.
 3. Pick the edition: **DnD 5.5 (2024)** or **DnD 5.0 (2014)**. It labels your games so
    you can tell them apart, and it decides which
    [Exhaustion rules](/docs/concepts/effects/#exhaustion) apply.
@@ -61,6 +61,26 @@ Once a campaign exists, its card lists every rule, so you can check what this ta
 plays without opening the form:
 
 ![The Campaigns tab, with a campaign selected and its house rules listed on the right.](../../../assets/screens/campaigns-tab.png)
+
+## Campaign notes
+
+A campaign also carries **Campaign notes**: whatever you want to remember about this
+game that isn't a house rule. The hooks you've planted, the threads still open, what the
+party owes whom. Only you ever see them, and they never reach the shared
+[player view](/docs/guides/player-view/).
+
+There are two places to write them:
+
+- **On the campaign form**, in the **Campaign notes** box under the house rules, while
+  you're creating or editing a campaign.
+- **On the campaign card**, without opening the form. Click the notes, type, and click
+  away to save. There's no Save button. Press `Escape` to leave them as they were.
+
+A campaign with none yet shows **Add campaign notes…** where they'd go. The notes take
+Markdown, so headings, lists, and bold text all come out formatted.
+
+Notes belong to the campaign. A saved character keeps its own **GM notes** separately,
+on the [Characters tab](/docs/reference/compendium/#characters).
 
 ## Running a campaign
 

@@ -66,7 +66,8 @@ you've saved yourself; pick one to read exactly what it applies. You use them fr
 
 ## Campaigns
 
-Your games and their house rules. Each campaign's card lists its rules at a glance. See
+Your games and their house rules. Each campaign's card lists its rules at a glance, and
+carries the private notes you keep on that game. See
 [Set up a campaign & house rules](/docs/guides/campaigns/).
 
 ## Libraries

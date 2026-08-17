@@ -48,6 +48,14 @@ export const SHOTS = [
     items: [],
   },
   {
+    // The notes sit near the top of a card that runs to the bottom of the window, so
+    // most of the capture is empty. Trimmed to just below the note.
+    in: `${IN}/campaign-notes.png`,
+    out: `${OUT}/campaign-notes.png`,
+    crop: { x: 0, y: 0, width: 2534, height: 700 },
+    items: [],
+  },
+  {
     in: `${IN}/characters-tab.png`,
     out: `${OUT}/characters-tab.png`,
     // The card runs out of content well before the bottom of the window.

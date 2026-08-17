@@ -9,3 +9,7 @@ dist/
 .DS_Store
 *.log
 screenshots/out/
+
+# Sources for the by-hand captures. scripts/annotate-screenshot.mjs crops and
+# annotates these into src/assets/screens/, and only those outputs are committed.
+src/assets/screens/incoming/

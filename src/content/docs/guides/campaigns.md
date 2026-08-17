@@ -29,14 +29,15 @@ Make and edit campaigns on the **Campaigns** tab of the
 
 1. Open the compendium with the **book** at the top of the screen, and pick the
    **Campaigns** tab.
-2. Create a new campaign. The **New campaign** box asks for a name, an edition, the five
-   house rules below, and any notes you want to keep on the game.
+2. Create a new campaign. The form asks for a name, an edition, the five house rules
+   below, and any notes you want to keep on the game. Editing a campaign later opens the
+   same form.
 3. Pick the edition: **DnD 5.5 (2024)** or **DnD 5.0 (2014)**. It labels your games so
    you can tell them apart, and it decides which
    [Exhaustion rules](/docs/concepts/effects/#exhaustion) apply.
 4. Set the house rules, and save.
 
-![The New campaign box, with a name, an edition, and the five house-rule dropdowns.](../../../assets/screens/campaign-form.png)
+![The campaign form, with the name, edition and five house-rule dropdowns above a Campaign notes box at the foot.](../../../assets/screens/campaign-form.png)
 
 Which creatures and spells you actually see is a separate choice, in
 [Settings](/docs/reference/settings/#libraries), so it covers you whether or not you're
@@ -75,6 +76,8 @@ There are two places to write them:
   you're creating or editing a campaign.
 - **On the campaign card**, without opening the form. Click the notes, type, and click
   away to save. There's no Save button. Press `Escape` to leave them as they were.
+
+![A campaign card for Sands of Eternity, its house rules listed above a Campaign notes section holding a few lines about the last session.](../../../assets/screens/campaign-notes.png)
 
 A campaign with none yet shows **Add campaign notes…** where they'd go. The notes take
 Markdown, so headings, lists, and bold text all come out formatted.

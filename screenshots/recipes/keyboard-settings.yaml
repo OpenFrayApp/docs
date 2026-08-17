@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Keyboard tab, cropped to the tab strip and the first group
+# (reference/settings.md#keyboard).
+name: keyboard-settings
+install: docs
+viewport: { width: 1280, height: 1200 }
+
+setup:
+  - use: open-settings
+  - click: { role: tab, name: Keyboard }
+  - wait: { css: '[role=tabpanel]', contains: Turn and fight }
+  - wait: 300
+
+# From the tab strip down through the first group, so the reader can see which tab they
+# are on. The whole panel is 26 rows tall and none of the rest is different.
+clip:
+  span:
+    - { css: '[role=tablist]' }
+    - { text: Pause or resume }
+  pad: 22
+
+# No callouts: the selected tab carries the console's own highlight, and each row prints
+# its key and spells out Change and Clear on the buttons themselves.

@@ -9,14 +9,14 @@ keywords:
 ---
 
 Some things live outside the fight: which **libraries** you play with, how much your
-players see on the screen you share with them, and whether the app is light or dark.
-They're set once and remembered in your browser, with no account needed. Click the
-**gear** at the top right and choose **Settings**. The same menu holds the light and
-dark switch, a link to this handbook, and **Report a bug**, which opens a new issue on
-GitHub.
+players see on the screen you share with them, which keys run which commands, and
+whether the app is light or dark. They're set once and remembered in your browser, with
+no account needed. Click the **gear** at the top right and choose **Settings**. The same
+menu holds the light and dark switch, the keyboard cheat sheet, a link to this handbook,
+and **Report a bug**, which opens a new issue on GitHub.
 
-Settings opens on three tabs (**Libraries**, **Player view**, and **Importer**) and
-starts on Libraries.
+Settings opens on four tabs (**Libraries**, **Player view**, **Keyboard**, and
+**Importer**) and starts on Libraries.
 
 ## Libraries
 
@@ -73,13 +73,41 @@ its controls beside the stat block.
 Sharing itself is the **screen** button in the top bar. See
 [Share the player view](/docs/guides/player-view/), which explains each choice.
 
+## Keyboard
+
+Nearly every command in the console has a key, and the **Keyboard** tab is where you
+change which one. It lists all 26 commands in the same five groups the cheat sheet uses,
+each with the key it currently answers to. For the full list of what the keys do, see
+[Keyboard shortcuts](/docs/reference/keyboard/).
+
+![The Keyboard tab in Settings, selected in the tab strip, above the Turn and fight rows with their keys, Change and Clear buttons.](../../../assets/screens/keyboard-settings.png)
+
+To give a command a different key:
+
+1. Click **Change** on its row. The button reads **Press a key…** while it waits.
+2. Press the key you want. Hold **Shift** or **Ctrl** with it for a longer chord.
+3. Check the row. The new key shows beside the command straight away.
+
+A key that's already taken is refused, and a line under the row names the command
+holding it. Keys the browser needs for itself are refused the same way. Press `Escape`
+to back out without changing anything.
+
+**Clear** takes a command's key away, leaving it **Not set**. The command still works
+from its button. **Restore defaults**, at the bottom of the tab, puts every key back at
+once and asks you to confirm first.
+
+:::note[Saved on this device]
+Your keys are remembered in this browser, like the light and dark choice. They don't
+travel with your account, so another computer starts from the defaults.
+:::
+
 ## Light or dark
 
 Click the **gear** at the top right, then **Light mode** or **Dark mode**. The row names
 the one you'd switch to. OpenFray opens dark by default. Your choice is remembered in
 your browser, and it's shared with the OpenFray website, so both match.
 
-![The gear menu open in the top bar, showing Settings, Light mode, Handbook, and Report a bug.](../../../assets/screens/theme-toggle.png)
+![The gear menu open in the top bar, showing Settings, Keyboard shortcuts, Light mode, Handbook, and Report a bug.](../../../assets/screens/theme-toggle.png)
 
 ## The importer
 

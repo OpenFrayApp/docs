@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The read-only cheat sheet, opened from the gear menu rather than with Shift+/ so the
+# capture doesn't depend on the keymap it is picturing (reference/keyboard.md).
+name: keyboard-help
+install: docs
+viewport: { width: 1440, height: 1000 }
+
+setup:
+  - click: { role: button, name: Settings and more }
+  - click: { role: menuitem, name: Keyboard shortcuts }
+  - wait: { css: '[role=dialog]' }
+  - wait: 300
+
+# No callouts: every row names its own command and prints its own key, so an outline
+# would only point at writing the reader is already reading.
+clip: { panel: Keyboard shortcuts, pad: 14 }

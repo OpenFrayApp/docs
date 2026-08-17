@@ -101,6 +101,7 @@ export default defineConfig({
             { label: 'The compendium', link: '/reference/compendium/' },
             { label: 'Dice & roll formulas', link: '/reference/dice/' },
             { label: 'The game log', link: '/reference/game-log/' },
+            { label: 'Keyboard shortcuts', link: '/reference/keyboard/' },
             { label: 'Settings & appearance', link: '/reference/settings/' },
           ],
         },

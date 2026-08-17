@@ -58,8 +58,8 @@ The lower half lists what the creature can do, in the usual order:
 - **Spellcasting** — the creature's spells, grouped by how often it can cast them.
 - **Actions**, **Bonus Actions**, and **Reactions**.
 - **Legendary Actions** and **Lair Actions** for creatures that have them.
-- A collapsible **Description** with the creature's flavor text, where the source has
-  one.
+- A **Description** with the creature's flavor text, where the source has one. It starts
+  open, so it's there when the table asks. Click the heading to fold it away.
 
 At the very bottom, a **source line** names the book the creature comes from, and its
 page where the book has one, for example _Brood & Bloom_, or _Basic Rules 2024 (SRD

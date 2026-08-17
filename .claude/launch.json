@@ -1,0 +1,21 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "docs",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 4322
+    },
+    {
+      "name": "console",
+      "url": "http://localhost:5199",
+      "port": 5199
+    },
+    {
+      "name": "site",
+      "url": "http://localhost:4321",
+      "port": 4321
+    }
+  ]
+}

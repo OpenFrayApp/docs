@@ -83,6 +83,7 @@ export default defineConfig({
             { label: 'Rest & clear the board', link: '/guides/rests/' },
             { label: 'Share the player view', link: '/guides/player-view/' },
             { label: 'End the fight', link: '/guides/recap/' },
+            { label: 'Save a fight for later', link: '/guides/saving/' },
           ],
         },
         {
@@ -91,6 +92,7 @@ export default defineConfig({
             { label: 'Set up a campaign & house rules', link: '/guides/campaigns/' },
             { label: 'Build your own creatures & spells', link: '/guides/making-your-own/' },
             { label: 'Import from D&D Beyond', link: '/guides/importer/' },
+            { label: 'Publish an encounter', link: '/guides/publishing/' },
           ],
         },
         {

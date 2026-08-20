@@ -47,17 +47,20 @@ From then on, these follow you between devices:
 | **Characters**                    | build the party once instead of retyping them each session                        |
 | **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/) and private notes on the game |
 | **Your player-view link**         | name it something your table remembers, and keep it between sessions              |
+| **Saved fights**                  | keep a board [as it stands](/docs/guides/saving/) and come back to it             |
+| **What you've published**         | the [links you've handed out](/docs/guides/publishing/), and a way to take them down |
 
 Saving happens in the background while you play. You never wait for it, and there's no
-save button.
+save button. Saving a fight to come back to later is a different thing, with its own
+button: see [Save a fight for later](/docs/guides/saving/).
 
 Nothing you did before signing in is thrown away. The fight on your board stays put.
 
 ## Deleting everything
 
 In **Profile**, **Delete account** removes your account and everything attached to it:
-your fights, creatures, spells, characters, and campaigns. You're asked to type your
-email to confirm.
+your fights, creatures, spells, characters, and campaigns. Anything you published comes
+down with it, and those links stop working. You're asked to type your email to confirm.
 
 :::danger[Deleting is permanent]
 Deleting your account cannot be undone, and nothing is kept. If you sign back in later

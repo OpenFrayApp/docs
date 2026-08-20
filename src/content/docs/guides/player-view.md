@@ -9,7 +9,9 @@ keywords:
 ---
 
 The **player view** is a read-only screen your players open on their own devices. It
-shows the turn order and the game log, and nothing else. You decide when it's on and how
+shows the turn order and the game log, and nothing else. It is live, and it is for your
+own table: handing an encounter to another Game Master is
+[publishing](/docs/guides/publishing/), which is a different link. You decide when it's on and how
 much of a creature it gives away. This page covers sharing it, what your players see,
 and what stays with you.
 

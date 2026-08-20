@@ -36,7 +36,11 @@ mode, and the link your player view uses.
 ## Signing in
 
 Sign in with **Discord** or **Google**. It's free, and the first time you sign in an
-account is created for you.
+account is created for you. Tick the box to accept the
+[terms](https://openfray.app/terms) and the
+[privacy policy](https://openfray.app/privacy) first: creating the account is what
+accepts them, and the sign-in screen is the last place to ask before Discord or Google
+takes over. You need to be 13 or older.
 
 From then on, these follow you between devices:
 
@@ -60,7 +64,8 @@ Nothing you did before signing in is thrown away. The fight on your board stays 
 
 In **Profile**, **Delete account** removes your account and everything attached to it:
 your fights, creatures, spells, characters, and campaigns. Anything you published comes
-down with it, and those links stop working. You're asked to type your email to confirm.
+down with it, and anyone holding one of those links will find it gone. You're asked to
+type your email to confirm.
 
 :::danger[Deleting is permanent]
 Deleting your account cannot be undone, and nothing is kept. If you sign back in later

@@ -9,7 +9,7 @@ viewport: { width: 1280, height: 1200 }
 setup:
   - use: open-settings
   - click: { role: tab, name: Keyboard }
-  - wait: { css: '[role=tabpanel]', contains: Turn and fight }
+  - wait: { css: '[role=tabpanel]', contains: Turn and encounter }
   - wait: 300
 
 # From the tab strip down through the first group, so the reader can see which tab they

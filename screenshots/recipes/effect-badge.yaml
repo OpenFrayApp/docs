@@ -14,7 +14,9 @@ clip:
   pad: 18
 
 marks:
-  badge: { within: clip, text: Frightened }
+  # The badge carries its own remove × beside the name, so the whole of it is never
+  # exactly "Frightened" — the smallest box holding the word is the badge itself.
+  badge: { within: clip, contains: Frightened, pick: smallest }
 
 # Nudged left so the arrow comes in at a slant: the badge sits under the creature's name,
 # and straight down from a centred label the shaft runs through it.

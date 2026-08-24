@@ -39,8 +39,10 @@ callouts:
   - { mark: bar, text: Roll anything by hand, place: top, inside: true, gap: 24 }
   - { mark: entry, text: 'Every roll, with its dice', place: top }
 
-# The entry's numbers are a real roll, but its box is a fixed row of the log, so the
-# check masks the entry and still guards the bar and the frame around it.
+# The entry's numbers are a real roll. Masking just that row was not enough: a total one
+# digit wider re-wraps the row, which moves every line under it and made this recipe pass
+# or fail at random. The whole log column is masked instead, so what the check still
+# guards is the dice bar this capture is actually about, and the frame around it.
 check:
   ignore:
-    - { css: li, contains: 1d20+2, visible: true, pick: last }
+    - { css: ul, contains: 1d20+2, visible: true, pick: smallest }

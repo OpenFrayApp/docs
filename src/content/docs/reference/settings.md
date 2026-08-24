@@ -52,25 +52,35 @@ remembered in your browser, so it sticks whether or not you're signed in.
 The **player view** is a read-only screen your players follow on their own devices. Its
 tab decides how much of a fight reaches them:
 
-| Setting                          | What you can choose                         | Starts as       |
-| -------------------------------- | ------------------------------------------- | --------------- |
-| **Creature hit points**          | In words (Bloodied) · Exact number · Hidden | In words        |
-| **Creature armor class**         | Hidden · Shown                              | Hidden          |
-| **Creature rolls**               | Shown · Hidden                              | Shown           |
-| **Creature conditions**          | Shown · Hidden                              | Shown           |
-| **Creatures arriving mid-fight** | Shown · Hidden until revealed               | Shown           |
-| **Game log**                     | This fight only · The whole session         | This fight only |
-| **Fight clocks**                 | Shown · Hidden                              | Shown           |
-| **End-of-fight summary**         | Shown · Hidden                              | Shown           |
+| Setting                              | What you can choose                         | Starts as            |
+| ------------------------------------ | ------------------------------------------- | -------------------- |
+| **Creature hit points**              | In words (Bloodied) · Exact number · Hidden | In words             |
+| **Creature armor class**             | Hidden · Shown                              | Hidden               |
+| **Creature rolls**                   | Shown · Hidden                              | Shown                |
+| **Creature conditions**              | Shown · Hidden                              | Shown                |
+| **Creatures arriving mid-encounter** | Shown · Hidden until revealed               | Shown                |
+| **Game log**                         | This encounter only · The whole session     | This encounter only  |
+| **Encounter clocks**                 | Shown · Hidden                              | Shown                |
+| **End-of-encounter summary**         | Shown · Hidden                              | Shown                |
+| **Campaign name**                    | Shown · Hidden                              | Hidden               |
+| **Game Master name**                 | Shown · Hidden                              | Hidden               |
 
 Player characters always show in full, whatever you pick here, and so does anyone
 fighting alongside them. Every choice reaches your players' screens straight away,
 mid-fight included. Any single creature can also be hidden or revealed on its own, from
 its controls beside the stat block.
 
-![The Player view tab in Settings, listing every choice the shared screen offers with its current value.](../../../assets/screens/player-view-settings.png)
+The last two put a line at the top of your players' screen: the campaign's name, and
+**Run by** your profile name. Both start off, and the Game Master's name needs an
+account, because an anonymous link has no name to send.
 
-Sharing itself is the **screen** button in the top bar. See
+A **?** beside a setting's label explains what it does. Point at it, or tap it on a
+touchscreen. Anything written in plain sight beside a control instead is telling you
+something about its state.
+
+![The Player view tab in Settings, listing every choice the shared screen offers with its current value, several carrying a ? beside the label.](../../../assets/screens/player-view-settings.png)
+
+Sharing itself is the **cast** button in the top bar. See
 [Share the player view](/docs/guides/player-view/), which explains each choice.
 
 ## Keyboard
@@ -80,7 +90,7 @@ change which one. It lists all 26 commands in the same five groups the cheat she
 each with the key it currently answers to. For the full list of what the keys do, see
 [Keyboard shortcuts](/docs/reference/keyboard/).
 
-![The Keyboard tab in Settings, selected in the tab strip, above the Turn and fight rows with their keys, Change and Clear buttons.](../../../assets/screens/keyboard-settings.png)
+![The Keyboard tab in Settings, selected in the tab strip, above the Turn and encounter rows with their keys, Change and Clear buttons.](../../../assets/screens/keyboard-settings.png)
 
 To give a command a different key:
 

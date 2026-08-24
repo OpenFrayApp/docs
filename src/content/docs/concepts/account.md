@@ -29,9 +29,12 @@ You can also share a read-only [player view](/docs/guides/player-view/) with you
 without an account. The shared view is stored on no server either way. It reaches your
 players' screens as the board changes and is kept nowhere.
 
-Three things do stick around on your own device without an account: your
-[library choices](/docs/reference/settings/#libraries), your choice of light or dark
-mode, and the link your player view uses.
+A handful of things do stick around on your own device without an account: your
+[library choices](/docs/reference/settings/#libraries), your keyboard shortcuts, your
+choice of light or dark mode, and the link your player view uses, plus the
+[PIN](/docs/guides/player-view/#lock-it-with-a-pin) locking it and the
+[backdrop](/docs/guides/player-view/#put-a-backdrop-behind-it) behind it. All of those
+belong to the browser rather than to you, so another computer starts fresh.
 
 ## Signing in
 
@@ -59,6 +62,11 @@ save button. Saving a fight to come back to later is a different thing, with its
 button: see [Save a fight for later](/docs/guides/saving/).
 
 Nothing you did before signing in is thrown away. The fight on your board stays put.
+
+Signing out is the one place that isn't symmetrical. The player-view link's name belongs
+to the account, so signing out stops the share and mints a fresh anonymous link in its
+place. Anyone holding the old one is left behind. See
+[Naming the link](/docs/guides/player-view/#naming-the-link).
 
 ## Deleting everything
 

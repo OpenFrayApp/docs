@@ -17,8 +17,8 @@ fight.
 
 The screen has three parts:
 
-- **The tabs** — **Creatures**, **Spells**, **Characters**, **Effects**, and
-  **Campaigns**.
+- **The tabs** — **Creatures**, **Spells**, **Characters**, **Effects**, **Campaigns**,
+  and **Encounters**.
 - **The list** — search by name; every match shows here.
 - **The reading pane** — the full stat block or card of what you picked, in the same
   layout you see during a fight.
@@ -69,6 +69,13 @@ you've saved yourself; pick one to read exactly what it applies. You use them fr
 Your games and their house rules. Each campaign's card lists its rules at a glance, and
 carries the private notes you keep on that game. See
 [Set up a campaign & house rules](/docs/guides/campaigns/).
+
+## Encounters
+
+The fights you've saved to come back to. Each card shows what was on the board when you
+saved it, counted under **Creatures**, **Allies**, and **Party**, with the date and the
+two ways back in: **Restore** and **Add creatures**. Saving needs an account. See
+[Save a fight for later](/docs/guides/saving/).
 
 ## Libraries
 

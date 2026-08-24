@@ -25,17 +25,17 @@ to, grouped the way this page groups them. Press `Escape` to close it.
 The buttons themselves carry their key too. Hover one and its tooltip names the chord,
 so you can pick the shortcuts up as you go.
 
-## Turn and fight
+## Turn and encounter
 
 These run the fight itself. All but **Start combat** need a fight already under way.
 
-| Command         | Key       |
-| --------------- | --------- |
-| Next turn       | `N`       |
-| Previous turn   | `Shift+N` |
-| Start combat    | `B`       |
-| End the fight   | `Shift+B` |
-| Pause or resume | `P`       |
+| Command           | Key       |
+| ----------------- | --------- |
+| Next turn         | `N`       |
+| Previous turn     | `Shift+N` |
+| Start combat      | `B`       |
+| End the encounter | `Shift+B` |
+| Pause or resume   | `P`       |
 
 **Next turn** does everything the button does, so recharge rolls and effects that end on
 a turn still happen.
@@ -93,12 +93,12 @@ These open a panel or a picker on the fight screen.
 
 These work on any screen.
 
-| Command                                 | Key       |
-| --------------------------------------- | --------- |
-| Show the compendium / Back to the fight | `M`       |
-| Focus the dice bar                      | `/`       |
-| Settings                                | `,`       |
-| Keyboard shortcuts                      | `Shift+/` |
+| Command                                     | Key       |
+| ------------------------------------------- | --------- |
+| Show the compendium / Back to the encounter | `M`       |
+| Focus the dice bar                          | `/`       |
+| Settings                                    | `,`       |
+| Keyboard shortcuts                          | `Shift+/` |
 
 ## When a shortcut does nothing
 

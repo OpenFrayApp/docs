@@ -56,6 +56,9 @@ What happens next depends on the spell:
   already filled in;
 - a **helpful or utility** spell shows its card.
 
+A condition named in a spell's rules text carries its own rules: point at it and they
+come up, the same way they do in a stat block.
+
 Wherever a spell rolls its own dice, **Roll damage** becomes **Reroll damage**
 afterward. Rerolling updates the damage the saves are split from and leaves the results
 you've already recorded alone. See

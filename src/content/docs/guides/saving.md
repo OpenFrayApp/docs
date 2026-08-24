@@ -17,12 +17,16 @@ wouldn't be there on the laptop you run next week's game from.
 
 ## Saving the board
 
-The **save** button is the floppy disk in the top bar.
+The **save** button is the floppy disk under the tracker, at the foot of the column, next
+to the **share** button.
 
 1. Click the **save** button. A small box opens.
 2. Type a name in **Name**. Something you'll recognise next week: `Bridge fight` beats
    `Session 12`.
 3. Click **Save**.
+
+The button is grayed out while the board is empty. There is nothing to keep until
+somebody is on it.
 
 What gets kept is the board as it stands: the creatures, the party, hit points, effects,
 conditions, initiative, the round you're on, and the log. It is a snapshot, not a link.

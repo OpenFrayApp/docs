@@ -31,7 +31,7 @@ Each one is written into the **log** on the right, showing the dice that were ro
 brackets, and what was added to them. Nothing is rolled in secret, and anyone at the
 table can check how a number came to be.
 
-![The dice bar at the bottom of the screen and a log entry reading "1d20 [16] +2", both outlined in red and labeled.](../../../assets/screens/dice-log.png)
+![The dice bar with its formula box, Roll, the Regular, Adv and Dis modes and the dice d100 to d4, beside a log entry, both outlined in red and labeled.](../../../assets/screens/dice-log.png)
 
 Rolls you make by hand from the dice bar land in the log too. The full history, grouped
 by round, is covered in [The game log](/docs/reference/game-log/).

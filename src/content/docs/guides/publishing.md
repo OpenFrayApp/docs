@@ -23,7 +23,9 @@ has somebody standing behind it, and you can take it down again.
 
 ## Publishing an encounter
 
-The **share** button is in the top bar, beside the save button.
+The **share** button is under the tracker, at the foot of the column, beside the save
+button. It's grayed out until there's a creature on the board to publish: a board holding
+only your player characters has nothing to hand over.
 
 1. Put the creatures you want on the board.
 2. Click the **share** button.
@@ -33,7 +35,18 @@ The **share** button is in the top bar, beside the save button.
    headings.
 5. Check the **byline**. It starts as the name on your account and you can type over it.
 6. Choose an **Encounter license**, covered below.
-7. Click **Publish**, then copy the link.
+7. Read the line above the button. It says what pressing it confirms: that you hold the
+   rights to the encounter, and that you agree to the
+   [terms](https://openfray.app/terms).
+8. Click **Publish**.
+
+The dialog then becomes the link itself, with the same three buttons the **Shared links**
+page carries (**Copy**, **Open**, and **Unpublish**), and **Done** to close it.
+**Unpublish** asks first, and taking it down here drops the dialog back to the form: the
+code is gone for good, and publishing again makes a new link rather than reviving the old
+one.
+
+A **?** beside a field explains what it's for. Point at it, or tap it on a touchscreen.
 
 What travels is the cast, the name, the note, the byline and the license. What does not:
 your player characters, hit points, effects, initiative, the log, or anything else about

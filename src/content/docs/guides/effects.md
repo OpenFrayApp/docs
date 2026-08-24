@@ -123,7 +123,7 @@ The **Applied effects** list, in the controls beside the stat block, holds every
 on the selected creature with its buttons. A bundle appears under its own name with its
 parts listed beneath it:
 
-![The Applied effects list showing "Frightened · DEX save DC 10" with Roll save and Clear buttons, outlined in red.](../../../assets/screens/applied-effects.png)
+![The Applied effects list showing a dotted-underlined "Frightened · DEX save DC 10" with its Roll save, Hide and Clear buttons, outlined in red.](../../../assets/screens/applied-effects.png)
 
 - **Clear** removes an effect. Inside a bundle it removes just that part; **Clear all**
   on the bundle's own line removes the lot.
@@ -135,6 +135,11 @@ parts listed beneath it:
   players as one badge, so **Hide** sits on the bundle's line and covers everything
   inside it.
 - **Clear effects**, at the bottom, removes all the applied effects at once.
+
+A condition in this list is written under a dotted underline, the same treatment a rules
+term wears in a stat block. Point at it and its rules come up, so you can settle what
+**Frightened** actually does without leaving the fight. The badge on the tracker row is a
+remove button rather than a reference, so the rules live here instead.
 
 Casting a spell can put effects on the board too, already bundled under the spell's
 name. See [Cast a spell](/docs/guides/spells/).

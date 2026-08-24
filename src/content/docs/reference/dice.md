@@ -21,14 +21,32 @@ The box takes a formula and rolls it. Beyond `2d6+3`, it understands:
 | Type this             | And you get                                                            |
 | --------------------- | ---------------------------------------------------------------------- |
 | `1d20+7`              | one die, plus a flat modifier                                          |
-| `2d20adv` / `2d20dis` | roll two, keep the higher or lower; both are shown                     |
+| `2d20adv` / `2d20dis` | roll two, keep the higher or lower; both are shown. Works on any die   |
 | `4d6kh3`              | roll four, keep the highest three (`kl` keeps the lowest)              |
 | `2d6+1d4+2`           | as many dice and modifiers as you like, added together                 |
 | `1d6!`                | exploding: a die landing on its highest face is rolled again and added |
 | `1d6x10`              | multiply that group of dice, so a d6 gives 10, 20, 30 and so on        |
 
-The **d20 d12 d10 d8 d6 d4** buttons beside the box are shortcuts for a single die, for
-when someone just needs a number.
+The **d100 d20 d12 d10 d8 d6 d4** buttons beside the box are shortcuts for a single die,
+for when someone just needs a number.
+
+## Advantage without typing it
+
+At the head of that row sits one control with three answers: **Regular**, **Adv**, and
+**Dis**. It decides how the next die you tap is rolled, and it stays where you put it,
+so a run of rolls at advantage is one click and then the die each time.
+
+- **Regular** rolls one die, the way the buttons always have.
+- **Adv** rolls two and keeps the higher.
+- **Dis** rolls two and keeps the lower.
+
+It reaches every die, not just the d20: **Adv** and a **d6** rolls `2d6adv`. Both dice
+show, the one that counted highlighted, and the log names it as advantage rather than as
+a keep rule.
+
+The typed formula is left alone. Whatever you write in the box is rolled exactly as
+written, because somebody typing `2d20kh1` has already said what they want. Set the mode
+in the formula itself when you want it there.
 
 Every roll made here is written into the [game log](/docs/reference/game-log/), dice in
 brackets, like every other roll.

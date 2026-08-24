@@ -22,7 +22,7 @@ during a fight is on it.
 
 1. **The top bar.** Adding creatures and players, group saves, casting a spell, and
    rests, plus the switch between the console and the compendium. On its right: signing
-   in, the **screen** (sharing a [player view](/docs/guides/player-view/)), and the
+   in, the **cast** button (sharing a [player view](/docs/guides/player-view/)), and the
    **gear**, which opens a short menu: settings, light or dark, this handbook, and
    reporting a bug.
 2. **The tracker.** Everyone in the fight, in the order they act, with hit points, armor

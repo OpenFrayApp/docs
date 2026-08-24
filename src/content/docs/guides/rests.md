@@ -15,7 +15,9 @@ page covers both. The rest buttons are the **campfire** (short rest) and the **t
 ![The campfire and tent buttons in the top bar, outlined in red and labeled Short rest and Long rest.](../../../assets/screens/rest-buttons.png)
 
 Rests are disabled while a fight is running. You can't rest mid-combat, so OpenFray
-grays them out until you stop.
+grays them out until you stop. They're grayed out on an empty board too, along with
+**Group save** and **Cast spell**: the three keep their places in the bar rather than
+disappearing, so you always know where to look for them.
 
 ## Short rest
 
@@ -36,8 +38,9 @@ and current hit points are tinted by how hurt each one is, so you can see at a g
 who still needs attention.
 
 If you're signed in, OpenFray also counts how many short rests the party has taken since
-their last long rest, and shows it next to the button. That count helps with abilities
-that come back on a short rest.
+their last long rest, and puts the number in the corner of the campfire button, at every
+width. That count helps with abilities that come back on a short rest. Point at it and
+it says what it is.
 
 ## Long rest
 

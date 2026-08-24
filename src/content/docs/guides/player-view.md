@@ -19,16 +19,19 @@ It works without an account. Signing in lets you give the link a name you can re
 
 ## Sharing the fight
 
-The **screen** button sits in the top bar, between **Sign in** and the gear.
+The **cast** button sits in the top bar, between your account and the gear. It's the
+one that looks like a screen with signal waves coming off it.
 
-1. Click the **screen** button. A small box opens.
+1. Click the **cast** button. The **Player view** box opens.
 2. Click **Start sharing**. A green dot appears on the button while sharing is on, and
-   the box shows your **Link** with two buttons beside it.
+   the box grows a **Link** section.
 3. Click the **copy** button (two sheets) beside the link, and send the link to your
    players however you normally talk to them.
 4. To see what your table sees, click the **open** button (an arrow leaving a box). The
    player view opens in a new tab.
 5. When you're done, open the box again and click **Stop sharing**.
+
+![The Player view box with Start sharing outlined in red, and the PIN boxes and the backdrop tiles labeled.](../../../assets/screens/player-view-panel.png)
 
 Your players' screens fill in as soon as you start. If someone opens the link first, it
 says it's waiting and then fills in on its own. Nobody has to reload.
@@ -36,11 +39,59 @@ says it's waiting and then fills in on its own. Nobody has to reload.
 Reloading the console doesn't interrupt them either: sharing picks up again on its own,
 and only stops when you press **Stop sharing** or close the tab.
 
+Everything else in the box (the PIN, the backdrop, the link's name) can be changed
+mid-fight, and reaches the table straight away.
+
 :::caution[Anyone with the link can watch]
-The link is the only thing protecting the view, so give it to your table and keep it off
-the public internet. Nobody can change anything through it: the player view has no
-buttons.
+Without a PIN the link is the only thing protecting the view, so give it to your table
+and keep it off the public internet. Nobody can change anything through it: the player
+view has no buttons.
 :::
+
+## Lock it with a PIN
+
+If you'd rather the link wasn't enough on its own, set a four-digit **PIN**. Your players
+type it once, on their own device, before the board shows.
+
+1. Click the **cast** button.
+2. Under **PIN**, type four digits into the boxes. The fourth digit sets it, and the box
+   says so.
+3. Tell your table the four digits.
+
+Anyone opening the link now gets **This view is locked** and four boxes of their own. The
+right four open the board in a moment; the wrong four are told so and can try again.
+
+**Remove**, beside the boxes, lifts the lock and leaves the link open. Clearing every box
+does the same.
+
+The lock is real, not a curtain. With a PIN set, the board travels down a route worked
+out from the link *and* the PIN together, so somebody who has the link and not the digits
+has nowhere to read the fight from. Nothing is being hidden from a page they already
+have.
+
+The PIN is kept in the browser you set it in, beside the link itself, so it survives a
+reload and lasts until you change it.
+
+## Put a backdrop behind it
+
+A **backdrop** is a piece of scenery behind your players' screen. Under **Backdrop** in
+the same box, pick one of the tiles, or **None** for the plain screen. It changes on
+their devices as you click, so you can move the scene from the harbor to the marsh
+between rounds.
+
+Ten come bundled, and nothing else can be used: the art ships with OpenFray, so your
+players' browsers never fetch a picture from anywhere else.
+
+- **Night and dusk** — Mountain fortress, Hell fortress, Marsh, Sea, Magical forest.
+- **Daylight** — Valley road, Elven city, Desert ruins, Frozen lake, Morning harbor.
+
+Each piece was treated for one of the two moods, and it brings that mood with it: a
+daylight backdrop turns your players' screen light, a night one turns it dark. While a
+backdrop is showing, their light-and-dark switch stands down rather than fight it, and
+picking **None** hands them their own choice back untouched.
+
+Like the PIN, the backdrop belongs to the browser you set it in, not to a campaign or an
+account. It needs neither.
 
 ## What your players see
 
@@ -51,6 +102,10 @@ never pushes the turn order out of sight. On a phone they stack, log underneath.
   and effects, who's up, and which round you're on.
 - **The game log** — the running record of what happened.
 - **The clocks** — how long the fight has taken, and how long it has run in the game.
+
+The top of their screen carries the OpenFray wordmark and their own light-and-dark
+switch. It can carry your campaign's name and your own, too. Both are off until you turn
+them on, in the settings covered below.
 
 Player characters always show in full: hit points, armor class, conditions, and death
 saves. Your table wrote those numbers down themselves. Anyone fighting alongside them
@@ -77,8 +132,9 @@ A creature you hold back is tagged **Hidden** on your own tracker, and anything 
 stays out of your players' log. A creature merely waiting for the fight to start isn't
 tagged; it appears on its own when you press **Begin**.
 
-A creature that arrives mid-fight follows your **Creatures arriving mid-fight** setting,
-so reinforcements can be held back by default and revealed when the party sees them.
+A creature that arrives mid-fight follows your **Creatures arriving mid-encounter**
+setting, so reinforcements can be held back by default and revealed when the party sees
+them.
 
 When the fight ends, every creature leaves your players' screen again, and anything you
 showed or hid during it goes back to normal. The next **Begin** puts them all back, so
@@ -141,25 +197,41 @@ explaining:
 - **Creature conditions → Hidden** takes the badges off a creature's row, and the lines
   about conditions landing and clearing out of their log. Your players' own characters
   keep theirs.
-- **Game log → This fight only** starts their log fresh each time you press **Begin**
-  and clears it when the fight ends. Yours keeps everything either way.
+- **Game log → This encounter only** starts their log fresh each time you press
+  **Begin** and clears it when the fight ends. Yours keeps everything either way.
+- **Campaign name** and **Game Master name → Shown** head their screen with the
+  campaign you're running and **Run by** your profile name. Both start off: what the
+  game is called is yours to announce, not the link's. The second one needs an account,
+  because an anonymous link has no name to send.
 
 ## Naming the link
 
 Without an account you get a link with a jumble of letters in it. It's yours, it stays
 the same, and it's kept in the browser you're using.
 
-Sign in and you can name it instead:
+Sign in and you can name it instead. Under **Link**, the part nobody edits is written
+out as plain text and the end of the link sits in a box after it, so you're editing the
+link itself rather than filling in a field about it:
 
-1. Click the **screen** button, then type a name in **Name the link**.
-2. Click **Save**.
+1. Click the **cast** button.
+2. Type over the end of the **Link**, something like `tuesday-game`.
+3. Click **Save**. The button appears once what you've typed differs from the link you're
+   on.
 
-Use letters, numbers, and hyphens, something like `tuesday-game`. Names are first come,
-first served: if another Game Master has already taken one, OpenFray says so and your
-current link keeps working, so nothing breaks mid-session.
+Letters, numbers, and hyphens only; anything else simply doesn't land as you type, so the
+count of what you've typed is always the truth. Names are first come, first served: if
+another Game Master has already taken one, OpenFray says so and your current link keeps
+working, so nothing breaks mid-session.
 
 A named link follows your account, so it's the same on your laptop and your tablet, and
 it's still the same next week.
+
+:::caution[Signing out gives the name back]
+The name belongs to the account, so signing out stops the share and mints a fresh
+anonymous link. A link your table is holding from a signed-in session stops working at
+that moment. Sign back in and the name is yours again, but hand out the new link, or
+sign in again first, before the next session.
+:::
 
 ## What isn't saved
 

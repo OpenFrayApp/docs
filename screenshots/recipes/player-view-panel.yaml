@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The cast button's modal, as it opens (guides/player-view.md): the switch that starts
+# sharing, the PIN that locks the view, and the backdrops behind it. Shot before sharing
+# starts, so no link is minted — the Link section only exists once there is a code, and a
+# capture of it would show this machine's address rather than anybody's.
+name: player-view-panel
+install: docs
+
+setup:
+  - click: { role: button, name: Share with players }
+  - wait: { css: '[role=dialog]', contains: Backdrop }
+  - wait: 400
+
+clip:
+  css: '[role=dialog]'
+  contains: Backdrop
+  pad: 22
+
+marks:
+  share: { css: button, text: Start sharing }
+  pin:
+    span:
+      - { css: 'input[aria-label="PIN digit 1"]' }
+      - { css: 'input[aria-label="PIN digit 4"]' }
+  backdrops: { css: '[role=radiogroup][aria-label="Backdrop"]' }
+
+# Labels go on the right, the only side the modal leaves room on. The switch is outlined
+# and unlabelled — it already says what it does — so the two labels that are left set how
+# far the margin has to reach.
+callouts:
+  - { mark: share }
+  - { mark: pin, text: Four digits to lock it, place: right }
+  - { mark: backdrops, text: Scenery for their screen, place: right }

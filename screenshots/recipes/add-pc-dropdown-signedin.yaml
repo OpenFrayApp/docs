@@ -9,6 +9,15 @@ session: gm
 viewport: { width: 1440, height: 900 }
 
 setup:
+  # The board is account state, not browser state: it can still hold whatever an earlier
+  # `gm` recipe left there. Draining it first keeps this crop's Cast spell button in the
+  # same disabled state every run, regardless of history. share-encounter-form tears its
+  # own addition back down in its own teardown, so this is a belt-and-braces guard rather
+  # than the only thing standing between the two recipes.
+  - dialog: accept
+  - optional:
+      - click: { css: 'button[aria-label="Remove everyone and clear the log"]' }
+      - wait: 300
   # The saved characters arrive from the account after first paint, and the picker says
   # "No saved characters yet" until they do — so wait for one of them by name, not for
   # the picker itself.

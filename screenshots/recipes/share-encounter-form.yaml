@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The share-encounter form, numbered to match steps 3-8 on guides/publishing.md. Shot
+# filled in but never submitted, so nothing is published from this run.
+#
+# The board needs one creature so the share button is enabled; `seed`'s Add PC step
+# assumes the anonymous quick-add form, which a signed-in Add PC replaces with a picker
+# over saved characters, so this adds a single creature by hand instead of using the
+# shared macro. A core creature rather than the fixture homebrew: the homebrew was
+# pasted in through Import a creature, which flags it `imported` — the same restriction
+# an OpenFray Importer creature carries — and that fires the restricted-creature warning
+# this shot isn't about.
+name: share-encounter-form
+install: docs
+session: gm
+viewport: { width: 1440, height: 1300 }
+
+setup:
+  # The board is account state, not browser state: it syncs to whichever account is
+  # signed in, so it can still hold whatever an earlier run of this or any other `gm`
+  # recipe left there. Draining it first makes the recipe correct regardless of history.
+  # `dialog: accept` answers the confirm this button raises; shotlist 0.5.0.
+  - dialog: accept
+  - optional:
+      - click: { css: 'button[aria-label="Remove everyone and clear the log"]' }
+      - wait: 300
+  - click: { role: button, name: Add creature, exact: true }
+  - fill: { placeholder: Search creatures… }
+    value: Ogre
+  - wait: 400
+  - click: { role: button, name: Ogre, matching: '^Ogre' }
+  - wait: 300
+  - press: Escape
+  - wait: 200
+  - click: { css: 'button[aria-label="Share this encounter"]' }
+  - wait: { css: 'input#share-name' }
+  - fill: { css: 'input#share-name' }
+    value: Ashes at the Ninth Bell
+  - fill: { css: 'textarea#share-note' }
+    value: The bells have already started when the party arrives. Whatever answers them isn't polite about it.
+  - optional:
+      - blur: { css: ':focus' }
+  - wait: 400
+
+# Spanned from the dialog's own title to the Publish button, the way custom-spell and
+# campaign-form crop their own dialogs: the `panel` finder's ancestor climb landed on the
+# whole card for at least one mark below, which put a disc at the card's own corner and
+# opened a gap above it into the modal's translucent overlay.
+# A third point sets the width: the title and the Publish button are both narrow
+# elements, so a span of just the two came out only as wide as whichever was widest.
+clip:
+  span:
+    - { text: Share this encounter }
+    - { css: 'textarea#share-note' }
+    - { css: button, text: Publish }
+  pad: 16
+
+marks:
+  name: { css: 'input#share-name' }
+  note: { css: 'textarea#share-note' }
+  byline: { css: 'input#share-by' }
+  license: { css: 'select#share-license' }
+  consent: { css: p, contains: 'By publishing this you confirm' }
+  publish: { css: button, text: Publish }
+
+numbered:
+  marks: [name, note, byline, license, consent, publish]
+  # Every field's label sits at its own top-left, so a badge there covers it. The right
+  # edge is clear on all six.
+  badge: mr
+  inside: true
+
+# Leaves the board as it found it, so the next `gm` recipe — this one or any other that
+# happens to render the header — never inherits this run's Ogre. The dialog is still open
+# where setup left it, and it sits over the tracker's own clear button, so it closes first.
+teardown:
+  - click: { css: button, text: Close }
+  - wait: 200
+  - dialog: accept
+  - click: { css: 'button[aria-label="Remove everyone and clear the log"]' }
+  # The board is local-first: the removal renders at once but reaches the account in a
+  # debounced background save, and the browser closes the instant teardown ends. Without
+  # this the removal never makes it to the server, and the next run inherits the Ogre.
+  - wait: 1800

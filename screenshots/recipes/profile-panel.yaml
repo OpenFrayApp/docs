@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Profile panel signed in (concepts/account.md): the identity line, the display name
+# and default-license settings. Needs an account, so it shoots through the `gm` session.
+#
+# The account's email shows in three places — the header, the "Signed in" line, and the
+# Delete account section's confirmation label — and none of it is the point of the
+# picture. Masked in all three, matched structurally (a title attribute, a span holding
+# an @, an aria-labelled input) rather than by the address itself, so the real value
+# never has to appear in this file to be hidden from the image.
+name: profile-panel
+install: docs
+session: gm
+viewport: { width: 900, height: 700 }
+
+setup:
+  - click: { css: 'button[aria-label="Account menu"]' }
+  - wait: { css: '[role=menu]' }
+  - click: { css: '[role=menuitem]', text: Profile }
+  - wait: { text: Default license for shared encounters }
+  - wait: 500
+
+clip:
+  span:
+    - { css: h1, text: Account }
+    - { text: Default license for shared encounters }
+    - { css: select, contains: license }
+  pad: 20
+
+mask:
+  - { css: 'p[title*="@"]' }
+  - { css: span, contains: '@' }

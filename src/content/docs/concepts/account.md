@@ -68,6 +68,25 @@ to the account, so signing out stops the share and mints a fresh anonymous link 
 place. Anyone holding the old one is left behind. See
 [Naming the link](/docs/guides/player-view/#naming-the-link).
 
+## Your profile
+
+Click your **account**, then **Profile**. It shows the email you signed in with and how
+(Google or Discord; OpenFray never sees your password either way), and holds two
+settings beyond deleting the account, covered next.
+
+![The Profile panel: the signed-in email and provider, the display name field holding a
+name, and the default-license dropdown, its email masked.](../../../assets/screens/profile-panel.png)
+
+- **Display name** is what appears in two places: the **Run by** line on your
+  [player view](/docs/guides/player-view/#what-your-players-see), and the byline on
+  anything you [publish](/docs/guides/publishing/). It starts as whatever your sign-in
+  provider handed over, and leaving it blank publishes and shares anonymously instead.
+- **Default license for shared encounters** is what the
+  [publish dialog](/docs/guides/publishing/#licenses-and-what-they-cover)'s license field
+  starts on, so a Game Master who always publishes under the same terms doesn't pick them
+  every time. Changing it here changes nothing you've already published; it's only where
+  the next one starts.
+
 ## Deleting everything
 
 In **Profile**, **Delete account** removes your account and everything attached to it:

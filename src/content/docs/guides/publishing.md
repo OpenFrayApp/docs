@@ -8,10 +8,11 @@ keywords:
   - share homebrew creatures
 ---
 
-**Publishing** puts an encounter, or a single creature, at a link anyone can open. They
-read it in their browser, and add it to their own board with one click. It is how you
-hand a fight to another Game Master, put one under a blog post, or send a homebrew
-creature to the person who asked for it.
+**Publishing** puts an encounter at a link anyone can open. They read it in their
+browser, and add it to their own board with one click. It is how you hand a fight to
+another Game Master, or put one under a blog post. Publishing a single creature works
+the same way from its own card; see [Publish a creature](/docs/guides/publish-creature/)
+for that.
 
 This is not the [player view](/docs/guides/player-view/), which is a live screen for your
 own table during a fight. A published link is prep: it carries no hit points, no effects,
@@ -40,6 +41,8 @@ only your player characters has nothing to hand over.
    [terms](https://openfray.app/terms).
 8. Click **Publish**.
 
+![The Share this encounter form: Name, Note, Your name, Encounter license, the consent line and Publish, numbered one to six.](../../../assets/screens/share-encounter-form.png)
+
 The dialog then becomes the link itself, with the same three buttons the **Shared links**
 page carries (**Copy**, **Open**, and **Unpublish**), and **Done** to close it.
 **Unpublish** asks first, and taking it down here drops the dialog back to the form: the
@@ -57,16 +60,6 @@ as they stand on your board.
 Anyone with the link reads it. Don't put anything in a note you wouldn't put on a web
 page: no passwords, no real names, no addresses.
 :::
-
-## Publishing a creature
-
-Open the creature in the compendium and click the **share** button on its stat block. The
-dialog is the same, minus the encounter's name and license: a creature already carries its
-own.
-
-A creature brought in with the **OpenFray Importer** can't be published. Those stat blocks
-are Wizards of the Coast's, and putting one on a public page isn't ours to do. It stays
-yours to use at your own table.
 
 ## Licenses, and what they cover
 
@@ -145,6 +138,8 @@ the code never existed.
 
 ## Where to next
 
+- [Publish a creature](/docs/guides/publish-creature/) — sharing a single stat block
+  instead of a whole board.
 - [Save a fight for later](/docs/guides/saving/) — keeping one for yourself instead.
 - [Share the player view](/docs/guides/player-view/) — the live screen for your own table.
 - [Build your own creatures & spells](/docs/guides/making-your-own/) — including the

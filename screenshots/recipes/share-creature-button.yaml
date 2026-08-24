@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Where the creature share button lives, on the stat block's source line
+# (guides/publish-creature.md).
+name: share-creature-button
+install: docs
+session: gm
+viewport: { width: 1440, height: 900 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: 'input[aria-label="Search creatures"]' }
+  - fill: { css: 'input[aria-label="Search creatures"]' }
+    value: Ogre
+  - wait: 400
+  - click: { role: button, name: Ogre, matching: '^Ogre' }
+  - wait: 500
+
+clip:
+  span:
+    - { css: p, contains: 'Source:' }
+    - { css: 'button[aria-label="Share this creature"]' }
+  grow: { left: 16, right: 16, top: 12, bottom: 12 }
+
+marks:
+  btn: { css: 'button[aria-label="Share this creature"]' }
+
+# Outlined and unlabelled: the page's sentence names the button.
+callouts:
+  - { mark: btn }

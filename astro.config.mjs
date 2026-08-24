@@ -93,6 +93,7 @@ export default defineConfig({
             { label: 'Build your own creatures & spells', link: '/guides/making-your-own/' },
             { label: 'Import from D&D Beyond', link: '/guides/importer/' },
             { label: 'Publish an encounter', link: '/guides/publishing/' },
+            { label: 'Publish a creature', link: '/guides/publish-creature/' },
           ],
         },
         {

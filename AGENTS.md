@@ -53,6 +53,12 @@ hatch. Three rules the recipes rely on:
   every line under it, which is what made `dice-log` pass or fail at random.
 - Blur after typing. A `fill` leaves a caret and a focus ring that do not render the same
   way twice; `optional: [{ blur: { css: ':focus' } }]` is the guard.
+- Click by role and name, not bare `text:`, on anything from a shared list row. `text:`
+  needs an element whose own trimmed content matches exactly, and a count or a badge
+  sitting beside the name as a sibling node (`Bellwright Acolyte ×2`) means no element's
+  text is ever exactly the name alone. The click silently lands on nothing, and the step
+  after it times out with no clue why. `role: button, name: …, exact: true` matches the
+  accessible name instead, which the sibling doesn't touch.
 
 ### Captures that need an account
 
@@ -64,17 +70,41 @@ that file is signed in as that account. `verify` in the config is the account bu
 an abandoned sign-in fails the login instead of writing a session that quietly shoots the
 anonymous console. When it expires, run `--login gm` again.
 
-The account behind it is a dedicated docs account holding **fixture data**, not anybody's
-game: three campaigns, the sample party from `data/party.yaml` as saved characters, three
-homebrew creatures and one homebrew spell. That is what makes these captures
-reproducible: the recipes only ever *read* it. Two rules follow:
+The account behind it holds **fixture data** rather than anybody's real game: three
+campaigns, the sample party from `data/party.yaml` as saved characters, three homebrew
+creatures, one homebrew spell, and one saved encounter. That is what makes these captures
+reproducible: almost every recipe only ever *reads* it.
 
-- **Never let a recipe create, rename or delete account data.** shotlist has no teardown
-  and cannot accept a `window.confirm`, so anything a run creates accumulates on every
-  later run and the picture changes. `import-json` pastes a stat block and never submits
-  it, which is why it is safe.
-- **Never seed the board on a `gm` recipe.** A signed-in board syncs to the account, so
-  the next run would seed on top of the last one. Leave that account's board empty.
+**It is not the handbook's alone.** The site's own screenshot work signs in as the same
+account, and keeps its own fixtures there: four more saved characters (Bram Ironfist,
+Elowen Vale, Kessa Quick, Sister Mirad), its own display name, and whatever is on the
+board at the time. Both sets are legitimate and neither owns the account, so:
+
+- **Never clear the board, and never delete anything you did not create.** Other work is
+  live on this account and may be mid-fight on it. The two bulk-clear buttons take
+  everything, which is somebody else's encounter as often as your own.
+- **Fixtures are created once, by hand, outside any recipe**, the same way the campaigns
+  and characters were seeded, never inside a recipe's own `setup`. A recipe that creates
+  what it shoots leaves that behind for every later run to inherit, and the picture
+  quietly changes each time. `import-json` pastes a stat block and never submits it,
+  which is why it is the one exception that gets away with touching the form at all.
+- **A recipe that must put something on the board owns taking exactly that back off.**
+  The board is account state, not browser state: it syncs to whichever account is signed
+  in, so it outlives the browser context a run closes at the end. `share-encounter-form`
+  adds one creature and removes that one creature in its own `teardown`, addressing it by
+  row (`button[aria-label="Remove <name>"]`), which raises no confirm and works whether or
+  not a fight is running. Pick something unlikely to be on the board already: a row is
+  addressed by name, so adding an Ogre to a board that has one makes the removal
+  ambiguous. Teardown runs in the same browser after the shot, pass or fail, which is what
+  makes any of this possible.
+- **Expect the shared fixtures to move.** A capture framing the character list or the
+  publishing byline shows the site's fixtures too, so `--check` will flag it when the site
+  changes them. That is the cost of one account, and it is a re-shoot, not a bug.
+- **The board is local-first, and closing the browser doesn't wait for it.** A removal
+  renders at once but reaches the account through a debounced background save, and
+  teardown's browser closes the instant its last step ends. A `wait` of a second or two
+  after the clearing click is what lets the save actually leave before the tab does.
+  Without it, the next run inherits whatever teardown thought it had removed.
 
 Account data arrives after first paint, so wait for it by name (`wait: { text: Zara }`)
 rather than for the control that will hold it. The picker renders "No saved characters

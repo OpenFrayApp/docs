@@ -16,19 +16,19 @@ session: gm
 viewport: { width: 1440, height: 1300 }
 
 setup:
-  # The board is account state, not browser state: it syncs to whichever account is
-  # signed in, so it can still hold whatever an earlier run of this or any other `gm`
-  # recipe left there. Draining it first makes the recipe correct regardless of history.
-  # `dialog: accept` answers the confirm this button raises; shotlist 0.5.0.
-  - dialog: accept
-  - optional:
-      - click: { css: 'button[aria-label="Remove everyone and clear the log"]' }
-      - wait: 300
+  # Adds exactly one creature and takes exactly that one away again, rather than clearing
+  # the board. The `gm` account is shared with other work, so a bulk clear here would
+  # destroy somebody else's fight; and the clip is the modal alone, so whatever else is
+  # on the board behind it never reaches the picture anyway.
+  #
+  # Awakened Shrub because the removal is by row, and a row is addressed by name: a
+  # creature likely to be on the board already (an Ogre, a goblin) would make
+  # "Remove <name>" ambiguous and could take somebody else's combatant off instead.
   - click: { role: button, name: Add creature, exact: true }
   - fill: { placeholder: Search creatures… }
-    value: Ogre
+    value: Awakened Shrub
   - wait: 400
-  - click: { role: button, name: Ogre, matching: '^Ogre' }
+  - click: { role: button, name: Awakened Shrub, matching: '^Awakened Shrub' }
   - wait: 300
   - press: Escape
   - wait: 200
@@ -73,12 +73,14 @@ numbered:
 # Leaves the board as it found it, so the next `gm` recipe — this one or any other that
 # happens to render the header — never inherits this run's Ogre. The dialog is still open
 # where setup left it, and it sits over the tracker's own clear button, so it closes first.
+# Takes back exactly what setup added, and nothing else. The row's own remove button
+# raises no confirm and exists whether or not a fight is running, unlike the two bulk
+# clears, which vanish once combat starts.
 teardown:
   - click: { css: button, text: Close }
   - wait: 200
-  - dialog: accept
-  - click: { css: 'button[aria-label="Remove everyone and clear the log"]' }
+  - click: { css: 'button[aria-label="Remove Awakened Shrub"]' }
   # The board is local-first: the removal renders at once but reaches the account in a
   # debounced background save, and the browser closes the instant teardown ends. Without
-  # this the removal never makes it to the server, and the next run inherits the Ogre.
+  # this the removal never leaves, and the next run inherits the creature.
   - wait: 1800

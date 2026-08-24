@@ -27,6 +27,10 @@ site:
   # committed. `verify` is the account button, which the header only renders once
   # Supabase reports a user — so an expired sign-in fails the login rather than writing a
   # session that quietly shoots the anonymous console.
+  #
+  # This account is shared with the site repo's own captures, so its fixture data belongs
+  # to both. Never clear the board and never delete what you did not create; see the
+  # Screenshots section of AGENTS.md.
   sessions:
     gm:
       path: .shotlist/gm.json

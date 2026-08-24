@@ -70,19 +70,26 @@ that file is signed in as that account. `verify` in the config is the account bu
 an abandoned sign-in fails the login instead of writing a session that quietly shoots the
 anonymous console. When it expires, run `--login gm` again.
 
-The account behind it holds **fixture data** rather than anybody's real game: three
-campaigns, the sample party from `data/party.yaml` as saved characters, three homebrew
-creatures, one homebrew spell, and one saved encounter. That is what makes these captures
-reproducible: almost every recipe only ever *reads* it.
+**One account serves both this repo and the site.** That is deliberate: the handbook's
+captures and the site's marketing captures sign in as the same `gm` account, so its
+fixture data belongs to both and to neither exclusively.
 
-**It is not the handbook's alone.** The site's own screenshot work signs in as the same
-account, and keeps its own fixtures there: four more saved characters (Bram Ironfist,
-Elowen Vale, Kessa Quick, Sister Mirad), its own display name, and whatever is on the
-board at the time. Both sets are legitimate and neither owns the account, so:
+What is there, and whose it is:
 
-- **Never clear the board, and never delete anything you did not create.** Other work is
-  live on this account and may be mid-fight on it. The two bulk-clear buttons take
-  everything, which is somebody else's encounter as often as your own.
+| Fixture | Kept for |
+| ------- | -------- |
+| Three campaigns, three homebrew creatures, one homebrew spell, one saved encounter | the handbook |
+| The sample party from `data/party.yaml` as saved characters (Zara, Mira, Tav, Ren) | the handbook |
+| Four more saved characters (Bram Ironfist, Elowen Vale, Kessa Quick, Sister Mirad) | the site |
+| The account's display name, and whatever is on the board | the site, mostly |
+
+Fixture data is what makes these captures reproducible: almost every recipe only ever
+*reads* it. Sharing one account is what makes that fragile, so:
+
+- **Never clear the board, and never delete or rename anything you did not create.** The
+  other side's work is live on this account and may be mid-fight on it. The two
+  bulk-clear buttons take everything, which is somebody else's encounter as often as your
+  own. When a capture needs something gone, take that one thing.
 - **Fixtures are created once, by hand, outside any recipe**, the same way the campaigns
   and characters were seeded, never inside a recipe's own `setup`. A recipe that creates
   what it shoots leaves that behind for every later run to inherit, and the picture
@@ -97,9 +104,11 @@ board at the time. Both sets are legitimate and neither owns the account, so:
   addressed by name, so adding an Ogre to a board that has one makes the removal
   ambiguous. Teardown runs in the same browser after the shot, pass or fail, which is what
   makes any of this possible.
-- **Expect the shared fixtures to move.** A capture framing the character list or the
-  publishing byline shows the site's fixtures too, so `--check` will flag it when the site
-  changes them. That is the cost of one account, and it is a re-shoot, not a bug.
+- **Expect the other side's fixtures to move.** A capture framing the character list or
+  the publishing byline shows the site's fixtures too, so `--check` will flag it when the
+  site changes them. That is the cost of one account, and it is a re-shoot, not a bug.
+  Re-shoot against what is actually there rather than reaching for the other side's data
+  to put it back.
 - **The board is local-first, and closing the browser doesn't wait for it.** A removal
   renders at once but reaches the account through a debounced background save, and
   teardown's browser closes the instant its last step ends. A `wait` of a second or two

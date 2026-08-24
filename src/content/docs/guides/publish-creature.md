@@ -22,7 +22,7 @@ encounter does.
 
 Open the creature in the compendium and click the **share** button on its stat block.
 
-![The share button on a creature's stat block, beside its Source and License line.](../../../assets/screens/share-creature-button.png)
+![The foot of a creature's stat block, its Actions above the Source and License line, with the share button outlined in red.](../../../assets/screens/share-creature-button.png)
 
 The dialog that opens is the one [Publish an encounter](/docs/guides/publishing/#publishing-an-encounter)
 walks through, minus two fields an encounter needs and a creature already has: there's no

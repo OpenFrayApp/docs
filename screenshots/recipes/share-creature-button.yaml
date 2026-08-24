@@ -1,11 +1,15 @@
 # yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
 #
-# Where the creature share button lives, on the stat block's source line
-# (guides/publish-creature.md).
+# Where the creature share button lives (guides/publish-creature.md). Spans down from
+# the Actions heading rather than cropping tight to the source line, so the button reads
+# as sitting at the foot of a stat block instead of floating with no context above it.
 name: share-creature-button
 install: docs
 session: gm
-viewport: { width: 1440, height: 900 }
+# Short: the Source/License/share row docks to the bottom of the reading pane
+# (mt-auto), so a tall viewport leaves a dead gap between it and Ogre's short
+# Actions list. A shorter one keeps the two close together.
+viewport: { width: 1440, height: 620 }
 
 setup:
   - click: { css: 'button[aria-label="Show the compendium"]' }
@@ -18,9 +22,10 @@ setup:
 
 clip:
   span:
+    - { css: h4, text: Actions }
     - { css: p, contains: 'Source:' }
     - { css: 'button[aria-label="Share this creature"]' }
-  grow: { left: 16, right: 16, top: 12, bottom: 12 }
+  grow: { left: 16, right: 16, top: 14, bottom: 12 }
 
 marks:
   btn: { css: 'button[aria-label="Share this creature"]' }

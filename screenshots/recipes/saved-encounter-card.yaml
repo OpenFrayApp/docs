@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# A saved fight's card on the Encounters tab (guides/saving.md): the cast grouped and
+# counted under Creatures and Party, the campaign and date line, and the two ways back
+# in. "Ambush at the Ninth Bell" is fixture data saved once on the `gm` account; this
+# recipe only ever reads it.
+name: saved-encounter-card
+install: docs
+session: gm
+viewport: { width: 1600, height: 900 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: '[role=tablist]', contains: Encounters }
+  - click: { css: button, text: Encounters }
+  - wait: { text: Ambush at the Ninth Bell }
+  # Not `text:`, which needs an element whose own trimmed content matches exactly —
+  # the row's accessible name is fine even with sibling badge text a bare text query
+  # would trip on elsewhere in this list.
+  - click: { role: button, name: 'Ambush at the Ninth Bell', exact: true }
+  # The cast loads asynchronously after the card itself does, so the wait is for a name
+  # inside it rather than for the card or the Restore button. `contains`, not `text`: the
+  # count reads "Bellwright Acolyte ×2" as one element, whose own trimmed text is never
+  # exactly "Bellwright Acolyte" for an exact match to land on.
+  - wait: { css: li, contains: Bellwright Acolyte }
+  - wait: 500
+
+# A third point for width: the tab strip and the button row both end well short of
+# the pane's own right edge, so the date line — the widest text in the card — sets it.
+clip:
+  span:
+    - { css: '[role=tablist]' }
+    - { css: p, contains: 'saved before the encounter began' }
+    - { css: p, contains: 'Add creatures' }
+  pad: 22

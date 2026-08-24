@@ -28,6 +28,8 @@ The **share** button is under the tracker, at the foot of the column, beside the
 button. It's grayed out until there's a creature on the board to publish: a board holding
 only your player characters has nothing to hand over.
 
+![The save and share buttons at the foot of the tracker, outlined in red and labeled.](../../../assets/screens/save-share-buttons.png)
+
 1. Put the creatures you want on the board.
 2. Click the **share** button.
 3. Give it a **Name**. This is what a reader sees first.

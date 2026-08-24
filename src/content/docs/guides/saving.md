@@ -20,6 +20,8 @@ wouldn't be there on the laptop you run next week's game from.
 The **save** button is the floppy disk under the tracker, at the foot of the column, next
 to the **share** button.
 
+![The save and share buttons at the foot of the tracker, outlined in red and labeled.](../../../assets/screens/save-share-buttons.png)
+
 1. Click the **save** button. A small box opens.
 2. Type a name in **Name**. Something you'll recognise next week: `Bridge fight` beats
    `Session 12`.
@@ -48,6 +50,8 @@ Its card shows what was on the board when you saved, grouped and counted under
 **Creatures**, **Allies**, and **Party**. You can tell one goblin ambush from another
 without opening either. The date it was saved is on the card, and the name can be edited
 in place.
+
+![A saved fight's card: the date it was saved, the cast grouped under Creatures and Party, and the Restore, Add creatures and Delete buttons.](../../../assets/screens/saved-encounter-card.png)
 
 ## The two ways back in
 

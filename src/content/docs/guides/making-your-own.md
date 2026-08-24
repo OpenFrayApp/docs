@@ -45,7 +45,7 @@ The form is a whole stat block, broken into collapsible sections you can work th
 any order: **Identity**, **Defense & HP**, **Speed**, **Abilities & saves**, then
 skills, senses, traits, actions, reactions, legendary actions, and spellcasting.
 
-![The creature editor on a Bandit Gunner, with its hit dice giving a derived 17 HP average and the ability scores filled in.](../../../assets/screens/custom-creature.png)
+![The creature editor on a Bellwright Acolyte, its hit dice giving a derived 22 HP average, with the ability scores filled in.](../../../assets/screens/custom-creature.png)
 
 You enter the creature's stats, and OpenFray does the math from them:
 

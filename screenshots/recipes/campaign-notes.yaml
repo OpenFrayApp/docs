@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# One campaign's card: its house rules, then the notes kept on that game
+# (guides/campaigns.md). The card only, not the list beside it.
+name: campaign-notes
+install: docs
+session: gm
+# Short: the card stretches to the pane, and its content ends at the notes.
+viewport: { width: 1400, height: 600 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: '[role=tablist]', contains: Campaigns }
+  - click: { css: button, text: Campaigns }
+  - wait: { text: The Salt Road Covenant }
+  - click: { text: The Salt Road Covenant }
+  - wait: 800
+
+# The card's own span: its heading, through the rules, down to the buttons at its foot.
+clip:
+  span:
+    - { css: 'h2, h3', contains: Salt Road }
+    - { text: Critical hit damage }
+    - { text: Campaign notes }
+    - { css: button, text: Delete }
+  pad: 20

@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Import a creature box with a stat block pasted in (guides/making-your-own.md and
+# guides/importer.md). Needs an account, so it shoots through the `gm` session. The paste
+# is never submitted, so the run leaves nothing behind on that account.
+name: import-json
+install: docs
+session: gm
+viewport: { width: 1280, height: 1000 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: button, text: Import a creature }
+  - click: { css: button, text: Import a creature }
+  - wait: { css: 'textarea[aria-label="Creature JSON"]' }
+  - fill: { css: 'textarea[aria-label="Creature JSON"]' }
+    value: |
+      {
+        "name": "Chime Rat",
+        "size": "Tiny",
+        "type": "beast",
+        "ac": 12,
+        "maxHp": 7,
+        "hpFormula": "3d4",
+        "speed": { "walk": 30, "climb": 20 },
+        "abilities": { "str": 4, "dex": 15, "con": 10, "int": 2, "wis": 12, "cha": 4 },
+        "senses": { "passivePerception": 11, "darkvision": 30 },
+        "cr": 0.125,
+        "xp": 25
+      }
+  # Filling leaves the caret and the focus ring in the box, and neither renders the same
+  # way twice — the same guard dice-log needs after it presses Roll.
+  - optional:
+      - blur: { css: ':focus' }
+  - wait: 600
+
+# "Creature JSON" is the textarea's accessible name rather than text on the page, so the
+# dialog is found by the sentence above the box instead.
+clip:
+  dialogWith: 'Paste what the OpenFray Importer copied'
+  pad: 20

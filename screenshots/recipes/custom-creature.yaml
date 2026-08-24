@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The creature editor on a homebrew creature (guides/making-your-own.md), so the derived
+# HP average and the ability scores are real rather than placeholders.
+name: custom-creature
+install: docs
+session: gm
+viewport: { width: 1280, height: 1400 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: 'input[aria-label="Search creatures"]' }
+  - fill: { css: 'input[aria-label="Search creatures"]' }
+    value: Bellwright
+  - wait: { text: Bellwright Acolyte }
+  - click: { text: Bellwright Acolyte }
+  - wait: 700
+  - click: { css: button, text: Edit }
+  - wait: { text: Defense & HP }
+  - wait: 500
+
+# Spanned from the dialog's own title down through the abilities, which is what the page
+# describes. Ending on the helper line keeps the footer buttons out rather than clipped.
+clip:
+  span:
+    - { text: Edit creature }
+    - { text: Identity }
+    - { css: p, contains: Enter each ability score }
+  pad: 18

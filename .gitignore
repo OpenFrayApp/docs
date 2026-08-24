@@ -10,6 +10,9 @@ dist/
 *.log
 screenshots/out/
 
+# `shotlist --login` writes a live signed-in session here. Never commit one.
+.shotlist/
+
 # Sources for the by-hand captures. scripts/annotate-screenshot.mjs crops and
 # annotates these into src/assets/screens/, and only those outputs are committed.
 src/assets/screens/incoming/

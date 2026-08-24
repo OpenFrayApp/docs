@@ -77,7 +77,7 @@ There are two places to write them:
 - **On the campaign card**, without opening the form. Click the notes, type, and click
   away to save. There's no Save button. Press `Escape` to leave them as they were.
 
-![A campaign card for Sands of Eternity, its house rules listed above a Campaign notes section holding a few lines about the last session.](../../../assets/screens/campaign-notes.png)
+![A campaign card for The Salt Road Covenant, its house rules listed above a Campaign notes section holding a few lines about the last session.](../../../assets/screens/campaign-notes.png)
 
 A campaign with none yet shows **Add campaign notes…** where they'd go. The notes take
 Markdown, so headings, lists, and bold text all come out formatted.

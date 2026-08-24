@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The custom spell editor on a homebrew spell (guides/making-your-own.md).
+name: custom-spell
+install: docs
+session: gm
+viewport: { width: 1280, height: 1300 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: '[role=tablist]', contains: Spells }
+  - click: { css: button, text: Spells }
+  - wait: { css: 'input[aria-label="Search spells"]' }
+  - fill: { css: 'input[aria-label="Search spells"]' }
+    value: Bellsong
+  - wait: { text: Bellsong Ward }
+  - click: { text: Bellsong Ward }
+  - wait: 700
+  - click: { css: button, text: Edit }
+  - wait: { css: 'input[aria-label="Spell name"]' }
+  - wait: 500
+
+# All four sections the page names, spanned so neither the title nor the footer is cut.
+clip:
+  span:
+    - { text: Edit spell }
+    - { text: Identity }
+    - { text: Mechanics }
+  pad: 18

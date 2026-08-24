@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# Add PC as a signed-in Game Master (concepts/combatants.md): the picker searches the
+# characters saved to the account instead of offering a blank form. The four are the
+# handbook's sample party, fixture data on the `gm` session.
+name: add-pc-dropdown-signedin
+install: docs
+session: gm
+viewport: { width: 1440, height: 900 }
+
+setup:
+  # The saved characters arrive from the account after first paint, and the picker says
+  # "No saved characters yet" until they do — so wait for one of them by name, not for
+  # the picker itself.
+  - click: { css: button, text: Add PC }
+  - wait: { text: Zara }
+  - wait: 500
+
+clip:
+  span:
+    - { css: button, text: Add PC }
+    - { text: Create a character… }
+  pad: 18
+
+marks:
+  btn: { css: button, text: Add PC }
+
+# The button only; the page's sentence names it, and the picker under it labels itself.
+callouts:
+  - { mark: btn }

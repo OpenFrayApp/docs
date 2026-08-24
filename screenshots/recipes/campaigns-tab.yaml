@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The Campaigns tab with one campaign open (guides/campaigns.md). Needs an account, so it
+# shoots through the `gm` session; the three campaigns are fixture data on that account.
+name: campaigns-tab
+install: docs
+session: gm
+# Short on purpose: the detail pane fills whatever height it is given, and the
+# content ends well before the buttons at its foot.
+viewport: { width: 1600, height: 780 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: '[role=tablist]', contains: Campaigns }
+  - click: { css: button, text: Campaigns }
+  - wait: { text: The Trials of Vaelthorn }
+  - click: { text: The Trials of Vaelthorn }
+  - wait: 800
+
+# The tab strip down to the card's own buttons, so the list and the rules pane both show.
+clip:
+  span:
+    - { css: '[role=tablist]' }
+    - { css: button, text: Delete }
+  pad: 22

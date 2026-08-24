@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+#
+# The campaign form, opened on an existing campaign so every field carries a value
+# (guides/campaigns.md). Needs an account; the campaign is fixture data on the `gm` session.
+name: campaign-form
+install: docs
+session: gm
+viewport: { width: 1280, height: 1100 }
+
+setup:
+  - click: { css: 'button[aria-label="Show the compendium"]' }
+  - wait: { css: '[role=tablist]', contains: Campaigns }
+  - click: { css: button, text: Campaigns }
+  - wait: { text: The Trials of Vaelthorn }
+  - click: { text: The Trials of Vaelthorn }
+  - wait: 700
+  - click: { css: button, text: Edit }
+  - wait: { css: 'input[aria-label="Campaign name"]' }
+  - wait: 500
+
+# Spanned from the title to the note under the notes box, so the form is whole: the
+# dialog is taller than the viewport, and cropping to its box cut the footer in half.
+clip:
+  span:
+    - { text: Edit campaign }
+    - { text: House rules }
+    - { css: 'p, span, div', contains: 'Markdown, only ever yours', pick: smallest }
+  pad: 18

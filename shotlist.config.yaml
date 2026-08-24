@@ -19,6 +19,19 @@ site:
   ready: 'button:has-text("Add creature"):visible, button[aria-label="Add to the encounter"]:visible'
   settle: 800
 
+  # The signed-in Game Master, for the captures an account gates: campaigns, characters,
+  # homebrew, and the import. `npx shotlist --login gm` opens a browser to sign in by
+  # hand and writes the cookies; a recipe then asks for them with `session: gm`.
+  #
+  # The file holds a live session, so it lives outside the tree git tracks and is never
+  # committed. `verify` is the account button, which the header only renders once
+  # Supabase reports a user — so an expired sign-in fails the login rather than writing a
+  # session that quietly shoots the anonymous console.
+  sessions:
+    gm:
+      path: .shotlist/gm.json
+      verify: 'button[aria-label="Account menu"]'
+
 style:
   color: '#E5484A' # the red STYLE.md specifies
   canvas: '#020617' # the console's own background, so a margin is invisible

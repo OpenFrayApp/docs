@@ -34,10 +34,14 @@ one that looks like a screen with signal waves coming off it.
 ![The Player view box with Start sharing outlined in red, and the PIN boxes and the backdrop tiles labeled.](../../../assets/screens/player-view-panel.png)
 
 Your players' screens fill in as soon as you start. If someone opens the link first, it
-says it's waiting and then fills in on its own. Nobody has to reload.
+shows **Connecting**, then fills in on its own. Nobody has to reload.
 
-Reloading the console doesn't interrupt them either: sharing picks up again on its own,
-and only stops when you press **Stop sharing** or close the tab.
+The top of the player view shows **Live** while its board is current. If the connection
+drops, it shows **Reconnecting** and the age of the last update for up to 30 seconds. The
+board is covered with **Connection lost** after that. A fresh update brings it back.
+
+Stopping the share or losing permission shows **Access ended** at once. The player needs
+a new link before the board can return.
 
 Everything else in the box (the PIN, the backdrop, the link's name) can be changed
 mid-fight, and reaches the table straight away.
@@ -238,8 +242,7 @@ sign in again first, before the next session.
 Nothing about the shared view is stored on a server. The board is passed to your
 players' screens as it changes and kept nowhere, so:
 
-- when you stop sharing, or close the tab, their screens say the Game Master has stepped
-  away;
+- when you stop sharing or revoke the link, their screens show **Access ended**;
 - there's no history to scroll back through after the session;
 - two Game Masters sharing at the same time never see each other's fights.
 

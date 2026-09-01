@@ -1,8 +1,10 @@
 Guidance for AI agents (and humans) working on the OpenFray handbook. The
 cross-repo agreements (code style, writing style, committing, working agreements)
 live in the
-[openfray repo's AGENTS.md](https://github.com/OpenFrayApp/openfray/blob/main/AGENTS.md),
-and every published word follows this
+[openfray repo's AGENTS.md](https://github.com/OpenFrayApp/openfray/blob/main/AGENTS.md).
+The shared workspace is `/Users/nico/GitHub/openfray/openfray-app/`. Read its
+`AGENTS.md` and `STYLE.md` before working here. For cross-repo work, read its
+`CONTEXT-MAP.md`. Every published word follows this
 repo's [STYLE.md](./STYLE.md) (the teaching voice), built on the shared core in
 that repo. **Read all three before writing here.** This file carries what is specific to this repo:
 the handbook itself and the screenshot pipeline.

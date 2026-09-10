@@ -41,7 +41,7 @@ export default defineConfig({
         Head: './src/components/Head.astro',
       },
       // Fathom analytics — privacy-friendly, cookieless (same site id as the console
-      // and marketing site), production only. The CSP in site/public/_headers already
+      // and marketing site), production only. The assembled deployment CSP already
       // allows cdn.usefathom.com across the whole deploy, including /docs.
       head: fathomHead,
       customCss: ['./src/styles/theme.css'],

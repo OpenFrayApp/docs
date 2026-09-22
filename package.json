@@ -12,6 +12,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.1",
     "@astrojs/sitemap": "^3.7.3",
     "@astrojs/starlight": "^0.41.4",
     "astro": "^7.0.2",
@@ -26,7 +27,7 @@
     "prettier": "^3.9.5",
     "prettier-plugin-astro": "^0.14.1",
     "shotlist": "^0.5.0",
-    "vitest": "^3.0.0"
+    "vitest": "^4.1.11"
   },
   "license": "AGPL-3.0-or-later"
 }

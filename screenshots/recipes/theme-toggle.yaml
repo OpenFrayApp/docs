@@ -10,11 +10,12 @@ setup:
   - click: { role: button, name: Settings and more }
   - wait: { css: '[role=menu]' }
 
-# The right end of the top bar, from Sign in across to the open menu. Matched by CSS
+# The right end of the top bar, from the view toggle through save status. Matched by CSS
 # rather than by role: a role query cannot be resolved inside a span.
 clip:
   span:
-    - { css: button, text: Sign in }
+    - { css: 'button[aria-label="Show the encounter"]' }
+    - { css: 'button[aria-label="Sign in to resume saving"]' }
     - { css: 'button[aria-label="Settings and more"]' }
     - { css: '[role=menu]' }
   pad: 22

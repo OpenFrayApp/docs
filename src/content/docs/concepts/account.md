@@ -47,14 +47,14 @@ takes over. You need to be 13 or older.
 
 From then on, these follow you between devices:
 
-| What                              | Why you'd want it                                                                 |
-| --------------------------------- | --------------------------------------------------------------------------------- |
-| **The fight you're running**      | close the laptop mid-session, pick it up next week exactly where you left off     |
-| **Creatures and spells you make** | your homebrew and imports, in your own library                                    |
-| **Characters**                    | build the party once instead of retyping them each session                        |
-| **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/) and private notes on the game |
-| **Your player-view link**         | name it something your table remembers, and keep it between sessions              |
-| **Saved fights**                  | keep a board [as it stands](/docs/guides/saving/) and come back to it             |
+| What                              | Why you'd want it                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------ |
+| **The fight you're running**      | close the laptop mid-session, pick it up next week exactly where you left off        |
+| **Creatures and spells you make** | your homebrew and imports, in your own library                                       |
+| **Characters**                    | build the party once instead of retyping them each session                           |
+| **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/) and private notes on the game    |
+| **Your player-view link**         | name it something your table remembers, and keep it between sessions                 |
+| **Saved fights**                  | keep a board [as it stands](/docs/guides/saving/) and come back to it                |
 | **What you've published**         | the [links you've handed out](/docs/guides/publishing/), and a way to take them down |
 
 Saving happens in the background while you play. You never wait for it, and there's no
@@ -67,6 +67,20 @@ Signing out is the one place that isn't symmetrical. The player-view link's name
 to the account, so signing out stops the share and mints a fresh anonymous link in its
 place. Anyone holding the old one is left behind. See
 [Naming the link](/docs/guides/player-view/#naming-the-link).
+
+## Checking save status
+
+The colored dot after the **Settings** gear shows the board’s save status. Hover over it,
+focus it with the keyboard, or tap it to read the message:
+
+- Green: **Saved**.
+- Amber: **Saving** or **Saving elsewhere**.
+- Gray: **Offline** or **Sign in to resume saving**.
+- Red: **Save failed** or **Copies need attention**.
+
+The same popover offers the actions available for that state: **Sign in**, **Retry saving**,
+**Download recovery copy**, **Take over saving**, or **Resolve copies**. Press **Escape**
+or click outside it to close it.
 
 ## Your profile
 

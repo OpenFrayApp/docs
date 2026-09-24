@@ -3,7 +3,7 @@
 # The three ways onto the board, each boxed and named (getting-started.md).
 name: add-buttons
 install: docs
-viewport: { width: 1440, height: 560 }
+viewport: { width: 1800, height: 560 }
 
 clip:
   span:

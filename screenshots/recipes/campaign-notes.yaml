@@ -6,7 +6,7 @@ name: campaign-notes
 install: docs
 session: gm
 # Short: the card stretches to the pane, and its content ends at the notes.
-viewport: { width: 1400, height: 600 }
+viewport: { width: 1800, height: 600 }
 
 setup:
   - click: { css: 'button[aria-label="Show the compendium"]' }

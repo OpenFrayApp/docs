@@ -5,7 +5,7 @@
 name: custom-creature
 install: docs
 session: gm
-viewport: { width: 1280, height: 1400 }
+viewport: { width: 1800, height: 1400 }
 
 setup:
   - click: { css: 'button[aria-label="Show the compendium"]' }

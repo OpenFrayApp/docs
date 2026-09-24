@@ -13,7 +13,7 @@
 name: share-encounter-form
 install: docs
 session: gm
-viewport: { width: 1440, height: 1300 }
+viewport: { width: 1800, height: 1300 }
 
 setup:
   # Adds exactly one creature and takes exactly that one away again, rather than clearing

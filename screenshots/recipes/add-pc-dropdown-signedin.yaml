@@ -6,7 +6,7 @@
 name: add-pc-dropdown-signedin
 install: docs
 session: gm
-viewport: { width: 1440, height: 900 }
+viewport: { width: 1800, height: 900 }
 
 setup:
   # The saved characters arrive from the account after first paint, and the picker says

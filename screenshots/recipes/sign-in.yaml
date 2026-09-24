@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
 name: sign-in
 install: docs
-viewport: { width: 800, height: 760 }
+viewport: { width: 1800, height: 760 }
 
 setup:
   - click: { role: button, name: Sign in, exact: true }
@@ -9,10 +9,7 @@ setup:
 
 clip:
   span:
-    - { css: '[role="dialog"][aria-label="Sign in"]' }
-
-marks:
-  terms: { css: '#sign-in-terms' }
-
-callouts:
-  - { mark: terms, text: Terms notice, place: right }
+    - { css: '[role="dialog"][aria-label="Sign in"] a[title="OpenFray home"]' }
+    - { css: button, text: Back to the console }
+    - { css: p, contains: 'You must be at least 13' }
+  pad: 24

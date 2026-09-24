@@ -6,7 +6,7 @@
 # run's shot; In lair is on first, so the counter reads the lair allowance.
 name: effect-legendary-resistance
 install: docs
-viewport: { width: 1500, height: 1120 }
+viewport: { width: 1800, height: 1120 }
 
 setup:
   - use: seed

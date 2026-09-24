@@ -4,7 +4,7 @@
 # first — an empty log has nothing to filter and nothing to clear.
 name: game-log-modal
 install: docs
-viewport: { width: 1440, height: 1000 }
+viewport: { width: 1800, height: 1000 }
 
 setup:
   - use: seed

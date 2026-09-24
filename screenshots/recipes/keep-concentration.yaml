@@ -22,11 +22,10 @@ setup:
     with: { who: Ogre, hp: 55 }
   - wait: 400
 
-# The heading down to the reaction button, which closes the cluster the prompt
-# lives in.
+# Include the whole control cluster below the prompt.
 clip:
   span:
     - { text: Controls }
     - { css: button, text: Roll CON save }
-    - { css: button, text: Use reaction }
+    - { css: button, text: Make ally }
   pad: 18

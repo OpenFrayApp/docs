@@ -4,7 +4,7 @@
 # viewport keeps the newest entry beside the bar, so the crop is a band rather than a page.
 name: dice-log
 install: docs
-viewport: { width: 1440, height: 560 }
+viewport: { width: 1800, height: 560 }
 
 # The swipe shell keeps a hidden copy of the dice bar in the DOM, so every query here
 # names the visible one.

@@ -4,7 +4,7 @@
 name: custom-spell
 install: docs
 session: gm
-viewport: { width: 1280, height: 1300 }
+viewport: { width: 1800, height: 1300 }
 
 setup:
   - click: { css: 'button[aria-label="Show the compendium"]' }

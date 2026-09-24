@@ -5,7 +5,7 @@
 # crop — the header and the three actions are the picture.
 name: legendary-actions
 install: docs
-viewport: { width: 1500, height: 1120 }
+viewport: { width: 1800, height: 1120 }
 
 setup:
   - use: add-creature

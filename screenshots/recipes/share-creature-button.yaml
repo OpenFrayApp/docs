@@ -9,7 +9,7 @@ session: gm
 # Short: the Source/License/share row docks to the bottom of the reading pane
 # (mt-auto), so a tall viewport leaves a dead gap between it and Ogre's short
 # Actions list. A shorter one keeps the two close together.
-viewport: { width: 1440, height: 620 }
+viewport: { width: 1800, height: 620 }
 
 setup:
   - click: { css: 'button[aria-label="Show the compendium"]' }

@@ -5,10 +5,14 @@ This inventory tracks the captures referenced by the handbook for
 
 ## Capture source
 
-The console source is `d7d5ed57a3371347799b4ce2d7ef97f4eb4e67cd`, pinned by the
-parent repository’s `develop` commit `7ba53c795289aaf39ef1d34bb17d96471d6ee534`.
-The console working tree was clean. Captures use `http://localhost:5199/console/`,
-the default dark theme, and the configured 2× scale.
+The initial console source was `d7d5ed57a3371347799b4ce2d7ef97f4eb4e67cd`, pinned by
+the parent repository’s `develop` commit `7ba53c795289aaf39ef1d34bb17d96471d6ee534`.
+
+The desktop-width follow-up uses console commit
+`32ba9c1af84e7eb2709b4b4ffd66e3225f353021`, which makes tablet Search icon-only.
+This follow-up commit is not yet pinned by the parent. Captures use
+`http://localhost:5199/console/`, the default dark theme, and the configured 2× scale.
+The two videos retain their initial capture source.
 
 Signed-in recipes use the dedicated Discord capture account, `sirdaniel`, through
 `.shotlist/gm.json`. That file is private and untracked. The saved session was verified
@@ -74,9 +78,17 @@ page’s alt text. Full-header captures show Search: the desktop layout, tablet 
 phone layout (magnifying-glass button), compendium, and creature dropdown.
 Close crops of individual controls intentionally omit unrelated header controls.
 
-The desktop capture uses 1800×1000, the tablet 1180×820, and the phone 375×812 CSS
-pixels. The tablet header wraps with Search visible; its tracker scrolls while the
+All desktop recipes use 1800 CSS pixels of width; their heights vary with the crop.
+Only `tablet-layout` (1180×820) and `phone-layout` (375×812) use smaller viewports.
+The tablet header fits one row with icon-only Search; its tracker scrolls while the
 controls and log sit below. The phone has the stacked header and bottom navigation.
+The sign-in capture has no annotation, and its alt text describes the unmarked page.
+Its crop includes the whole wordmark and the sign-in content. The concentration-check
+crop includes the full control cluster.
+
+The import and campaign-form recipes wait for Saved or Saving elsewhere before opening.
+Account recovery otherwise can restore the view after the form opens and erase its
+sample text. A populated-field check now rejects an empty capture.
 
 The Save and Share callouts were separated and their buttons outlined. Alt text now
 matches numbered goblins, the attack result without assuming a hit, and the tracker’s
@@ -112,8 +124,11 @@ tests, including a duplicate five-test suite in a local worktree. This repositor
 no separate typecheck script; the Astro build generated its content types. Recipe lint
 passed for all 87 recipe, macro, and data files.
 
-`npx shotlist --check --diff --keep-going` passed: 68 recipes matched, five were skipped,
-and none failed. Existing region masks exclude variable dice and clocks in nine recipes.
+The initial `npx shotlist --check --diff --keep-going` passed: 68 recipes matched,
+five were skipped, and none failed. The desktop-width comparison matched 65 recipes
+and skipped five. Campaign-form and import readiness timed out; sign-in compared against
+the crop revised during the run. All three targeted follow-up checks passed after the
+readiness and crop corrections, covering all 68 comparable recipes. Existing region masks exclude variable dice and clocks in nine recipes.
 Five existing recipes disable pixel comparison because they contain variable results: `attack-resolve`, `game-log-modal`,
 `immunity-damage`, `magic-resistance`, and `recap`. Their captures were reviewed visually.
 
@@ -121,5 +136,10 @@ The independent standards review found no new recipe or prose violations. It ide
 the stale retained captures as unresolved standards exceptions and noted the clipped
 importer heading. The spec review identified two prose corrections: the game-log page’s
 cleanup icon and the combatants page’s list of derived numbers. Both were corrected.
+
+The desktop-width follow-up passed standards and spec reviews with no findings.
+Console validation passed 3,482 unit tests, 31 browser tests, writer-identity checks,
+lint, and typechecking. Header screenshots were inspected at widths 820, 1025, 1180,
+and 1800. The 1180px header stays on one row; the 1025px header still wraps naturally.
 
 This audit does not declare the retained assets current or the release ready.

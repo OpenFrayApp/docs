@@ -9,7 +9,7 @@
 
 site:
   url: http://localhost:5199/console/
-  viewport: { width: 1440, height: 900 }
+  viewport: { width: 1800, height: 1000 }
   scale: 2
   theme: dark
   # The console renders before the compendium arrives, so a selector alone is not enough

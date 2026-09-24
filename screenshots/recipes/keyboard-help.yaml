@@ -4,7 +4,7 @@
 # capture doesn't depend on the keymap it is picturing (reference/keyboard.md).
 name: keyboard-help
 install: docs
-viewport: { width: 1440, height: 1000 }
+viewport: { width: 1800, height: 1000 }
 
 setup:
   - click: { role: button, name: Settings and more }

@@ -38,12 +38,17 @@ belong to the browser rather than to you, so another computer starts fresh.
 
 ## Signing in
 
-Sign in with **Discord** or **Google**. It's free, and the first time you sign in an
-account is created for you. Tick the box to accept the
-[terms](https://openfray.app/terms) and the
-[privacy policy](https://openfray.app/privacy) first: creating the account is what
-accepts them, and the sign-in screen is the last place to ask before Discord or Google
-takes over. You need to be 13 or older.
+Click **Sign in** in the console’s header, then **Continue with Discord** or
+**Continue with Google**. The provider opens so you can sign in. Your first sign-in
+creates a free account, and your current encounter stays on the board.
+
+By continuing with either provider, you agree to the
+[Terms of Service](https://openfray.app/terms/). The
+[Privacy Policy](https://openfray.app/privacy/) explains how your personal data is handled.
+The notice appears beside the provider buttons; there is no checkbox. You must be at least
+13 and meet your country’s minimum digital-consent age if higher.
+
+![The sign-in page with Google and Discord buttons and the Terms notice highlighted.](../../../assets/screens/sign-in.png)
 
 From then on, these follow you between devices:
 

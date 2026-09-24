@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+name: sign-in
+install: docs
+viewport: { width: 800, height: 760 }
+
+setup:
+  - click: { role: button, name: Sign in, exact: true }
+  - wait: { role: dialog, name: Sign in }
+
+clip:
+  span:
+    - { css: '[role="dialog"][aria-label="Sign in"]' }
+
+marks:
+  terms: { css: '#sign-in-terms' }
+
+callouts:
+  - { mark: terms, text: Terms notice, place: right }

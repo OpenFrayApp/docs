@@ -63,7 +63,20 @@ Removing creatures leaves the remaining labels unchanged. Changing the style aff
 new labels; existing labels and names you type stay as they are. Letters continue after
 Z as AA, AB, and so on.
 
-![The Tracker tab in Settings, with Creature labels set to Numeric and the dropdown outlined in red.](../../../assets/screens/creature-labels.png)
+To change the side markers in the tracker, use the color pickers below **Creature labels**:
+
+1. Click **Creature color** to choose a color for creatures opposing the party.
+2. Click **Ally color** to choose a color for player characters and allied creatures.
+3. Click **Done** to return to the tracker.
+
+Colors apply immediately and stay in this browser. They leave the shared player view,
+hit-point colors, and active-turn and selection highlights unchanged. Choose colors you
+can distinguish against your light or dark background.
+
+Click **Reset colors** to restore the theme’s red creature markers and light blue ally
+markers. This leaves your creature label style unchanged.
+
+![The Tracker tab in Settings, with Creature labels outlined in red and Creature color, Ally color, and Reset colors below.](../../../assets/screens/creature-labels.png)
 
 ## Player view
 

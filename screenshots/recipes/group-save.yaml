@@ -3,7 +3,7 @@
 # The Group save box with its six working parts boxed (fight/saves.md).
 name: group-save
 install: docs
-viewport: { width: 1440, height: 1000 }
+viewport: { width: 1800, height: 1000 }
 
 setup:
   - use: seed

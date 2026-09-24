@@ -4,7 +4,7 @@
 # from the stat block, the targets picked, and the recorded results.
 name: save-resolve
 install: docs
-viewport: { width: 1500, height: 1120 }
+viewport: { width: 1800, height: 1120 }
 
 setup:
   - use: seed

@@ -6,9 +6,11 @@
 name: import-json
 install: docs
 session: gm
-viewport: { width: 1280, height: 1000 }
+viewport: { width: 1800, height: 1000 }
 
 setup:
+  # Account recovery can restore the active view after the first paint.
+  - wait: { css: 'button[aria-label="Saved"], button[aria-label="Saving elsewhere"]' }
   - click: { css: 'button[aria-label="Show the compendium"]' }
   - wait: { css: button, text: Import a creature }
   - click: { css: button, text: Import a creature }
@@ -33,6 +35,7 @@ setup:
   - optional:
       - blur: { css: ':focus' }
   - wait: 600
+  - wait: { css: 'textarea[aria-label="Creature JSON"]:not(:placeholder-shown)' }
 
 clip:
   css: '[role="dialog"][aria-label="Import creature"]'

@@ -4,7 +4,7 @@
 # (reference/settings.md#keyboard).
 name: keyboard-settings
 install: docs
-viewport: { width: 1280, height: 1200 }
+viewport: { width: 1800, height: 1200 }
 
 setup:
   - use: open-settings

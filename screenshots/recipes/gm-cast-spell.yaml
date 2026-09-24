@@ -6,7 +6,7 @@
 # roll, so the failure needs no luck. A plain crop.
 name: gm-cast-spell
 install: docs
-viewport: { width: 1500, height: 1120 }
+viewport: { width: 1800, height: 1120 }
 
 setup:
   - use: seed

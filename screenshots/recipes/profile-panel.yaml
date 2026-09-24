@@ -11,7 +11,7 @@
 name: profile-panel
 install: docs
 session: gm
-viewport: { width: 900, height: 700 }
+viewport: { width: 1800, height: 700 }
 
 setup:
   - click: { css: 'button[aria-label="Account menu"]' }

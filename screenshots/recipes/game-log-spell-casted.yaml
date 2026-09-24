@@ -7,7 +7,7 @@ name: game-log-spell-casted
 install: docs
 # Tall, so the log column holds every entry of the cast without scrolling the
 # save roll out from under its heading.
-viewport: { width: 1440, height: 1200 }
+viewport: { width: 1800, height: 1200 }
 
 setup:
   - use: seed

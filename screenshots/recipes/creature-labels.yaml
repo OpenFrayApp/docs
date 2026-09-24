@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
 name: creature-labels
 install: docs
-viewport: { width: 1280, height: 900 }
+viewport: { width: 1800, height: 900 }
 
 setup:
   - use: open-settings

@@ -48,7 +48,7 @@ By continuing with either provider, you agree to the
 The notice appears beside the provider buttons; there is no checkbox. You must be at least
 13 and meet your country’s minimum digital-consent age if higher.
 
-![The sign-in page with Google and Discord buttons and the Terms notice highlighted.](../../../assets/screens/sign-in.png)
+![The sign-in page with Google and Discord buttons and the Terms notice.](../../../assets/screens/sign-in.png)
 
 From then on, these follow you between devices:
 

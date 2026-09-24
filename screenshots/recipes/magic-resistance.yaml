@@ -4,7 +4,7 @@
 # creature with Magic Resistance, and its row shows the two dice advantage rolled.
 name: magic-resistance
 install: docs
-viewport: { width: 1500, height: 1120 }
+viewport: { width: 1800, height: 1120 }
 
 setup:
   - use: seed

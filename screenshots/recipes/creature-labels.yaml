@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+name: creature-labels
+install: docs
+viewport: { width: 1280, height: 900 }
+
+setup:
+  - use: open-settings
+  - click: { role: tab, name: Tracker, exact: true }
+  - wait: { css: '#creature-label-style' }
+
+clip:
+  span:
+    - { heading: Settings }
+    - { css: '[role=tabpanel]', contains: Creature labels, pick: first }
+  pad: 22
+
+marks:
+  labels: { css: '#creature-label-style' }
+
+callouts:
+  - { mark: labels, text: Creature labels, place: bottom }

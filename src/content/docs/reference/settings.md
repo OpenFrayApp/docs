@@ -15,8 +15,8 @@ no account needed. Click the **gear** at the top right and choose **Settings**. 
 menu holds the light and dark switch, the keyboard cheat sheet, a link to this handbook,
 and **Report a bug**, which opens a new issue on GitHub.
 
-Settings opens on four tabs (**Libraries**, **Player view**, **Keyboard**, and
-**Importer**) and starts on Libraries.
+Settings opens on five tabs (**Libraries**, **Tracker**, **Player view**, **Keyboard**,
+and **Importer**) and starts on Libraries.
 
 ## Libraries
 
@@ -47,23 +47,41 @@ remembered in your browser, so it sticks whether or not you're signed in.
 
 ![The Settings screen on its Libraries tab, with the tab strip and the library list outlined in red and labeled.](../../../assets/screens/settings-panel.png)
 
+## Tracker
+
+Open the **Tracker** tab and choose **Creature labels** to set how repeated creatures
+are labeled:
+
+| Style                 | Examples                        |
+| --------------------- | ------------------------------- |
+| **Numeric** (default) | Goblin 1, Goblin 2, Goblin 3    |
+| **Roman numerals**    | Goblin I, Goblin II, Goblin III |
+| **Letters**           | Goblin A, Goblin B, Goblin C    |
+
+A single creature keeps its name. Adding a second matching creature labels both.
+Removing creatures leaves the remaining labels unchanged. Changing the style affects
+new labels; existing labels and names you type stay as they are. Letters continue after
+Z as AA, AB, and so on.
+
+![The Tracker tab in Settings, with Creature labels set to Numeric and the dropdown outlined in red.](../../../assets/screens/creature-labels.png)
+
 ## Player view
 
 The **player view** is a read-only screen your players follow on their own devices. Its
 tab decides how much of a fight reaches them:
 
-| Setting                              | What you can choose                         | Starts as            |
-| ------------------------------------ | ------------------------------------------- | -------------------- |
-| **Creature hit points**              | In words (Bloodied) · Exact number · Hidden | In words             |
-| **Creature armor class**             | Hidden · Shown                              | Hidden               |
-| **Creature rolls**                   | Shown · Hidden                              | Shown                |
-| **Creature conditions**              | Shown · Hidden                              | Shown                |
-| **Creatures arriving mid-encounter** | Shown · Hidden until revealed               | Shown                |
-| **Game log**                         | This encounter only · The whole session     | This encounter only  |
-| **Encounter clocks**                 | Shown · Hidden                              | Shown                |
-| **End-of-encounter summary**         | Shown · Hidden                              | Shown                |
-| **Campaign name**                    | Shown · Hidden                              | Hidden               |
-| **Game Master name**                 | Shown · Hidden                              | Hidden               |
+| Setting                              | What you can choose                         | Starts as           |
+| ------------------------------------ | ------------------------------------------- | ------------------- |
+| **Creature hit points**              | In words (Bloodied) · Exact number · Hidden | In words            |
+| **Creature armor class**             | Hidden · Shown                              | Hidden              |
+| **Creature rolls**                   | Shown · Hidden                              | Shown               |
+| **Creature conditions**              | Shown · Hidden                              | Shown               |
+| **Creatures arriving mid-encounter** | Shown · Hidden until revealed               | Shown               |
+| **Game log**                         | This encounter only · The whole session     | This encounter only |
+| **Encounter clocks**                 | Shown · Hidden                              | Shown               |
+| **End-of-encounter summary**         | Shown · Hidden                              | Shown               |
+| **Campaign name**                    | Shown · Hidden                              | Hidden              |
+| **Game Master name**                 | Shown · Hidden                              | Hidden              |
 
 Player characters always show in full, whatever you pick here, and so does anyone
 fighting alongside them. Every choice reaches your players' screens straight away,

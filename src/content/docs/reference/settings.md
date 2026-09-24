@@ -69,19 +69,33 @@ To change the side markers in the tracker, use the color pickers below **Creatur
 2. Click **Ally color** to choose a color for player characters and allied creatures.
 3. Click **Done** to return to the tracker.
 
-Colors apply immediately and stay in this browser. They leave the shared player view,
-hit-point colors, and active-turn and selection highlights unchanged. Choose colors you
-can distinguish against your light or dark background.
+Colors apply immediately and stay in this browser. The shared player view follows these
+colors unless you set separate colors on the **Player view** tab. Hit-point colors and
+active-turn and selection highlights stay unchanged.
 
-Click **Reset colors** to restore the theme’s red creature markers and light blue ally
-markers. This leaves your creature label style unchanged.
+Click the counterclockwise arrow beside a color box to reset that color. The buttons are
+named **Reset creature color** and **Reset ally color**. They restore the theme’s red
+creature markers and light blue ally markers independently.
 
-![The Tracker tab in Settings, with Creature labels outlined in red and Creature color, Ally color, and Reset colors below.](../../../assets/screens/creature-labels.png)
+Choose colors you can distinguish against your light or dark background.
+
+![The Tracker tab in Settings, with Creature labels outlined in red and a reset arrow beside each color picker.](../../../assets/screens/creature-labels.png)
 
 ## Player view
 
-The **player view** is a read-only screen your players follow on their own devices. Its
-tab decides how much of a fight reaches them:
+The **player view** is a read-only screen your players follow on their own devices.
+You choose its marker colors for everyone watching:
+
+1. Open the **Player view** tab in **Settings**.
+2. Choose **Creature color** or **Ally color** to override that tracker color on the shared screen.
+3. Click the counterclockwise reset arrow beside an override to make it follow **Tracker** again.
+
+**Follows Tracker** means changes on the **Tracker** tab also change that player-view
+color. **Custom player-view color** stays as you set it, even when you change Tracker.
+Each color follows or overrides independently. These choices leave your own tracker
+unchanged and are remembered in your browser.
+
+The other settings decide how much of a fight reaches your players:
 
 | Setting                              | What you can choose                         | Starts as           |
 | ------------------------------------ | ------------------------------------------- | ------------------- |

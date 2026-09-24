@@ -21,7 +21,7 @@ merges into one list in initiative order.
 Every row holds the four things you check most often: initiative, name, hit points, and
 armor class.
 
-![One tracker row, with its initiative, name, hit points and armor class outlined in red and labeled.](../../../assets/screens/tracker-row.png)
+![One tracker row, with its initiative, hit points, and armor class outlined in red and labeled.](../../../assets/screens/tracker-row.png)
 
 Around those four, a row can carry:
 

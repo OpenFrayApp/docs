@@ -19,7 +19,7 @@ clip: { css: form, contains: Roll initiative, pick: last, pad: 10 }
 
 marks:
   zara: { label: Initiative for Zara }
-  surprise: { label: Mark Goblin Minion surprised }
+  surprise: { label: Mark Goblin Minion 1 surprised }
 
 # Zara's box is mid-modal, so its label goes above; the surprise column is the last thing
 # before the modal's edge, so its label comes in from the side rather than down through
@@ -35,5 +35,5 @@ check:
   ignore:
     - { label: Initiative for Ogre }
     - { label: Initiative for Goblin Boss }
-    - { label: Initiative for Goblin Minion, exact: true }
+    - { label: Initiative for Goblin Minion 1, exact: true }
     - { label: Initiative for Goblin Minion 2 }

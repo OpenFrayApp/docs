@@ -11,7 +11,7 @@ steps:
     as: row
     steps:
       - optional:
-          - fill: { label: Initiative for $row.who }
+          - fill: { label: Initiative for $row.who, exact: true }
             value: $row.roll
   - click: { role: button, name: Start combat }
   - wait: 400

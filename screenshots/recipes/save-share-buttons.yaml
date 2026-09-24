@@ -16,16 +16,12 @@ clip:
   span:
     - { css: 'button[aria-label="Save this encounter"]' }
     - { css: 'button[aria-label="Share this encounter"]' }
-  grow: { left: 60, right: 60, top: 60, bottom: 20 }
+  grow: { left: 90, right: 100, top: 20, bottom: 20 }
 
 marks:
   save: { css: 'button[aria-label="Save this encounter"]' }
   share: { css: 'button[aria-label="Share this encounter"]' }
 
-# Labelled from above rather than below: the difficulty readout sits directly under
-# this pair, and labelling downward would have pulled it into frame for no reason.
-# Pulled apart too, so the two words don't run into each other underneath buttons this
-# close together.
 callouts:
-  - { mark: save, text: Save, place: top, box: false, dx: -14 }
-  - { mark: share, text: Share, place: top, box: false, dx: 14 }
+  - { mark: save, text: Save, place: left }
+  - { mark: share, text: Share, place: right }

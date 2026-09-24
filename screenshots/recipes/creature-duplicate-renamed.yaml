@@ -31,12 +31,11 @@ clip:
     - { css: span, text: (Goblin Minion) }
   grow: { left: 14, right: 460, top: 14, bottom: 14 }
 
-# The names are plain spans — a tracker row is a clickable div, not a button. Snik
-# is scoped to its row because the stat header carries the same word.
+# Snik is scoped to its row because the stat header carries the same word.
 marks:
-  first: { css: span, text: Goblin Minion, visible: true }
-  second: { css: span, text: Goblin Minion 2, visible: true }
-  renamed: { css: span, text: Snik, within: { trackerRow: Snik } }
+  first: { css: 'button, span', text: Goblin Minion 1, visible: true }
+  second: { css: 'button, span', text: Goblin Minion 2, visible: true }
+  renamed: { css: 'button, span', text: Snik, within: { trackerRow: Snik } }
   header:
     span:
       - { css: h3, text: Snik }

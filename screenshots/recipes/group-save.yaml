@@ -12,7 +12,7 @@ setup:
   - wait: 400
   # Chosen from inside the dialog: a creature's tracker row is a button with the same
   # name, and which of the two comes first depends on who won initiative.
-  - each: [Goblin Boss, Goblin Minion, Goblin Minion 2]
+  - each: [Goblin Boss, Goblin Minion 1, Goblin Minion 2]
     as: who
     steps:
       - click:

@@ -28,7 +28,7 @@ and you take the damage off the target yourself. See [Honest dice](/docs/concept
    modifiers from [effects](/docs/concepts/effects/), and shows the total against the
    target's armor class: **Hit** or **Miss**.
 
-![The attack box with the target, the resolved roll reading Hit, and the Apply to Zara button outlined in red and labeled.](../../../assets/screens/attack-resolve.png)
+![The attack box with the target, the resolved roll, and the Apply to Zara button outlined in red and labeled.](../../../assets/screens/attack-resolve.png)
 
 **Roll attack** becomes **Reroll** after the first roll, so you can roll again if you
 need to.

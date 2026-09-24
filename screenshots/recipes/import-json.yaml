@@ -34,8 +34,6 @@ setup:
       - blur: { css: ':focus' }
   - wait: 600
 
-# "Creature JSON" is the textarea's accessible name rather than text on the page, so the
-# dialog is found by the sentence above the box instead.
 clip:
-  dialogWith: 'Paste what the OpenFray Importer copied'
+  css: '[role="dialog"][aria-label="Import creature"]'
   pad: 20

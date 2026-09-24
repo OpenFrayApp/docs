@@ -48,14 +48,19 @@ characters and add them from the compendium instead:
 
 ![The Add PC button outlined in red, with the signed-in picker open, showing a search over saved characters and a Create a character link.](../../../assets/screens/add-pc-dropdown-signedin.png)
 
-A saved character can carry more: ability scores, private notes, and its class, level,
-and the armor it wears. Those last three feed exactly two numbers, each behind its own
-switch. Tick **Calculate AC automatically** and OpenFray works armor class out from the
-armor, shield, and ability scores, including the Barbarian and Monk unarmored numbers,
-and updates it when the character dons or doffs armor mid-fight. Leave the initiative
-modifier blank and it's derived from Dexterity and the class bonuses that touch
-initiative. Type either number yourself and your number wins. Everything else about the
-character stays yours to write. OpenFray still never runs a build.
+A saved character can carry ability scores, private notes, class, level, and worn armor.
+These can supply four numbers:
+
+- Armor class: tick **Calculate AC automatically** to use armor, shield, and ability
+  scores, including Barbarian and Monk unarmored formulas. Turn it off to enter your own
+  number.
+- Initiative modifier: leave it blank to use Dexterity and applicable class bonuses.
+  Type a number to override the calculation.
+- Spell attack bonus and spell save DC: these use class, level, and ability scores
+  when you [cast a spell](/docs/guides/spells/). You can change the numbers for the cast.
+  Unsupported classes and multiclass characters leave them for you to enter.
+
+Other character details remain yours to write.
 
 ## Quick adds
 
@@ -86,7 +91,7 @@ tell them apart. The stat block keeps the original name. If you rename one yours
 shows your name with the real one after it (for example _Snik (Goblin)_), so you always
 know what it is.
 
-![Three goblins in the tracker outlined in red: Goblin Minion, Goblin Minion 2, and a renamed Snik whose stat block reads Snik (Goblin Minion).](../../../assets/screens/creature-duplicate-renamed.png)
+![Goblin Minion 1, Goblin Minion 2, and Snik outlined in the tracker, with Snik (Goblin Minion) outlined in the stat block.](../../../assets/screens/creature-duplicate-renamed.png)
 
 ## What each row shows
 

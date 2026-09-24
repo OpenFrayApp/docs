@@ -51,7 +51,7 @@ in this fight are shown:
 | **Note**          | Notes you left, and anything else.              |
 
 **Clear log** empties the history. The log is also cleared when you remove everyone from
-the board with the skull (see
+the board with the trash can (see
 [Clearing the board](/docs/guides/rests/#clearing-the-board)); a plain **Stop** keeps
 it.
 

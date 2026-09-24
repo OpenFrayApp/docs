@@ -45,8 +45,8 @@ creates a free account, and your current encounter stays on the board.
 By continuing with either provider, you agree to the
 [Terms of Service](https://openfray.app/terms/). The
 [Privacy Policy](https://openfray.app/privacy/) explains how your personal data is handled.
-The notice appears beside the provider buttons; there is no checkbox. You need to be
-13 or older.
+The notice appears beside the provider buttons; there is no checkbox. You must be at least
+13 and meet your country’s minimum digital-consent age if higher.
 
 ![The sign-in page with Google and Discord buttons and the Terms notice highlighted.](../../../assets/screens/sign-in.png)
 

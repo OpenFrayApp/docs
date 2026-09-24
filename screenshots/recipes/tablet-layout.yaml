@@ -18,5 +18,5 @@ clip: viewport
 # and the clocks keep real time.
 check:
   ignore:
-    - { css: div.border-t, contains: Game log, pick: smallest }
+    - { css: 'div:has(> div > h3)', contains: Game log, pick: smallest }
     - { css: div, contains: Real, matching: In-game, pick: smallest }

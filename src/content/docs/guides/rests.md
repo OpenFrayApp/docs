@@ -65,15 +65,15 @@ mid-fight:
 
 - the **broom** removes every foe and keeps your players, for the next fight in the same
   session;
-- the **skull** removes everyone and starts fresh. It also clears the game log, so use
+- the **trash can** removes everyone and starts fresh. It also clears the game log, so use
   it when you're done with that story entirely.
 
-![The skull and broom at the top of the tracker, labeled in red "Remove everyone" and "Remove foes only".](../../../assets/screens/clear-board.png)
+![The trash can and broom at the top of the tracker, labeled in red "Remove everyone" and "Remove foes only".](../../../assets/screens/clear-board.png)
 
 Both ask before they do it.
 
 :::note[Stop doesn't clear the board]
 **Stop** ends the fight but keeps everyone on the board, with their hit points and
-effects intact. Use the broom or the skull to take the board apart. See
+effects intact. Use the broom or the trash can to take the board apart. See
 [Run rounds & turns](/docs/guides/encounters/#rounds-and-turns).
 :::

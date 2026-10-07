@@ -1,0 +1,8 @@
+# Sample names and required practice values for isolated anonymous tutorial boards.
+pc: { name: Zara, hp: 30, ac: 12, init: 0 }
+ally: { name: Mira, hp: 30, ac: 12 }
+initiative:
+  - { who: Zara, roll: 20 }
+  - { who: Mira, roll: 19 }
+  - { who: Mage, roll: 18 }
+  - { who: Ogre, roll: 17 }

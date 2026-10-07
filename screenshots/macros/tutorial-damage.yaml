@@ -1,0 +1,12 @@
+# Record the prescribed outside damage through the Ogre's real hit-point editor.
+steps:
+  - use: tutorial-start
+  - click:
+      css: 'button:not([aria-label])'
+      matching: '^\d+$'
+      within: { trackerRow: Ogre }
+      pick: first
+  - fill: { label: Hit points for Ogre, exact: true }
+    value: '-3'
+  - press: Enter
+  - wait: 400

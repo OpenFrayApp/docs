@@ -1,0 +1,18 @@
+name: tutorial-fireball
+install: docs
+url: http://localhost:5199/console/
+viewport: { width: 1440, height: 820 }
+retries: 0
+setup:
+  - use: tutorial-prone
+  - click: { role: button, name: Fireball, startsWith: Fireball }
+  - wait: 400
+clip:
+  span:
+    - { css: '[role=dialog][aria-label="Mage casts Fireball"]' }
+    - { css: '[data-tutorial-guide]' }
+  pad: 16
+marks:
+  cast: { role: button, name: Cast, exact: true }
+callouts:
+  - { mark: cast }

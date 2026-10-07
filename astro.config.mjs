@@ -58,6 +58,7 @@ export default defineConfig({
           items: [
             { label: 'Overview', link: '/' },
             { label: 'Getting started', link: '/getting-started/' },
+            { label: 'Interactive tutorial', link: '/guides/tutorial/' },
           ],
         },
         {

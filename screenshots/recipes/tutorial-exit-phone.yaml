@@ -1,0 +1,13 @@
+name: tutorial-exit-phone
+install: docs
+url: http://localhost:5199/console/
+viewport: { width: 375, height: 812 }
+retries: 0
+setup:
+  - click: { role: button, name: Start tutorial, exact: true }
+  - click: { role: button, name: Exit tutorial, exact: true }
+clip: viewport
+marks:
+  return: { role: button, name: Return to tutorial, exact: true }
+callouts:
+  - { mark: return }

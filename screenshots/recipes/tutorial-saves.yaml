@@ -1,0 +1,23 @@
+name: tutorial-saves
+install: docs
+url: http://localhost:5199/console/
+viewport: { width: 1440, height: 820 }
+retries: 0
+setup:
+  - use: tutorial-fireball
+clip:
+  span:
+    - { css: '[role=dialog][aria-label="Mage · Fireball"]' }
+    - { css: '[data-tutorial-guide]' }
+  pad: 16
+marks:
+  apply: { role: button, name: Apply damage, exact: true }
+  targets: { css: 'ul', containingAll: [Mira, Save, Fail], pick: smallest }
+callouts:
+  - { mark: targets, n: 3, place: corner, badge: tr, inside: true }
+  - { mark: apply, n: 4, place: corner, badge: tr, inside: true }
+check:
+  ignore:
+    - { css: 'ul', containingAll: [Mira, Save, Fail], pick: smallest, pad: 12 }
+    - { css: 'div.mb-2', contains: '8d6', pick: smallest, pad: 4 }
+    - { css: div, containingAll: [Apply condition, '+1 Exhaustion'], pick: smallest }

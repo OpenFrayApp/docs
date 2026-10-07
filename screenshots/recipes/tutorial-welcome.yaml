@@ -1,0 +1,16 @@
+name: tutorial-welcome
+install: docs
+url: http://localhost:5199/console/
+viewport: { width: 1440, height: 820 }
+retries: 0
+setup:
+  - wait: { heading: Learn the console }
+clip: { role: dialog, name: Learn the console, pad: 16 }
+marks:
+  start: { role: button, name: Start tutorial, exact: true }
+  postpone: { role: button, name: Not now, exact: true }
+  preference: { label: Never show this again }
+callouts:
+  - { mark: start }
+  - { mark: postpone }
+  - { mark: preference }

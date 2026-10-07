@@ -1,0 +1,5 @@
+# Guide manual initiative for all four participants, using normal controls.
+steps:
+  - use: tutorial-setup
+  - use: start
+    with: { rolls: $tutorial.initiative }

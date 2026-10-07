@@ -1,0 +1,7 @@
+# Apply the condition after the genuine attack, preserving its result.
+steps:
+  - use: tutorial-attack
+  - click: { role: button, name: Apply effect, exact: true }
+  - click: { role: button, name: Prone, exact: true }
+  - click: { role: button, name: Apply, exact: true }
+  - wait: 400

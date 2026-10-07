@@ -1,0 +1,29 @@
+name: tutorial-initiative
+install: docs
+url: http://localhost:5199/console/
+viewport: { width: 1440, height: 820 }
+retries: 0
+setup:
+  - use: tutorial-setup
+  - click: { role: button, name: Begin }
+  - each: $tutorial.initiative
+    as: row
+    steps:
+      - fill: { label: Initiative for $row.who, exact: true }
+        value: $row.roll
+  - optional: [{ blur: { css: ':focus' } }]
+  - wait: 400
+clip:
+  span:
+    - { css: 'form[data-tutorial=initiative]' }
+    - { css: '[data-tutorial-guide]' }
+  pad: 16
+marks:
+  initiatives:
+    span:
+      - { css: 'input[aria-label="Initiative for Zara"]' }
+      - { css: 'input[aria-label="Initiative for Ogre"]' }
+  guide: { css: '[data-tutorial-guide]' }
+callouts:
+  - { mark: initiatives }
+  - { mark: guide }

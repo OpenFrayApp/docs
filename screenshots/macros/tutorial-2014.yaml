@@ -1,0 +1,8 @@
+# Select the older active SRD through Settings without changing a campaign.
+steps:
+  - click: { role: button, name: Not now, exact: true }
+  - use: open-settings
+  - check: { role: checkbox, name: Basic Rules 2014 }
+  - wait: 400
+  - uncheck: { role: checkbox, name: Basic Rules 2024 }
+  - wait: 400

@@ -1,0 +1,26 @@
+# The Mage's ordinary resource-spending stat-block path, not global Cast spell.
+steps:
+  - use: tutorial-prone
+  - click: { role: button, name: Fireball, startsWith: Fireball }
+  - click: { role: button, name: Cast, exact: true }
+  - click:
+      {
+        role: button,
+        name: Mira,
+        exact: true,
+        within: { css: '[role=dialog][aria-label="Mage · Fireball"]' },
+      }
+  - click:
+      {
+        role: button,
+        name: Ogre,
+        exact: true,
+        within: { css: '[role=dialog][aria-label="Mage · Fireball"]' },
+      }
+  - click: { role: button, name: Roll saves, exact: true }
+  # Declared sample-data external successful save. Ogre and damage roll genuinely.
+  - click:
+      css: button
+      text: Save
+      within: { css: li, containingAll: [Mira, Save, Fail], pick: smallest }
+  - wait: 500

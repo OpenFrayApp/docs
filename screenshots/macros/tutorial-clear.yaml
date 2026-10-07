@@ -1,0 +1,8 @@
+# End the actual practice fight and dismiss its recap before native clearing.
+steps:
+  - use: tutorial-fireball
+  - click: { role: button, name: Apply damage, exact: true }
+  - click: { role: button, name: Next turn, exact: true }
+  - click: { role: button, name: Stop, exact: true }
+  - click: { role: button, name: Done, exact: true }
+  - wait: 500

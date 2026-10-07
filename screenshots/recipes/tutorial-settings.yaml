@@ -1,0 +1,17 @@
+name: tutorial-settings
+install: docs
+url: http://localhost:5199/console/
+viewport: { width: 1440, height: 820 }
+retries: 0
+setup:
+  - click: { role: button, name: Not now, exact: true }
+  - use: open-settings
+clip:
+  span:
+    - { heading: Settings }
+    - { css: 'label', contains: Basic Rules 2014, pick: smallest }
+  pad: 16
+marks:
+  start: { role: button, name: Start tutorial, exact: true }
+callouts:
+  - { mark: start }

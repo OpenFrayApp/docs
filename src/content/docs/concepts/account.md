@@ -40,7 +40,8 @@ belong to the browser rather than to you, so another computer starts fresh.
 
 Click **Sign in** in the console’s header, then **Continue with Discord** or
 **Continue with Google**. The provider opens so you can sign in. Your first sign-in
-creates a free account, and your current encounter stays on the board.
+creates a free account. The tutorial offers this choice only after clearing its practice
+board and log; it promises no encounter transfer through the provider redirect.
 
 By continuing with either provider, you agree to the
 [Terms of Service](https://openfray.app/terms/). The
@@ -52,26 +53,47 @@ The notice appears beside the provider buttons; there is no checkbox. You must b
 
 From then on, these follow you between devices:
 
-| What                              | Why you'd want it                                                                 |
-| --------------------------------- | --------------------------------------------------------------------------------- |
-| **The fight you're running**      | close the laptop mid-session, pick it up next week exactly where you left off     |
-| **Creatures and spells you make** | your homebrew and imports, in your own library                                    |
-| **Characters**                    | build the party once instead of retyping them each session                        |
-| **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/) and private notes on the game |
-| **Your player-view link**         | name it something your table remembers, and keep it between sessions              |
-| **Saved fights**                  | keep a board [as it stands](/docs/guides/saving/) and come back to it             |
+| What                              | Why you'd want it                                                                    |
+| --------------------------------- | ------------------------------------------------------------------------------------ |
+| **The fight you're running**      | close the laptop mid-session, pick it up next week exactly where you left off        |
+| **Creatures and spells you make** | your homebrew and imports, in your own library                                       |
+| **Characters**                    | build the party once instead of retyping them each session                           |
+| **Campaigns**                     | your table's [house rules](/docs/guides/campaigns/) and private notes on the game    |
+| **Your player-view link**         | name it something your table remembers, and keep it between sessions                 |
+| **Saved fights**                  | keep a board [as it stands](/docs/guides/saving/) and come back to it                |
 | **What you've published**         | the [links you've handed out](/docs/guides/publishing/), and a way to take them down |
 
 Saving happens in the background while you play. You never wait for it, and there's no
 save button. Saving a fight to come back to later is a different thing, with its own
 button: see [Save a fight for later](/docs/guides/saving/).
 
-Nothing you did before signing in is thrown away. The fight on your board stays put.
-
 Signing out is the one place that isn't symmetrical. The player-view link's name belongs
 to the account, so signing out stops the share and mints a fresh anonymous link in its
 place. Anyone holding the old one is left behind. See
 [Naming the link](/docs/guides/player-view/#naming-the-link).
+
+## Tutorial invitation preferences
+
+The [Interactive tutorial](/docs/guides/tutorial/) works without an account. Completion
+or permanent dismissal stops automatic invitations on this device. **Not now** and
+**Yes, another time** postpone them only for the current session.
+
+When signed in, completion or permanent dismissal is also saved as an account preference
+in the background. Either the device preference or the account preference suppresses
+automatic invitations. An existing account preference stays in place when you use a
+fresh device. Anonymous completion or permanent dismissal transfers to your account
+after sign-in.
+
+Preference changes apply locally first. If the account save fails, the console shows:
+“The tutorial preference couldn’t be saved to your account. It still applies on this
+device.” Cross-device persistence is unconfirmed until the account save succeeds.
+If browser storage is unavailable, the preference still applies while the console stays
+open; it may not survive a reload. These failures leave the console usable.
+
+**Start tutorial** in Settings or search remains available despite suppression.
+Guide step progress is not stored; replay starts from the beginning on an empty board.
+Clearing a signed-in practice fight removes its encounter snapshots and log, while the
+new practice character and existing characters stay in the roster.
 
 ## Your profile
 

@@ -2,9 +2,9 @@ Guidance for AI agents (and humans) working on the OpenFray handbook. The
 cross-repo agreements (code style, writing style, committing, working agreements)
 live in the
 [openfray repo's AGENTS.md](https://github.com/OpenFrayApp/openfray/blob/main/AGENTS.md).
-The shared workspace is `/Users/nico/GitHub/openfray/openfray-app/`. Read its
-`AGENTS.md` and `STYLE.md` before working here. For cross-repo work, read its
-`CONTEXT-MAP.md`. Every published word follows this
+Read the parent's [STYLE.md](https://github.com/OpenFrayApp/openfray/blob/main/STYLE.md)
+before working here. For cross-repo work, read its
+[context map](https://github.com/OpenFrayApp/openfray/blob/main/CONTEXT-MAP.md). Every published word follows this
 repo's [STYLE.md](./STYLE.md) (the teaching voice), built on the shared core in
 that repo. **Read all three before writing here.** This file carries what is specific to this repo:
 the handbook itself and the screenshot pipeline.
@@ -78,15 +78,15 @@ fixture data belongs to both and to neither exclusively.
 
 What is there, and whose it is:
 
-| Fixture | Kept for |
-| ------- | -------- |
-| Three campaigns, three homebrew creatures, one homebrew spell, one saved encounter | the handbook |
-| The sample party from `data/party.yaml` as saved characters (Zara, Mira, Tav, Ren) | the handbook |
-| Four more saved characters (Bram Ironfist, Elowen Vale, Kessa Quick, Sister Mirad) | the site |
-| The account's display name, and whatever is on the board | the site, mostly |
+| Fixture                                                                            | Kept for         |
+| ---------------------------------------------------------------------------------- | ---------------- |
+| Three campaigns, three homebrew creatures, one homebrew spell, one saved encounter | the handbook     |
+| The sample party from `data/party.yaml` as saved characters (Zara, Mira, Tav, Ren) | the handbook     |
+| Four more saved characters (Bram Ironfist, Elowen Vale, Kessa Quick, Sister Mirad) | the site         |
+| The account's display name, and whatever is on the board                           | the site, mostly |
 
 Fixture data is what makes these captures reproducible: almost every recipe only ever
-*reads* it. Sharing one account is what makes that fragile, so:
+_reads_ it. Sharing one account is what makes that fragile, so:
 
 - **Never clear the board, and never delete or rename anything you did not create.** The
   other side's work is live on this account and may be mid-fight on it. The two

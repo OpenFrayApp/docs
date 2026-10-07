@@ -24,11 +24,17 @@ Every capture in the handbook (and the site's hero shots) is a
 [shotlist](https://github.com/SirDarcanos/shotlist) recipe in `screenshots/`. Run
 the console, then `npx shotlist <name> --install` re-shoots one and copies it where
 it belongs; `npx shotlist --check` reports the captures the app has moved on from.
-Six recipes install the site's shots into a `site` clone sitting beside this repo.
-The scripts in `scripts/` draw the red callouts onto the captures. Never edit a
+The site's marketing captures live in the site repository's own screenshot pipeline.
+The scripts in `scripts/` draw the red callouts onto handbook captures. Never edit a
 screenshot by hand.
 
 ## Before contributing
+
+Use the shared
+[Contributing](https://github.com/OpenFrayApp/openfray/blob/main/CONTRIBUTING.md),
+[Verification commands](https://github.com/OpenFrayApp/openfray/blob/main/docs/development/verification.md),
+and [Repository file policy](https://github.com/OpenFrayApp/openfray/blob/main/docs/development/repository-files.md)
+for branch targets, check scope, and private local files.
 
 Read [AGENTS.md](./AGENTS.md). Every published word follows the parent repo's
 STYLE.md.

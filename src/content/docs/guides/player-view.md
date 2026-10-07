@@ -69,7 +69,7 @@ right four open the board in a moment; the wrong four are told so and can try ag
 does the same.
 
 The lock is real, not a curtain. With a PIN set, the board travels down a route worked
-out from the link *and* the PIN together, so somebody who has the link and not the digits
+out from the link _and_ the PIN together, so somebody who has the link and not the digits
 has nowhere to read the fight from. Nothing is being hidden from a page they already
 have.
 

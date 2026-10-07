@@ -20,9 +20,8 @@ and **Importer**) and starts on Libraries.
 
 ## Start the tutorial
 
-Choose **Start tutorial**, above the settings tabs, to begin the
-[Interactive tutorial](/docs/guides/tutorial/). Manual entry works even after completion
-or permanent invitation dismissal. You can also open search in the header, type
+Choose **Start tutorial**, above the settings tabs, to begin the guided practice fight.
+You can restart even after completion or permanent invitation dismissal. You can also open search in the header, type
 `tutorial`, and choose **Start tutorial**.
 
 ![Settings above the library list, with Start tutorial outlined in red and both Basic Rules library choices visible.](../../../assets/screens/tutorial-settings.png)

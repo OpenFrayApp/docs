@@ -74,7 +74,7 @@ place. Anyone holding the old one is left behind. See
 
 ## Tutorial invitation preferences
 
-The [Interactive tutorial](/docs/guides/tutorial/) works without an account. Completion
+The interactive tutorial works without an account. Completion
 or permanent dismissal stops automatic invitations on this device. **Not now** and
 **Yes, another time** postpone them only for the current session.
 

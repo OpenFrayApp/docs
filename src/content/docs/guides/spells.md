@@ -22,9 +22,7 @@ will_ spell is unlimited, while a _2/Day Each_ spell counts down per spell, and 
 out when it's spent.
 
 Creature spells cast at the level printed on the stat block, without an upcasting picker.
-Depending on the creature, casting spends a daily use or a spell slot. The
-[Interactive tutorial](/docs/guides/tutorial/#cast-the-mages-fireball) follows the Mage’s
-Fireball through **Cast**, targeting, saves, and damage in either Basic Rules edition.
+Depending on the creature, casting spends a daily use or a spell slot.
 
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 

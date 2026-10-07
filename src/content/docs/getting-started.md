@@ -22,7 +22,7 @@ successful action. **Exit tutorial** keeps your committed board actions.
 Choose **Not now** to continue on your own. You can start later from **Settings** or by
 searching for `tutorial`. Start with an empty board and enable Basic Rules 2024 or Basic
 Rules 2014 in **Settings → Libraries**. The guide teaches cleanup before offering optional
-sign-in. Follow [Interactive tutorial](/docs/guides/tutorial/) for the full sequence.
+sign-in. The instructions appear inside the console as you work.
 
 ## The console at a glance
 

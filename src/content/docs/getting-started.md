@@ -115,7 +115,7 @@ Saving happens in the background while you play; there is no save button. Nothin
 did before signing in is lost when you sign in.
 
 :::note[Accounts are optional]
-Signing in with an account is entirely optional and **free**, via Google or Discord.
+Signing in with an account is entirely optional and **free**, via Google, Discord, or Patreon.
 Everything above works without an account.
 :::
 

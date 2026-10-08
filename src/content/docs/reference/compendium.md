@@ -53,7 +53,7 @@ party stays recognizable when you run more than one game. Click **Add to encount
 put a character straight on the tracker.
 
 :::note[Needs an account]
-Saving and reusing player characters requires signing in with a free Google or Discord
+Saving and reusing player characters requires signing in with a free Google, Discord, or Patreon
 account.
 :::
 

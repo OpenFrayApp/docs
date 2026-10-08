@@ -17,7 +17,7 @@ use the create button.
 
 :::note[Needs an account]
 Homebrew creations are stored in your account. Creating them requires signing in with a
-free Google or Discord account.
+free Google, Discord, or Patreon account.
 :::
 
 ## Starting from one that exists

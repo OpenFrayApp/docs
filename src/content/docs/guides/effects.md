@@ -163,7 +163,7 @@ Read any preset in full on the compendium's **Effects** tab. See
 [The compendium](/docs/reference/compendium/#effects).
 
 :::note[Needs an account]
-Saving your own presets requires signing in with a free Google or Discord account. A
+Saving your own presets requires signing in with a free Google, Discord, or Patreon account. A
 library's presets work for everyone who has the library turned on.
 :::
 

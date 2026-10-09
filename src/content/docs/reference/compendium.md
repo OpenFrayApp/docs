@@ -45,10 +45,6 @@ spell cards for manual use. Roll their dice and apply their effects yourself.
 They show a **5e** edition badge and do not inherit another library’s automation,
 even when a spell has the same name.
 
-The **A5E SRD: Adventurer’s Guide spells** collection follows the same manual workflow.
-Its **A5E** badge identifies a distinct ruleset. OpenFray does not convert its spells
-into SRD 5e or 5.5e or model its source-specific rules.
-
 ## Characters
 
 Your saved players. Build a character once, with armor, hit points, abilities,
@@ -106,8 +102,6 @@ The compendium shows the books you've turned on in
   for the intoxication, craving, and addiction it counts. It adds no creatures.
 - **The Waking Garden** — DnD 5.5e. OpenFray's own, a bestiary of vegetables that have
   woken up, across three stages of growth.
-- **A5E SRD: Adventurer’s Guide spells** — 369 publisher-verified spell cards
-  from EN Publishing’s CC-BY-4.0 SRD. A5E rules remain manual. Off by default.
 - **Kibbles’ Casting Compendium v2.3** — 295 reference spells by KibblesTasty,
   including elemental spells, psionics, and blood magic. Off by default.
 - **Spells That Don’t Suck** — 181 reference spells by Omega Ankh and somanyrobots,

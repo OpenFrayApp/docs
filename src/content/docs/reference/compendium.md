@@ -40,8 +40,9 @@ Every spell in the libraries you've turned on, with its full card: casting time,
 components, how long it lasts, and what it does. You see the same card when you cast a
 spell, or when you point at a spell name inside a stat block.
 
-Libraries marked **Reference** provide spell cards for manual use. Roll their dice
-and apply their effects yourself. They do not inherit another library’s automation,
+Kibbles’ Casting Compendium v2.3, Spells That Don’t Suck, and So Many Spells provide
+spell cards for manual use. Roll their dice and apply their effects yourself.
+They show a **5e** edition badge and do not inherit another library’s automation,
 even when a spell has the same name.
 
 ## Characters

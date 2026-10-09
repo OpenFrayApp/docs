@@ -21,8 +21,8 @@ in the save DC and attack bonus from that creature, and spends one casting: an _
 will_ spell is unlimited, while a _2/Day Each_ spell counts down per spell, and grays
 out when it's spent.
 
-Creature spells cast at the level printed on the stat block. There's no upcasting to
-pick, because a stat block doesn't have spell slots to spend.
+Creature spells cast at the level printed on the stat block, without an upcasting picker.
+Depending on the creature, casting spends a daily use or a spell slot.
 
 ![A creature's Spellcasting section, with a spell and its remaining uses outlined in red and labeled.](../../../assets/screens/cast-spell.png)
 

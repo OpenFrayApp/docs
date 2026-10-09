@@ -13,6 +13,17 @@ your web browser at [openfray.app/console](/console/). There's nothing to downlo
 account needed. This page runs you through your first fight, start to finish. You can
 [sign in](#saving-your-game) later if you want to save your game.
 
+## Try the interactive tutorial
+
+Choose **Start tutorial** in the welcome invitation for a guided practice fight lasting
+about five minutes. The guide uses the console’s real controls and advances after each
+successful action. **Exit tutorial** keeps your committed board actions.
+
+Choose **Not now** to continue on your own. You can start later from **Settings** or by
+searching for `tutorial`. Start with an empty board and enable Basic Rules 2024 or Basic
+Rules 2014 in **Settings → Libraries**. The guide teaches cleanup before offering optional
+sign-in. The instructions appear inside the console as you work.
+
 ## The console at a glance
 
 On a laptop, the console is one screen, split into three columns. Everything you use
@@ -111,8 +122,8 @@ While you're signed in, OpenFray also:
 - lets you set up [campaigns](/docs/guides/campaigns/) with your table's house rules;
 - lets you build your own creatures and spells.
 
-Saving happens in the background while you play; there is no save button. Nothing you
-did before signing in is lost when you sign in.
+Saving happens in the background while you play; there is no save button. The tutorial
+clears its practice board before offering sign-in.
 
 :::note[Accounts are optional]
 Signing in with an account is entirely optional and **free**, via Google, Discord, or Patreon.

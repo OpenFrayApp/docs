@@ -18,6 +18,25 @@ and **Report a bug**, which opens a new issue on GitHub.
 Settings opens on five tabs (**Libraries**, **Tracker**, **Player view**, **Keyboard**,
 and **Importer**) and starts on Libraries.
 
+## Start the tutorial
+
+Choose **Start tutorial**, above the settings tabs, to begin the guided practice fight.
+You can restart even after completion or permanent invitation dismissal. You can also open search in the header, type
+`tutorial`, and choose **Start tutorial**.
+
+![Settings above the library list, with Start tutorial outlined in red and both Basic Rules library choices visible.](../../../assets/screens/tutorial-settings.png)
+
+Starting requires an empty board outside a fight and an enabled Basic Rules library.
+The tutorial chooses Basic Rules 2024 first, or Basic Rules 2014 if only that one is active.
+A blocked start explains what to do and leaves the board and libraries unchanged.
+
+**Not now** postpones the welcome for this session. Completing the tutorial or choosing
+permanent dismissal stops automatic invitations. The preference is kept on this device
+and, when signed in, saved to the account in the background. Either saved preference
+suppresses invitations. See
+[Tutorial invitation preferences](/docs/concepts/account/#tutorial-invitation-preferences)
+for sign-in transfer and persistence failures.
+
 ## Libraries
 
 OpenFray ships with more than one edition of the rules, and with extra books of

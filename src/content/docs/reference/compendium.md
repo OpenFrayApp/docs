@@ -40,6 +40,10 @@ Every spell in the libraries you've turned on, with its full card: casting time,
 components, how long it lasts, and what it does. You see the same card when you cast a
 spell, or when you point at a spell name inside a stat block.
 
+Libraries marked **Reference** provide spell cards for manual use. Roll their dice
+and apply their effects yourself. They do not inherit another library’s automation,
+even when a spell has the same name.
+
 ## Characters
 
 Your saved players. Build a character once, with armor, hit points, abilities,
@@ -97,6 +101,11 @@ The compendium shows the books you've turned on in
   for the intoxication, craving, and addiction it counts. It adds no creatures.
 - **The Waking Garden** — DnD 5.5e. OpenFray's own, a bestiary of vegetables that have
   woken up, across three stages of growth.
+- **Kibbles’ Casting Compendium v2.3** — 295 reference spells by KibblesTasty,
+  including elemental spells, psionics, and blood magic. Off by default.
+- **Spells That Don’t Suck** — 181 reference spells by Omega Ankh and somanyrobots,
+  including contributions from KibblesTasty. Off by default.
+- **So Many Spells** — 179 reference spells by somanyrobots. Off by default.
 - **Homebrew creations** — everything you build or import yourself. On by default.
 
 Some spells differ between the two versions of the rules (_Barkskin_'s armor class, how
@@ -116,6 +125,8 @@ The built-in rules come from the official System Reference Document, used under 
 CC-BY-4.0 license. The Tome of Beasts books are used under the Open Game License.
 Brood & Bloom, The Waking Garden, and On Strong Waters and Potent Simples are written
 for OpenFray: their stat blocks and spells are CC-BY-4.0, and their lore, art, and prose
-stay ours. Full credit for every source is in the app. OpenFray is compatible with 5.5e
+stay ours. The three third-party spell collections use CC-BY-4.0.
+Full attribution and changes are listed in [Credits and licenses](/credits/),
+also linked from the console. OpenFray is compatible with 5.5e
 (2024) and 5e (2014) and isn't made or approved by Wizards of the Coast.
 :::

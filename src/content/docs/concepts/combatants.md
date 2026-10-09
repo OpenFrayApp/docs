@@ -43,7 +43,7 @@ OpenFray never rolls for a player on its own. Wherever it would roll for a creat
 type in what the player rolled instead, or choose to let OpenFray roll for them. See
 [Honest dice](/docs/concepts/dice/).
 
-When you sign in with your Google or Discord account, you can save your player
+When you sign in with your Google, Discord, or Patreon account, you can save your player
 characters and add them from the compendium instead:
 
 ![The Add PC button outlined in red, with the signed-in picker open, showing a search over saved characters and a Create a character link.](../../../assets/screens/add-pc-dropdown-signedin.png)

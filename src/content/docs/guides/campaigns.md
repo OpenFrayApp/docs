@@ -18,7 +18,7 @@ disadvantage, creatures join with average hit points, initiative ties go to the 
 Dexterity, and the party levels by experience points.
 
 :::note[Needs an account]
-Creating and using a campaign requires signing in with a free Google or Discord account.
+Creating and using a campaign requires signing in with a free Google, Discord, or Patreon account.
 Without an account OpenFray uses the default rules.
 :::
 

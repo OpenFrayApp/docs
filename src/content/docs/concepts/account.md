@@ -38,18 +38,18 @@ belong to the browser rather than to you, so another computer starts fresh.
 
 ## Signing in
 
-Click **Sign in** in the console’s header, then **Continue with Discord** or
-**Continue with Google**. The provider opens so you can sign in. Your first sign-in
-creates a free account. The tutorial offers this choice only after clearing its practice
+Click **Sign in** in the console’s header, then **Continue with Discord**,
+**Continue with Google**, or **Continue with Patreon**. The provider opens so you can sign in.
+Your first sign-in creates a free account. The tutorial offers this choice only after clearing its practice
 board and log; it promises no encounter transfer through the provider redirect.
 
-By continuing with either provider, you agree to the
+By continuing with a provider, you agree to the
 [Terms of Service](https://openfray.app/terms/). The
 [Privacy Policy](https://openfray.app/privacy/) explains how your personal data is handled.
 The notice appears beside the provider buttons; there is no checkbox. You must be at least
 13 and meet your country’s minimum digital-consent age if higher.
 
-![The sign-in page with Google and Discord buttons and the Terms notice.](../../../assets/screens/sign-in.png)
+![The sign-in page with Google, Discord, and Patreon buttons and the Terms notice.](../../../assets/screens/sign-in.png)
 
 From then on, these follow you between devices:
 
@@ -98,7 +98,7 @@ new practice character and existing characters stay in the roster.
 ## Your profile
 
 Click your **account**, then **Profile**. It shows the email you signed in with and how
-(Google or Discord; OpenFray never sees your password either way), and holds two
+(Google, Discord, or Patreon; OpenFray never sees your password), and holds two
 settings beyond deleting the account, covered next.
 
 ![The Profile panel: the signed-in email and provider, the display name field holding a
@@ -123,5 +123,5 @@ type your email to confirm.
 
 :::danger[Deleting is permanent]
 Deleting your account cannot be undone, and nothing is kept. If you sign back in later
-with the same Google or Discord account, a fresh account is created.
+with the same Google, Discord, or Patreon account, a fresh account is created.
 :::

@@ -126,7 +126,7 @@ Saving happens in the background while you play; there is no save button. The tu
 clears its practice board before offering sign-in.
 
 :::note[Accounts are optional]
-Signing in with an account is entirely optional and **free**, via Google or Discord.
+Signing in with an account is entirely optional and **free**, via Google, Discord, or Patreon.
 Everything above works without an account.
 :::
 

@@ -20,11 +20,8 @@ and **Importer**) and starts on Libraries.
 
 ## Start the tutorial
 
-Choose **Start tutorial**, above the settings tabs, to begin the guided practice fight.
-You can restart even after completion or permanent invitation dismissal. You can also open search in the header, type
-`tutorial`, and choose **Start tutorial**.
-
-![Settings above the library list, with Start tutorial outlined in red and both Basic Rules library choices visible.](../../../assets/screens/tutorial-settings.png)
+Open search in the header, type `tutorial`, and choose **Start tutorial** to begin the
+guided practice fight. You can restart even after completion or permanent invitation dismissal.
 
 Starting requires an empty board outside a fight and an enabled Basic Rules library.
 The tutorial chooses Basic Rules 2024 first, or Basic Rules 2014 if only that one is active.

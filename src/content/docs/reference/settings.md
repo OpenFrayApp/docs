@@ -13,7 +13,7 @@ players see on the screen you share with them, which keys run which commands, an
 whether the app is light or dark. They're set once and remembered in your browser, with
 no account needed. Click the **gear** at the top right and choose **Settings**. The same
 menu holds the light and dark switch, the keyboard cheat sheet, a link to this handbook,
-and **Report a bug**, which opens a new issue on GitHub.
+and **Share feedback**, which opens a form in the console.
 
 Settings opens on five tabs (**Libraries**, **Tracker**, **Player view**, **Keyboard**,
 and **Importer**) and starts on Libraries.
@@ -176,13 +176,46 @@ Your keys are remembered in this browser, like the light and dark choice. They d
 travel with your account, so another computer starts from the defaults.
 :::
 
+## Share feedback
+
+Open the **gear** at the top right and choose **Share feedback**. You can submit without
+an OpenFray or GitHub account:
+
+1. Choose a **Category**: **Bug**, **Feature request**, **Question**, **Other**, **Not sure**, or **Security**.
+2. Enter a **Title** (up to 256 characters).
+3. Enter a **Description** (up to 5,000 characters).
+4. For a bug, optionally fill **Expected behavior (optional)** (up to 2,000 characters).
+5. For a bug, optionally select **Include technical details** and review the preview.
+6. Complete verification.
+7. Click **Send feedback**.
+
+![The Share feedback form with category, title, description, expected behavior, and an unchecked technical-details option.](../../../assets/screens/share-feedback.png)
+
+Ordinary feedback becomes a public GitHub issue. Keep private information out of the title
+and description. **Security** feedback goes privately to `reports@openfray.app` by email
+and never creates a GitHub issue.
+
+Technical details include browser, operating system, viewport size, and board counts.
+They exclude names, statistics, notes, account details, and the game log.
+
+A successful GitHub submission offers **View issue**. If GitHub is unavailable, the console
+attempts email delivery and shows a separate confirmation. Email acceptance does not confirm
+that the message reached the mailbox.
+
+Closing and reopening keeps your draft until a successful submission or page reload.
+Closing during submission asks for confirmation and does not cancel sending.
+
+If sending is not confirmed, keep the draft and choose **Try again** or **Copy feedback**.
+**Report on GitHub** offers manual public reporting. For **Security**, **Email report**
+opens your email program instead.
+
 ## Light or dark
 
 Click the **gear** at the top right, then **Light mode** or **Dark mode**. The row names
 the one you'd switch to. OpenFray opens dark by default. Your choice is remembered in
 your browser, and it's shared with the OpenFray website, so both match.
 
-![The gear menu open in the top bar, showing Settings, Keyboard shortcuts, Light mode, Handbook, and Report a bug.](../../../assets/screens/theme-toggle.png)
+![The gear menu open in the top bar, showing Settings, Keyboard shortcuts, Light mode, Handbook, and Share feedback.](../../../assets/screens/theme-toggle.png)
 
 ## The importer
 

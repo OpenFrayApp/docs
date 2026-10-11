@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../node_modules/shotlist/dist/recipe.schema.json
+name: share-feedback
+install: docs
+viewport: { width: 1280, height: 1000 }
+setup:
+  - optional:
+      - click: { role: button, name: Not now, exact: true }
+  - click: { role: button, name: Settings and more }
+  - click: { role: menuitem, name: Share feedback }
+  - wait: { role: dialog, name: Share feedback }
+  - optional:
+      - blur: { css: ':focus' }
+clip:
+  css: '[role=dialog]'
+  pad: 16
+marks:
+  category: { css: '#feedback-category' }
+callouts:
+  - { mark: category, text: Choose a category, place: right }

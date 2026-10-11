@@ -7,14 +7,14 @@ install: docs
 viewport: { width: 1800, height: 1200 }
 
 setup:
+  - optional:
+      - click: { role: button, name: Not now, exact: true }
   - click: { role: button, name: Settings and more }
   - wait: { css: '[role=menu]' }
 
-# The right end of the top bar, from Sign in across to the open menu. Matched by CSS
-# rather than by role: a role query cannot be resolved inside a span.
+# Frame the gear and its open menu without requiring account controls.
 clip:
   span:
-    - { css: button, text: Sign in }
     - { css: 'button[aria-label="Settings and more"]' }
     - { css: '[role=menu]' }
   pad: 22

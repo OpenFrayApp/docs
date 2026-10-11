@@ -45,8 +45,8 @@ into **Core**, **OpenFray**, and **Other**:
 
 ![The Libraries panel in Settings, grouped into Core, OpenFray and Other, with Basic Rules 2024 ticked.](../../../assets/screens/rule-sets.png)
 
-- **Basic Rules 2024 (SRD 5.2.1)** — the newer rules. On by default.
-- **Basic Rules 2014 (SRD 5.1)** — the older rules. Turn this on if that's what your
+- **Basic Rules 2024** — the newer rules. On by default.
+- **Basic Rules 2014** — the older rules. Turn this on if that's what your
   table plays.
 - **Brood & Bloom**, **The Waking Garden**, and **On Strong Waters and Potent Simples**
   are OpenFray's own books. Their names are links: click one to read the book itself, in
@@ -55,6 +55,10 @@ into **Core**, **OpenFray**, and **Other**:
   shelve them all at once.
 - **Tome of Beasts 1, 2, and 3** and **Creature Codex** are four bestiaries from Kobold
   Press.
+- **Khyberia** adds creatures by Nick Stefanski.
+- **Deep Magic**, **Tome of Heroes**, and **Warlock Grimoire** add Kobold Press spells.
+- **Kibbles’ Casting Compendium**, **Spells That Don’t Suck**, and **So Many Spells** add third-party spells.
+  Each spell library uses its own supported casting profiles; other rules remain in the spell text.
 
 What each book contains is covered in
 [The compendium](/docs/reference/compendium/#libraries), along with where the rules come

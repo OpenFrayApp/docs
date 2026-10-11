@@ -90,7 +90,7 @@ device.” Cross-device persistence is unconfirmed until the account save succee
 If browser storage is unavailable, the preference still applies while the console stays
 open; it may not survive a reload. These failures leave the console usable.
 
-**Start tutorial** in Settings or search remains available despite suppression.
+**Start tutorial** in search remains available despite suppression.
 Guide step progress is not stored; replay starts from the beginning on an empty board.
 Clearing a signed-in practice fight removes its encounter snapshots and log, while the
 new practice character and existing characters stay in the roster.

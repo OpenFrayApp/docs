@@ -10,6 +10,7 @@ session: gm
 viewport: { width: 1800, height: 900 }
 
 setup:
+  - use: dismiss-tutorial
   - click: { css: 'button[aria-label="Show the compendium"]' }
   - wait: { css: '[role=tablist]', contains: Encounters }
   - click: { css: button, text: Encounters }

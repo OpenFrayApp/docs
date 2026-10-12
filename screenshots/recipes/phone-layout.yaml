@@ -8,6 +8,7 @@ install: docs
 viewport: { width: 375, height: 812 }
 
 setup:
+  - use: dismiss-tutorial
   - each: $party
     as: pc
     steps:

@@ -5,6 +5,7 @@ name: applied-effects
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - use: frighten

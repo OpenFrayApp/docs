@@ -5,6 +5,7 @@ name: attack-advantage
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - use: open-attack

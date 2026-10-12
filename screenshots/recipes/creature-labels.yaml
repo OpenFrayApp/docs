@@ -4,6 +4,7 @@ install: docs
 viewport: { width: 1800, height: 900 }
 
 setup:
+  - use: dismiss-tutorial
   - use: open-settings
   - click: { role: tab, name: Tracker, exact: true }
   - wait: { css: '#creature-label-style' }

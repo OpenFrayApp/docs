@@ -6,6 +6,7 @@ name: compendium
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - click: { role: button, name: Show the compendium }
   - wait: 700
   - fill: { placeholder: Search creatures… }

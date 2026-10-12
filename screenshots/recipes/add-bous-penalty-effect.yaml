@@ -8,6 +8,7 @@ name: add-bous-penalty-effect
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - click: { text: Ogre }

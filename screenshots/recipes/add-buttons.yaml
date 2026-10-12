@@ -5,6 +5,9 @@ name: add-buttons
 install: docs
 viewport: { width: 1800, height: 560 }
 
+setup:
+  - use: dismiss-tutorial
+
 clip:
   span:
     - { css: button, text: Quick add }

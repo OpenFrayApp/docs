@@ -178,8 +178,7 @@ travel with your account, so another computer starts from the defaults.
 
 ## Share feedback
 
-Open the **gear** at the top right and choose **Share feedback**. You can submit without
-an OpenFray or GitHub account:
+Open the **gear** at the top right and choose **Share feedback**.
 
 1. Choose a **Category**: **Bug**, **Feature request**, **Question**, **Security**, **Other**, or **Not sure**.
 2. Enter a **Title** (up to 256 characters).
@@ -197,9 +196,6 @@ and never creates a GitHub issue.
 
 Technical details include browser, operating system, viewport size, and board counts.
 They exclude names, statistics, notes, account details, and the game log.
-
-A successful GitHub submission offers **View**. If GitHub is unavailable, the console
-attempts email delivery and shows **Feedback sent by email.**
 
 Closing and reopening keeps your draft until a successful submission or page reload.
 Closing during submission asks for confirmation and does not cancel sending.

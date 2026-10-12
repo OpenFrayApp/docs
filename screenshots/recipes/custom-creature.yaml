@@ -8,6 +8,7 @@ session: gm
 viewport: { width: 1800, height: 1400 }
 
 setup:
+  - use: dismiss-tutorial
   - click: { css: 'button[aria-label="Show the compendium"]' }
   - wait: { css: 'input[aria-label="Search creatures"]' }
   - fill: { css: 'input[aria-label="Search creatures"]' }

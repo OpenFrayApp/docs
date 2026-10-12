@@ -9,6 +9,7 @@ session: gm
 viewport: { width: 1800, height: 1000 }
 
 setup:
+  - use: dismiss-tutorial
   # Account recovery can restore the active view after the first paint.
   - wait: { css: 'button[aria-label="Saved"], button[aria-label="Saving elsewhere"]' }
   - click: { css: 'button[aria-label="Show the compendium"]' }

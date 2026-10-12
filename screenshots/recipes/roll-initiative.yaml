@@ -6,6 +6,7 @@ name: roll-initiative
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - click: { role: button, name: Begin }
   - wait: { text: Roll initiative }

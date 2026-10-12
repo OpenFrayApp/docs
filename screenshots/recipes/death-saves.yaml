@@ -5,6 +5,7 @@ name: death-saves
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: zara-down
 
 # Down to the log line that says how she got there — the controls alone do not say that

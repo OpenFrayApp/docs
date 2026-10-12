@@ -5,6 +5,7 @@ name: rest-buttons
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - click: { text: Ren }
   - wait: 300

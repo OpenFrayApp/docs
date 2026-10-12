@@ -7,6 +7,7 @@ name: encounter-difficulty
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
     with:
       pcs:

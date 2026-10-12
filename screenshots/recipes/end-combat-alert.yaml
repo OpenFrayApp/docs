@@ -6,6 +6,7 @@ name: end-combat-alert
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - each: [Goblin Minion 2, Goblin Minion, Goblin Boss, Ogre]

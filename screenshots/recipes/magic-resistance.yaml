@@ -7,6 +7,7 @@ install: docs
 viewport: { width: 1800, height: 1120 }
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
     with:
       monsters:
@@ -29,6 +30,12 @@ setup:
   - wait: 200
   - click: { role: button, name: Roll saves }
   - wait: 600
+  - click:
+      css: button
+      text: Save
+      within: { css: li, contains: Archmage, matching: '→', pick: smallest }
+  - optional:
+      - blur: { css: ':focus' }
 
 clip: { panel: Mage · Hold Person, pad: 14 }
 
@@ -47,6 +54,10 @@ callouts:
       dx: 150,
     }
 
-# The save is a real roll, and a failure adds the apply-to-failed band to the box, so
-# the shot's shape varies run to run.
-check: false
+# Record save through the normal control so conditional rows stay consistent.
+# The extra width covers the buttons displaced by one- versus two-digit dice.
+check:
+  ignore:
+    - css: 'li > span:first-child'
+      within: { css: li, contains: Archmage, matching: '→', pick: smallest }
+      grow: { right: 32 }

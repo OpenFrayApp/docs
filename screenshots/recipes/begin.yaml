@@ -7,6 +7,7 @@ name: begin
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - click: { role: button, name: Stop }

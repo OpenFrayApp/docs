@@ -7,6 +7,7 @@ install: docs
 viewport: { width: 1800, height: 1120 }
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
     with:
       monsters:
@@ -29,6 +30,12 @@ setup:
   - wait: 200
   - click: { role: button, name: Roll saves }
   - wait: 600
+  - click:
+      css: button
+      text: Fail
+      within: { css: li, contains: Adult Bronze Dragon, matching: '→', pick: smallest }
+  - optional:
+      - blur: { css: ':focus' }
 
 clip: { panel: Archmage · Lightning Bolt, pad: 14 }
 
@@ -44,6 +51,11 @@ callouts:
   - { mark: dmg, box: true }
   - { mark: immune, text: 'Immune, so no damage lands', place: top, inside: true, gap: 40, dx: -60 }
 
-# The dragon's save is a real roll, and a failure adds the Use LR button to its row, so
-# the panel's shape varies run to run.
-check: false
+# Record fail through the normal control so conditional rows stay consistent.
+# The extra width covers the buttons displaced by one- versus two-digit dice.
+check:
+  ignore:
+    - { css: '[role=dialog] > div.mb-2.flex.flex-wrap', within: clip }
+    - css: 'li > span:first-child'
+      within: { css: li, contains: Adult Bronze Dragon, matching: '→', pick: smallest }
+      grow: { right: 32 }

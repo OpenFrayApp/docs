@@ -14,6 +14,7 @@ session: gm
 viewport: { width: 1800, height: 700 }
 
 setup:
+  - use: dismiss-tutorial
   - click: { css: 'button[aria-label="Account menu"]' }
   - wait: { css: '[role=menu]' }
   - click: { css: '[role=menuitem]', text: Profile }

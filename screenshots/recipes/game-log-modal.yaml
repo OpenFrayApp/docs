@@ -7,16 +7,16 @@ install: docs
 viewport: { width: 1800, height: 1000 }
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
-  - use: open-attack
-  - click: { role: button, name: Roll attack }
-  - wait: 500
-  - click: { role: button, name: Apply to Zara }
-  - wait: 500
-  # The attack box closes itself when the damage lands, and stays open when it does not.
+  - fill: { css: 'input[aria-label="Dice formula"]', visible: true }
+    value: 1d20
+  - click: { role: button, name: Roll, exact: true, visible: true }
+  - use: set-hp
+    with: { who: Zara, hp: 21 }
   - optional:
-      - click: { role: button, name: Close }
+      - blur: { css: ':focus' }
   - click: { role: button, name: Next turn }
   - wait: 400
   - click: { role: button, name: View all }
@@ -34,7 +34,10 @@ callouts:
   - { mark: chips, text: Filter by kind, place: left }
   - { mark: clear, text: Empty the history, place: right }
 
-# The attack behind the log is a real roll, and a miss writes fewer entries than a hit,
-# so the list's very shape varies run to run. Nothing regional to mask; the shot opts
-# out.
-check: false
+# A manual roll and recorded damage keep the entry layout independent of hit/miss.
+check:
+  ignore:
+    - css: span.tabular-nums
+      within: { css: li, contains: 1d20, pick: smallest, within: clip }
+    - css: div.pl-3
+      within: { css: li, contains: 1d20, pick: smallest, within: clip }

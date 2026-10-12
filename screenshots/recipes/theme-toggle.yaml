@@ -7,8 +7,7 @@ install: docs
 viewport: { width: 1800, height: 1200 }
 
 setup:
-  - optional:
-      - click: { role: button, name: Not now, exact: true }
+  - use: dismiss-tutorial
   - click: { role: button, name: Settings and more }
   - wait: { css: '[role=menu]' }
 

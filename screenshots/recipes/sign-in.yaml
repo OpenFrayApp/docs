@@ -4,8 +4,7 @@ install: docs
 viewport: { width: 1800, height: 760 }
 
 setup:
-  - optional:
-      - click: { role: button, name: Not now, exact: true }
+  - use: dismiss-tutorial
   - click: { role: button, name: Sign in, exact: true }
   - wait: { role: dialog, name: Sign in }
 

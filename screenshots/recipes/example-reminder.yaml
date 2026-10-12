@@ -5,6 +5,7 @@ name: example-reminder
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - click: { text: Zara }

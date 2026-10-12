@@ -5,6 +5,7 @@ name: tracker-row
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - click: { text: Ogre }

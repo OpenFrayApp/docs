@@ -5,11 +5,14 @@ name: recap
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - use: open-attack
   - click: { role: button, name: Roll attack }
   - wait: 500
+  - fill: { label: Damage to apply, exact: true }
+    value: '12'
   - click: { role: button, name: Apply to Zara }
   - wait: 500
   - optional:
@@ -31,7 +34,8 @@ setup:
 
 clip: { panel: Combat recap, pad: 16 }
 
-# The rolled attack decides the damage totals and which awards the fight earns, and an
-# absent award changes the recap's shape, so no region mask can hold it steady. The shot
-# opts out.
-check: false
+# Recorded damage keeps the awards consistent; elapsed time still varies per run.
+check:
+  ignore:
+    - css: div.text-lg
+      within: { css: div.rounded-lg, contains: 'Time (real)', pick: smallest }

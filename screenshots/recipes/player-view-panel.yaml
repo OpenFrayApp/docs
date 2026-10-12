@@ -8,6 +8,7 @@ name: player-view-panel
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - click: { role: button, name: Share with players }
   - wait: { css: '[role=dialog]', contains: Backdrop }
   - wait: 400

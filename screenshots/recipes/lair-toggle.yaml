@@ -6,6 +6,7 @@ name: lair-toggle
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: add-creature
     with: { foe: { name: Adult Blue Dragon, times: [1] } }
   - click: { text: Adult Blue Dragon }

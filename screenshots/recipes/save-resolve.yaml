@@ -7,6 +7,7 @@ install: docs
 viewport: { width: 1800, height: 1120 }
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
     with:
       monsters:

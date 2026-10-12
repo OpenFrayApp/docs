@@ -6,6 +6,7 @@ install: docs
 viewport: { width: 1800, height: 1000 }
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - click: { role: button, name: Group save }

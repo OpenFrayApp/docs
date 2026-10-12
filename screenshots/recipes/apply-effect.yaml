@@ -5,6 +5,7 @@ name: apply-effect
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   # The Presets row only appears once a library ships presets, and Brood & Bloom does.
   - use: open-settings
   - check: { role: checkbox, name: Brood & Bloom }

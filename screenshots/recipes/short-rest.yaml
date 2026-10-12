@@ -5,6 +5,7 @@ name: short-rest
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   # The party as a fight leaves them. The totals are typed rather than fought for: what
   # the box is showing is the list and its fields, and a rolled attack would only make

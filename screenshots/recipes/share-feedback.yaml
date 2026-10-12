@@ -3,8 +3,7 @@ name: share-feedback
 install: docs
 viewport: { width: 1280, height: 1000 }
 setup:
-  - optional:
-      - click: { role: button, name: Not now, exact: true }
+  - use: dismiss-tutorial
   - click: { role: button, name: Settings and more }
   - click: { role: menuitem, name: Share feedback }
   - wait: { role: dialog, name: Share feedback }

@@ -16,6 +16,7 @@ session: gm
 viewport: { width: 1800, height: 1300 }
 
 setup:
+  - use: dismiss-tutorial
   # Adds exactly one creature and takes exactly that one away again, rather than clearing
   # the board. The `gm` account is shared with other work, so a bulk clear here would
   # destroy somebody else's fight; and the clip is the modal alone, so whatever else is

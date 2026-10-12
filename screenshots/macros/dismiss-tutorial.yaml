@@ -1,0 +1,5 @@
+# Dismiss the fresh-session invitation without starting a practice fight or saving a preference.
+steps:
+  - optional:
+      - click: { role: button, name: Not now, exact: true }
+  - wait: { css: 'body:not(:has([role="dialog"] h2))' }

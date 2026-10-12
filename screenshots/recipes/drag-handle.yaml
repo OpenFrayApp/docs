@@ -3,6 +3,7 @@ name: drag-handle
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   # A fifth combatant, so the row being dragged has somewhere to go.
   - use: add-creature

@@ -1,7 +1,5 @@
 # Open Settings from the gear menu.
 steps:
-  - optional:
-      - click: { role: button, name: Not now, exact: true }
   - click: { role: button, name: Settings and more }
   - click: { role: menuitem, name: Settings }
   - wait: { css: '[role=tablist]' }

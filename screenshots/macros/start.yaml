@@ -11,6 +11,9 @@ steps:
     as: row
     steps:
       - optional:
+          # Clear first so an equal automatic roll is still replaced by a recorded value.
+          - fill: { label: Initiative for $row.who, exact: true }
+            value: ''
           - fill: { label: Initiative for $row.who, exact: true }
             value: $row.roll
   - click: { role: button, name: Start combat }

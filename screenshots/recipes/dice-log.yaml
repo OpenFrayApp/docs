@@ -9,6 +9,7 @@ viewport: { width: 1800, height: 560 }
 # The swipe shell keeps a hidden copy of the dice bar in the DOM, so every query here
 # names the visible one.
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - fill: { css: 'input[aria-label="Dice formula"]', visible: true }

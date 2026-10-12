@@ -7,6 +7,7 @@ install: docs
 viewport: { width: 1800, height: 1200 }
 
 setup:
+  - use: dismiss-tutorial
   - click: { role: button, name: Add PC, exact: true }
   - wait: { css: form, contains: Defenses }
 

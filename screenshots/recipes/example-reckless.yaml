@@ -6,6 +6,7 @@ name: example-reckless
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - use: start
   - click: { text: Ren }

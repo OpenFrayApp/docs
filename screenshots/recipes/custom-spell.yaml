@@ -7,6 +7,7 @@ session: gm
 viewport: { width: 1800, height: 1300 }
 
 setup:
+  - use: dismiss-tutorial
   - click: { css: 'button[aria-label="Show the compendium"]' }
   - wait: { css: '[role=tablist]', contains: Spells }
   - click: { css: button, text: Spells }

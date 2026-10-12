@@ -7,6 +7,7 @@ name: add-creature-dropdown
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: seed
   - click: { text: Zara }
   - wait: 300

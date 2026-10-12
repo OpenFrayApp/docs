@@ -7,6 +7,7 @@ install: docs
 viewport: { width: 1800, height: 1200 }
 
 setup:
+  - use: dismiss-tutorial
   - use: open-settings
   - click: { role: tab, name: Keyboard }
   - wait: { css: '[role=tabpanel]', contains: Turn and encounter }

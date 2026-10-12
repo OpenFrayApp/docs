@@ -5,6 +5,7 @@ name: death-save-row
 install: docs
 
 setup:
+  - use: dismiss-tutorial
   - use: zara-down
 
 clip:

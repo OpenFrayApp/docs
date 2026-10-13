@@ -97,17 +97,24 @@ new practice character and existing characters stay in the roster.
 
 ## Your profile
 
-Click your **account**, then **Profile**. It shows the email you signed in with and how
-(Google, Discord, or Patreon; OpenFray never sees your password), and holds two
-settings beyond deleting the account, covered next.
+Open the **account menu** in the console, then click **Profile** to open the site’s
+**Account** page. The **Signed in** box shows your verified email. Manage your email
+and password with the provider you use to sign in. OpenFray never sees your provider password.
 
-![The Profile panel: the signed-in email and provider, the display name field holding a
-name, and the default-license dropdown, its email masked.](../../../assets/screens/profile-panel.png)
+Click the blue **Return to console →** button on the left of that box to return to the console.
+Click **Sign out** on the right to end your session and open the sign-in page.
+If sign-out fails, the page stays open and shows what to retry.
+
+You can also choose **Sign out** directly in the console’s account menu. The console
+verifies your fight’s recovery copy first, then ends the session without opening the
+Account page. If the checkpoint fails, retry or download your recovery copy; you can
+keep playing while you resolve it.
 
 - **Display name** is what appears in two places: the **Run by** line on your
   [player view](/docs/guides/player-view/#what-your-players-see), and the byline on
   anything you [publish](/docs/guides/publishing/). It starts as whatever your sign-in
-  provider handed over, and leaving it blank publishes and shares anonymously instead.
+  provider handed over. Clearing a custom name restores the provider name when one is
+  available; without either name, you publish and share anonymously.
 - **Default license for shared encounters** is what the
   [publish dialog](/docs/guides/publishing/#licenses-and-what-they-cover)'s license field
   starts on, so a Game Master who always publishes under the same terms doesn't pick them
@@ -116,10 +123,10 @@ name, and the default-license dropdown, its email masked.](../../../assets/scree
 
 ## Deleting everything
 
-In **Profile**, **Delete account** removes your account and everything attached to it:
-your fights, creatures, spells, characters, and campaigns. Anything you published comes
-down with it, and anyone holding one of those links will find it gone. You're asked to
-type your email to confirm.
+In **Profile**, find the red-tinted **Delete account** box. Type your current account
+email, then click **Delete my account**. This removes your fights, creatures, spells,
+characters, and campaigns. Anything you published comes down with it, and anyone holding
+one of those links will find it gone.
 
 :::danger[Deleting is permanent]
 Deleting your account cannot be undone, and nothing is kept. If you sign back in later

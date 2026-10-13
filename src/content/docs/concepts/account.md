@@ -97,12 +97,13 @@ new practice character and existing characters stay in the roster.
 
 ## Your profile
 
-Click your **account**, then **Profile**. It shows the email you signed in with and how
-(Google, Discord, or Patreon; OpenFray never sees your password), and holds two
-settings beyond deleting the account, covered next.
+Open the **account menu** in the console, then click **Profile** to open the site’s
+**Account** page. The **Signed in** box shows your email and provider (Google, Discord,
+or Patreon). OpenFray never sees your provider password.
 
-![The Profile panel: the signed-in email and provider, the display name field holding a
-name, and the default-license dropdown, its email masked.](../../../assets/screens/profile-panel.png)
+Click **Return to console →** on the left of that box to return to the console.
+Click **Sign out** on the right to end your session and open the sign-in page.
+If sign-out fails, the page stays open and shows what to retry.
 
 - **Display name** is what appears in two places: the **Run by** line on your
   [player view](/docs/guides/player-view/#what-your-players-see), and the byline on
@@ -116,10 +117,10 @@ name, and the default-license dropdown, its email masked.](../../../assets/scree
 
 ## Deleting everything
 
-In **Profile**, **Delete account** removes your account and everything attached to it:
-your fights, creatures, spells, characters, and campaigns. Anything you published comes
-down with it, and anyone holding one of those links will find it gone. You're asked to
-type your email to confirm.
+In **Profile**, find the red-tinted **Delete account** box. Type your current account
+email, then click **Delete my account**. This removes your fights, creatures, spells,
+characters, and campaigns. Anything you published comes down with it, and anyone holding
+one of those links will find it gone.
 
 :::danger[Deleting is permanent]
 Deleting your account cannot be undone, and nothing is kept. If you sign back in later
